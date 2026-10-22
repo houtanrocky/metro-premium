@@ -26,3 +26,8 @@ Append dated entries; do not silently rewrite previous empirical conclusions.
 - Extracted 150 main-line station entries, eight branch entries and twelve alias-table claims. These are memberships/claims, not 158 unique operating stations. Found 116 exact orthographic-name candidates against cached OSM route members; fuzzy suggestions remain unaccepted.
 - Recorded internal guide count conflicts on lines 3 and 6, endpoint presentation ambiguities on lines 5 and 7, and conflicting metadata/visible-title years. None were resolved by inventing an opening date or connection.
 - Added secondary-reference evidence to network reports. No public metro geometry, transfers, entrance eligibility or historical-access gate was promoted solely on this evidence. No guide prose, schematic image or proprietary embedded map was added to public assets. Earlier feasibility findings remain unchanged.
+
+## 2026-10-22 — Owner price-field inspection
+
+- At the owner's request, exported the 11,767 December 2024 candidate records with original price, area and property-category fields for private inspection. Added a seeded 500-row sample and one seeded record in each of twelve high-count neighborhoods. Extreme source values were retained, not replaced with plausible-looking examples.
+- Outputs stay under an ignored per-run folder; no coordinates, listing descriptions, titles or seller data were exported. Original field strings and source provenance accompany the CSV files. No currency conversion, price/m² calculation or analytical gate change was made. Owner knowledge can provide a documented interpretation without silently being relabeled as an official publisher statement.
