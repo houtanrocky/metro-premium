@@ -43,7 +43,9 @@ def fit_models(frame, minimum_n=100, minimum_clusters=30):
         if {'x','y'}.issubset(df.columns) and df[['x','y']].notna().all().all():
             _, nn = cKDTree(df[['x','y']]).query(df[['x','y']],k=min(9,len(df)))
             z = resid-resid.mean()
-            item['exploratory_knn_moran_i'] = float(np.sum(z[:,None]*z[nn[:,1:]])/((nn.shape[1]-1)*np.sum(z*z))) if np.sum(z*z)>0 else None
+            # Coincident coordinates mean the first returned neighbor is not always self.
+            neighbors=np.array([row[row!=i][:nn.shape[1]-1] for i,row in enumerate(nn)])
+            item['exploratory_knn_moran_i'] = float(np.sum(z[:,None]*z[neighbors])/((nn.shape[1]-1)*np.sum(z*z))) if np.sum(z*z)>0 else None
             item['spatial_diagnostic_caveat'] = 'Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference.'
         output.append(item)
     return {'status':'estimated','diagnostics':diagnostics,'models':output}
