@@ -1,0 +1,179 @@
+{
+  "public_routes_enabled": false,
+  "public_stations_enabled": false,
+  "reference_image": "Not supplied in initial workspace",
+  "historical_eligibility_verified": false,
+  "metro": {
+    "status": "acquired_unverified",
+    "elements": 1874,
+    "station_candidates": 155,
+    "relations": [
+      {
+        "osm_relation": 443301,
+        "name": "خط ۵",
+        "ref": "5",
+        "from": "شهید قاسم سلیمانی",
+        "to": "تهران (صادقیه)",
+        "colour": "#008033",
+        "station_member_count": 13,
+        "way_member_count": 147,
+        "missing_ways": [],
+        "invalid_way_geometries": 0,
+        "public_approved": false
+      },
+      {
+        "osm_relation": 443307,
+        "name": "خط ۴",
+        "ref": "4",
+        "from": "علامه جعفری",
+        "to": "شهید کلاهدوز",
+        "colour": "yellow",
+        "station_member_count": 20,
+        "way_member_count": 11,
+        "missing_ways": [],
+        "invalid_way_geometries": 0,
+        "public_approved": false
+      },
+      {
+        "osm_relation": 2431321,
+        "name": "خط ۲: صادقیه به فرهنگسرا",
+        "ref": "2",
+        "from": "تهران(صادقیه)",
+        "to": "فرهنگسرا",
+        "colour": "#003380",
+        "station_member_count": 22,
+        "way_member_count": 7,
+        "missing_ways": [],
+        "invalid_way_geometries": 0,
+        "public_approved": false
+      },
+      {
+        "osm_relation": 5366249,
+        "name": "خط ٣",
+        "ref": "3",
+        "from": "آزادگان",
+        "to": "قائم",
+        "colour": "#00aad4",
+        "station_member_count": 25,
+        "way_member_count": 8,
+        "missing_ways": [],
+        "invalid_way_geometries": 0,
+        "public_approved": false
+      },
+      {
+        "osm_relation": 5697303,
+        "name": "خط ۶",
+        "ref": "6",
+        "from": "شهید آرمان علی‌وردی (کوهسار)",
+        "to": "شهدای دولت‌آباد",
+        "colour": "#FF5599",
+        "station_member_count": 26,
+        "way_member_count": 8,
+        "missing_ways": [],
+        "invalid_way_geometries": 0,
+        "public_approved": false
+      },
+      {
+        "osm_relation": 7429356,
+        "name": "خط ۷",
+        "ref": "7",
+        "from": "میدان کتاب",
+        "to": "ورزشگاه تختی",
+        "colour": "#6A00FF",
+        "station_member_count": 22,
+        "way_member_count": 6,
+        "missing_ways": [],
+        "invalid_way_geometries": 0,
+        "public_approved": false
+      },
+      {
+        "osm_relation": 19967673,
+        "name": "خط ١: تجریش به کهریزک",
+        "ref": "1",
+        "from": "تجریش",
+        "to": "کهریزک",
+        "colour": "#FF0F04",
+        "station_member_count": 29,
+        "way_member_count": 9,
+        "missing_ways": [],
+        "invalid_way_geometries": 0,
+        "public_approved": false
+      }
+    ],
+    "timestamp_osm_base": "2026-10-22T19:09:21Z",
+    "public_routes_enabled": false,
+    "reasons": [
+      "OSM tagging is evidence of mapping, not independent verification of operational lines.",
+      "Termini, route sequence, station membership and transfer identity require source comparison.",
+      "Opening dates not reconstructed; no claim of historical accessibility."
+    ],
+    "sha256": "20e771e4af00c9b59d6a63c64955da869c51d00e7b19c8b4f6c174a8a31e2491"
+  },
+  "walking": {
+    "nodes": 666,
+    "directed_edges": 1452,
+    "weak_components": 3,
+    "entrance_candidates": 5,
+    "omitted": {
+      "ways_access": 6,
+      "ways_not_walkable": 274,
+      "barrier_edges": 0
+    },
+    "crs": "EPSG:32639",
+    "scope": "tiny central-Tehran API bounding box only; not metropolitan coverage",
+    "entrance_eligibility": "Quarantined: mapped entrances need station membership and historical eligibility evidence",
+    "connector_limit_m": 100,
+    "barrier_limitations": "Incomplete access mapping, unmodeled crossing legality, conditional restrictions and node snapping remain limitations."
+  },
+  "route_checks": [
+    {
+      "from_osm_node": 25940814,
+      "to_osm_node": 14129250025,
+      "network_m": 2120.61663881484,
+      "euclidean_m": 1514.3031403366208,
+      "triangle_check": true
+    },
+    {
+      "from_osm_node": 25940815,
+      "to_osm_node": 14129250026,
+      "network_m": 939.4331916478136,
+      "euclidean_m": 730.8844022964947,
+      "triangle_check": true
+    },
+    {
+      "from_osm_node": 25969112,
+      "to_osm_node": 14141618203,
+      "network_m": 1777.2778484291157,
+      "euclidean_m": 661.8529067529277,
+      "triangle_check": true
+    },
+    {
+      "from_osm_node": 25969116,
+      "to_osm_node": 14143295066,
+      "network_m": 1073.7294207514478,
+      "euclidean_m": 740.7920997147638,
+      "triangle_check": true
+    },
+    {
+      "from_osm_node": 25971731,
+      "to_osm_node": 14258432107,
+      "network_m": 1323.463357994752,
+      "euclidean_m": 1017.5979592847826,
+      "triangle_check": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A90%5D%3B%28relation%2819967673%29%3Brelation%282431321%29%3Brelation%285366249%29%3Brelation%28443307%29%3Brelation%28443301%29%3Brelation%285697303%29%3Brelation%287429356%29%3B%29%3B%28._%3B%3E%3E%3B%29%3Bout+body%3B",
+      "sha256": "20e771e4af00c9b59d6a63c64955da869c51d00e7b19c8b4f6c174a8a31e2491",
+      "bytes": 313654,
+      "retrieved_at_utc": "2026-10-22T19:10:02Z"
+    },
+    {
+      "url": "https://www.openstreetmap.org/api/0.6/map?bbox=51.405,35.694,51.415,35.702",
+      "sha256": "5427c1b838b5571ab25aeb9c04bd75db49aa973dd2d1780307cc7cd6f7577a22",
+      "bytes": 870021,
+      "retrieved_at_utc": "2026-10-22T19:10:03Z"
+    }
+  ]
+}

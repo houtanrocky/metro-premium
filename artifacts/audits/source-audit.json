@@ -1,0 +1,3838 @@
+{
+  "status": "full_source_audit",
+  "total_observed_rows": 1000000,
+  "column_count": 60,
+  "source_storage_types": [
+    {
+      "column_name": "cat2_slug",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "cat3_slug",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "city_slug",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "neighborhood_slug",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "created_at_month",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "user_type",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "description",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "title",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "rent_mode",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "rent_value",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "rent_to_single",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "rent_type",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "price_mode",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "price_value",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "credit_mode",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "credit_value",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "rent_credit_transform",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "transformable_price",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "transformable_credit",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "transformed_credit",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "transformable_rent",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "transformed_rent",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "land_size",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "building_size",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "deed_type",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_business_deed",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "floor",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "rooms_count",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "total_floors_count",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "unit_per_floor",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_balcony",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_elevator",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_warehouse",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_parking",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "construction_year",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "is_rebuilt",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_water",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_warm_water_provider",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_electricity",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_gas",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_heating_system",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_cooling_system",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_restroom",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_security_guard",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_barbecue",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "building_direction",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_pool",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_jacuzzi",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_sauna",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "floor_material",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "property_type",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "regular_person_capacity",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "extra_person_capacity",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "cost_per_extra_person",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "rent_price_on_regular_days",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "rent_price_on_special_days",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "rent_price_at_weekends",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "location_latitude",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "location_longitude",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "location_radius",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    }
+  ],
+  "missing_all": {
+    "cat2_slug": 0,
+    "cat3_slug": 1,
+    "city_slug": 2,
+    "neighborhood_slug": 562861,
+    "created_at_month": 0,
+    "user_type": 711118,
+    "description": 0,
+    "title": 54,
+    "rent_mode": 647006,
+    "rent_value": 648678,
+    "rent_to_single": 999981,
+    "rent_type": 896039,
+    "price_mode": 426394,
+    "price_value": 431654,
+    "credit_mode": 647006,
+    "credit_value": 647905,
+    "rent_credit_transform": 647015,
+    "transformable_price": 647106,
+    "transformable_credit": 647915,
+    "transformed_credit": 927591,
+    "transformable_rent": 648752,
+    "transformed_rent": 927591,
+    "land_size": 813604,
+    "building_size": 19606,
+    "deed_type": 746542,
+    "has_business_deed": 965321,
+    "floor": 458252,
+    "rooms_count": 154101,
+    "total_floors_count": 695648,
+    "unit_per_floor": 697717,
+    "has_balcony": 493589,
+    "has_elevator": 458251,
+    "has_warehouse": 271845,
+    "has_parking": 271844,
+    "construction_year": 184172,
+    "is_rebuilt": 470530,
+    "has_water": 966556,
+    "has_warm_water_provider": 620500,
+    "has_electricity": 966555,
+    "has_gas": 966570,
+    "has_heating_system": 631031,
+    "has_cooling_system": 649381,
+    "has_restroom": 593087,
+    "has_security_guard": 968688,
+    "has_barbecue": 968802,
+    "building_direction": 676077,
+    "has_pool": 970610,
+    "has_jacuzzi": 971272,
+    "has_sauna": 971521,
+    "floor_material": 594016,
+    "property_type": 972943,
+    "regular_person_capacity": 970130,
+    "extra_person_capacity": 975991,
+    "cost_per_extra_person": 989759,
+    "rent_price_on_regular_days": 981932,
+    "rent_price_on_special_days": 989537,
+    "rent_price_at_weekends": 986449,
+    "location_latitude": 344392,
+    "location_longitude": 344392,
+    "location_radius": 660301
+  },
+  "months": [
+    {
+      "month": "2020-02-01 00:00:00",
+      "n": 1
+    },
+    {
+      "month": "2020-12-01 00:00:00",
+      "n": 1
+    },
+    {
+      "month": "2021-02-01 00:00:00",
+      "n": 1
+    },
+    {
+      "month": "2021-05-01 00:00:00",
+      "n": 1
+    },
+    {
+      "month": "2021-06-01 00:00:00",
+      "n": 1
+    },
+    {
+      "month": "2021-11-01 00:00:00",
+      "n": 1
+    },
+    {
+      "month": "2021-12-01 00:00:00",
+      "n": 2
+    },
+    {
+      "month": "2022-01-01 00:00:00",
+      "n": 1
+    },
+    {
+      "month": "2022-02-01 00:00:00",
+      "n": 2
+    },
+    {
+      "month": "2022-03-01 00:00:00",
+      "n": 1
+    },
+    {
+      "month": "2022-04-01 00:00:00",
+      "n": 5
+    },
+    {
+      "month": "2022-05-01 00:00:00",
+      "n": 7
+    },
+    {
+      "month": "2022-06-01 00:00:00",
+      "n": 4
+    },
+    {
+      "month": "2022-07-01 00:00:00",
+      "n": 4
+    },
+    {
+      "month": "2022-08-01 00:00:00",
+      "n": 9
+    },
+    {
+      "month": "2022-09-01 00:00:00",
+      "n": 6
+    },
+    {
+      "month": "2022-10-01 00:00:00",
+      "n": 6
+    },
+    {
+      "month": "2022-11-01 00:00:00",
+      "n": 9
+    },
+    {
+      "month": "2022-12-01 00:00:00",
+      "n": 11
+    },
+    {
+      "month": "2023-01-01 00:00:00",
+      "n": 17
+    },
+    {
+      "month": "2023-02-01 00:00:00",
+      "n": 17
+    },
+    {
+      "month": "2023-03-01 00:00:00",
+      "n": 25
+    },
+    {
+      "month": "2023-04-01 00:00:00",
+      "n": 23
+    },
+    {
+      "month": "2023-05-01 00:00:00",
+      "n": 53
+    },
+    {
+      "month": "2023-06-01 00:00:00",
+      "n": 66
+    },
+    {
+      "month": "2023-07-01 00:00:00",
+      "n": 96
+    },
+    {
+      "month": "2023-08-01 00:00:00",
+      "n": 117
+    },
+    {
+      "month": "2023-09-01 00:00:00",
+      "n": 177
+    },
+    {
+      "month": "2023-10-01 00:00:00",
+      "n": 213
+    },
+    {
+      "month": "2023-11-01 00:00:00",
+      "n": 353
+    },
+    {
+      "month": "2023-12-01 00:00:00",
+      "n": 532
+    },
+    {
+      "month": "2024-01-01 00:00:00",
+      "n": 942
+    },
+    {
+      "month": "2024-02-01 00:00:00",
+      "n": 1211
+    },
+    {
+      "month": "2024-03-01 00:00:00",
+      "n": 1881
+    },
+    {
+      "month": "2024-04-01 00:00:00",
+      "n": 7187
+    },
+    {
+      "month": "2024-05-01 00:00:00",
+      "n": 108759
+    },
+    {
+      "month": "2024-06-01 00:00:00",
+      "n": 125624
+    },
+    {
+      "month": "2024-07-01 00:00:00",
+      "n": 133219
+    },
+    {
+      "month": "2024-08-01 00:00:00",
+      "n": 132396
+    },
+    {
+      "month": "2024-09-01 00:00:00",
+      "n": 121432
+    },
+    {
+      "month": "2024-10-01 00:00:00",
+      "n": 126387
+    },
+    {
+      "month": "2024-11-01 00:00:00",
+      "n": 121456
+    },
+    {
+      "month": "2024-12-01 00:00:00",
+      "n": 116452
+    },
+    {
+      "month": "2025-01-01 00:00:00",
+      "n": 1139
+    },
+    {
+      "month": "2025-02-01 00:00:00",
+      "n": 148
+    },
+    {
+      "month": "2025-03-01 00:00:00",
+      "n": 5
+    }
+  ],
+  "cities": [
+    {
+      "city": "tehran",
+      "n": 190904
+    },
+    {
+      "city": "mashhad",
+      "n": 69032
+    },
+    {
+      "city": "karaj",
+      "n": 49367
+    },
+    {
+      "city": "shiraz",
+      "n": 37141
+    },
+    {
+      "city": "isfahan",
+      "n": 36953
+    },
+    {
+      "city": "tabriz",
+      "n": 27655
+    },
+    {
+      "city": "andisheh-new-town",
+      "n": 20847
+    },
+    {
+      "city": "ahvaz",
+      "n": 19590
+    },
+    {
+      "city": "qom",
+      "n": 17109
+    },
+    {
+      "city": "kermanshah",
+      "n": 17048
+    },
+    {
+      "city": "rasht",
+      "n": 16833
+    },
+    {
+      "city": "urmia",
+      "n": 13466
+    },
+    {
+      "city": "bandar-abbas",
+      "n": 11555
+    },
+    {
+      "city": "pardis-city",
+      "n": 11396
+    },
+    {
+      "city": "kerman",
+      "n": 11319
+    },
+    {
+      "city": "arak",
+      "n": 10878
+    },
+    {
+      "city": "hamedan",
+      "n": 9877
+    },
+    {
+      "city": "parand-city",
+      "n": 9624
+    },
+    {
+      "city": "yazd",
+      "n": 9310
+    },
+    {
+      "city": "ardabil",
+      "n": 9171
+    },
+    {
+      "city": "gorgan",
+      "n": 8604
+    },
+    {
+      "city": "khorramabad",
+      "n": 8325
+    },
+    {
+      "city": "qazvin",
+      "n": 8103
+    },
+    {
+      "city": "eslamshahr",
+      "n": 7988
+    },
+    {
+      "city": "chamestan",
+      "n": 7714
+    },
+    {
+      "city": "zanjan",
+      "n": 7647
+    },
+    {
+      "city": "zahedan",
+      "n": 7611
+    },
+    {
+      "city": "nur",
+      "n": 7241
+    },
+    {
+      "city": "fardis-city",
+      "n": 7195
+    },
+    {
+      "city": "sanandaj",
+      "n": 6549
+    },
+    {
+      "city": "hashtgerd-city",
+      "n": 6327
+    },
+    {
+      "city": "shahriar-city",
+      "n": 6160
+    },
+    {
+      "city": "neyshabur",
+      "n": 5591
+    },
+    {
+      "city": "bushehr",
+      "n": 5406
+    },
+    {
+      "city": "nowshahr",
+      "n": 5075
+    },
+    {
+      "city": "mahmudabad",
+      "n": 4991
+    },
+    {
+      "city": "sadra",
+      "n": 4970
+    },
+    {
+      "city": "dezful",
+      "n": 4960
+    },
+    {
+      "city": "yasuj",
+      "n": 4920
+    },
+    {
+      "city": "bojnurd",
+      "n": 4822
+    },
+    {
+      "city": "qods-city",
+      "n": 4683
+    },
+    {
+      "city": "kish",
+      "n": 4577
+    },
+    {
+      "city": "saveh",
+      "n": 4520
+    },
+    {
+      "city": "kashan",
+      "n": 4369
+    },
+    {
+      "city": "pakdasht-city",
+      "n": 4326
+    },
+    {
+      "city": "lahijan",
+      "n": 4089
+    },
+    {
+      "city": "borujerd",
+      "n": 3986
+    },
+    {
+      "city": "bandar-anzali",
+      "n": 3817
+    },
+    {
+      "city": "shahin-shahr",
+      "n": 3690
+    },
+    {
+      "city": "najafabad",
+      "n": 3586
+    },
+    {
+      "city": "ilam",
+      "n": 3303
+    },
+    {
+      "city": "qarchak-city",
+      "n": 3288
+    },
+    {
+      "city": "amol",
+      "n": 3272
+    },
+    {
+      "city": "semnan",
+      "n": 3123
+    },
+    {
+      "city": "varamin-city",
+      "n": 3113
+    },
+    {
+      "city": "sirjan",
+      "n": 3089
+    },
+    {
+      "city": "robat-karim",
+      "n": 3057
+    },
+    {
+      "city": "birjand",
+      "n": 3057
+    },
+    {
+      "city": "tonekabon",
+      "n": 3016
+    },
+    {
+      "city": "damavand",
+      "n": 2975
+    },
+    {
+      "city": "sabzevar",
+      "n": 2969
+    },
+    {
+      "city": "abadan",
+      "n": 2926
+    },
+    {
+      "city": "shahrekord",
+      "n": 2754
+    },
+    {
+      "city": "golbahar-city",
+      "n": 2673
+    },
+    {
+      "city": "sorkhrood",
+      "n": 2562
+    },
+    {
+      "city": "ramsar",
+      "n": 2514
+    },
+    {
+      "city": "sari",
+      "n": 2363
+    },
+    {
+      "city": "babolsar",
+      "n": 2194
+    },
+    {
+      "city": "dorud",
+      "n": 2161
+    },
+    {
+      "city": "malayer",
+      "n": 2090
+    },
+    {
+      "city": "rudehen",
+      "n": 2084
+    },
+    {
+      "city": "shahrud",
+      "n": 2081
+    },
+    {
+      "city": "mohammad-shahr",
+      "n": 2069
+    },
+    {
+      "city": "nasimshahr",
+      "n": 1988
+    },
+    {
+      "city": "chalus",
+      "n": 1981
+    },
+    {
+      "city": "golestan-baharestan",
+      "n": 1929
+    },
+    {
+      "city": "mahdasht-city",
+      "n": 1907
+    },
+    {
+      "city": "rafsanjan",
+      "n": 1888
+    },
+    {
+      "city": "marvdasht-city",
+      "n": 1806
+    },
+    {
+      "city": "qeshm",
+      "n": 1801
+    },
+    {
+      "city": "gonbad-kavus",
+      "n": 1800
+    },
+    {
+      "city": "bumehen",
+      "n": 1789
+    },
+    {
+      "city": "mohammadieh",
+      "n": 1772
+    },
+    {
+      "city": "qaem-shahr",
+      "n": 1724
+    },
+    {
+      "city": "mahshahr",
+      "n": 1661
+    },
+    {
+      "city": "foolad-shahr",
+      "n": 1634
+    },
+    {
+      "city": "chabahar",
+      "n": 1607
+    },
+    {
+      "city": "nazarabad",
+      "n": 1601
+    },
+    {
+      "city": "fuman",
+      "n": 1520
+    },
+    {
+      "city": "dogonbadan",
+      "n": 1484
+    },
+    {
+      "city": "garmdareh",
+      "n": 1465
+    },
+    {
+      "city": "langarud",
+      "n": 1461
+    },
+    {
+      "city": "zabol",
+      "n": 1458
+    },
+    {
+      "city": "charbagh-alborz",
+      "n": 1434
+    },
+    {
+      "city": "shushtar",
+      "n": 1420
+    },
+    {
+      "city": "sahand",
+      "n": 1407
+    },
+    {
+      "city": "safadasht-industrial-city",
+      "n": 1401
+    },
+    {
+      "city": "abhar",
+      "n": 1392
+    },
+    {
+      "city": "someh-sara",
+      "n": 1385
+    },
+    {
+      "city": "jiroft",
+      "n": 1375
+    },
+    {
+      "city": "babol",
+      "n": 1374
+    },
+    {
+      "city": "andimeshk",
+      "n": 1361
+    },
+    {
+      "city": "izadshahr",
+      "n": 1358
+    },
+    {
+      "city": "talesh",
+      "n": 1353
+    },
+    {
+      "city": "salman-shahr",
+      "n": 1348
+    },
+    {
+      "city": "behbahan",
+      "n": 1348
+    },
+    {
+      "city": "zibakenar",
+      "n": 1338
+    },
+    {
+      "city": "bandar-kangan",
+      "n": 1313
+    },
+    {
+      "city": "marivan",
+      "n": 1264
+    },
+    {
+      "city": "borazjan",
+      "n": 1219
+    },
+    {
+      "city": "shirvan",
+      "n": 1212
+    },
+    {
+      "city": "masal",
+      "n": 1211
+    },
+    {
+      "city": "kahrizak",
+      "n": 1207
+    },
+    {
+      "city": "khoy",
+      "n": 1201
+    },
+    {
+      "city": "izeh",
+      "n": 1175
+    },
+    {
+      "city": "bam",
+      "n": 1159
+    },
+    {
+      "city": "rudsar",
+      "n": 1149
+    },
+    {
+      "city": "astaneh-ashrafiyeh",
+      "n": 1149
+    },
+    {
+      "city": "khorramshahr",
+      "n": 1140
+    },
+    {
+      "city": "marand",
+      "n": 1125
+    },
+    {
+      "city": "bandar-ganaveh",
+      "n": 1120
+    },
+    {
+      "city": "Iranshahr",
+      "n": 1083
+    },
+    {
+      "city": "masjed-e-soleyman",
+      "n": 1078
+    },
+    {
+      "city": "astara",
+      "n": 1065
+    },
+    {
+      "city": "torbat-heydariyeh",
+      "n": 1038
+    },
+    {
+      "city": "pishva",
+      "n": 1018
+    },
+    {
+      "city": "chahar-dangeh",
+      "n": 997
+    },
+    {
+      "city": "kazeroon",
+      "n": 980
+    },
+    {
+      "city": "eslamabad-gharb",
+      "n": 976
+    },
+    {
+      "city": "saqqez",
+      "n": 963
+    },
+    {
+      "city": "shahre-rey",
+      "n": 952
+    },
+    {
+      "city": "kelarestan",
+      "n": 934
+    },
+    {
+      "city": "kuhdasht",
+      "n": 933
+    },
+    {
+      "city": "shush",
+      "n": 928
+    },
+    {
+      "city": "alvand",
+      "n": 927
+    },
+    {
+      "city": "maragheh",
+      "n": 917
+    },
+    {
+      "city": "nahavand",
+      "n": 914
+    },
+    {
+      "city": "chaf-chamkhale",
+      "n": 887
+    },
+    {
+      "city": "minab",
+      "n": 879
+    },
+    {
+      "city": "royan",
+      "n": 868
+    },
+    {
+      "city": "parsabad",
+      "n": 868
+    },
+    {
+      "city": "qorveh",
+      "n": 867
+    },
+    {
+      "city": "ahar",
+      "n": 866
+    },
+    {
+      "city": "garmsar",
+      "n": 839
+    },
+    {
+      "city": "sangar",
+      "n": 837
+    },
+    {
+      "city": "lavasan-city",
+      "n": 824
+    },
+    {
+      "city": "bandar-Imam-khomeini",
+      "n": 786
+    },
+    {
+      "city": "jahrom",
+      "n": 785
+    },
+    {
+      "city": "takestan",
+      "n": 783
+    },
+    {
+      "city": "esfarayen",
+      "n": 781
+    },
+    {
+      "city": "meshgin-shahr",
+      "n": 780
+    },
+    {
+      "city": "quchan",
+      "n": 776
+    },
+    {
+      "city": "fasa-city",
+      "n": 774
+    },
+    {
+      "city": "kouchesfahan",
+      "n": 769
+    },
+    {
+      "city": "rezvanshahr",
+      "n": 761
+    },
+    {
+      "city": "khomein",
+      "n": 752
+    },
+    {
+      "city": "aligudarz",
+      "n": 744
+    },
+    {
+      "city": "khoshkbijar",
+      "n": 733
+    },
+    {
+      "city": "shandiz-city",
+      "n": 720
+    },
+    {
+      "city": "ramhormoz",
+      "n": 718
+    },
+    {
+      "city": "siahkal",
+      "n": 711
+    },
+    {
+      "city": "saravan",
+      "n": 705
+    },
+    {
+      "city": "khomam",
+      "n": 701
+    },
+    {
+      "city": "kiashahr",
+      "n": 698
+    },
+    {
+      "city": "chenaran",
+      "n": 698
+    },
+    {
+      "city": "mianeh",
+      "n": 697
+    },
+    {
+      "city": "zarand",
+      "n": 696
+    },
+    {
+      "city": "khomeyni-shahr",
+      "n": 686
+    },
+    {
+      "city": "abyek",
+      "n": 674
+    },
+    {
+      "city": "bukan",
+      "n": 667
+    },
+    {
+      "city": "dehdasht",
+      "n": 663
+    },
+    {
+      "city": "torbat-jam",
+      "n": 663
+    },
+    {
+      "city": "nurabad",
+      "n": 657
+    },
+    {
+      "city": "lashtenesha",
+      "n": 639
+    },
+    {
+      "city": "damghan",
+      "n": 637
+    },
+    {
+      "city": "miandoab",
+      "n": 621
+    },
+    {
+      "city": "sabashahr",
+      "n": 617
+    },
+    {
+      "city": "fereydunkenar",
+      "n": 616
+    },
+    {
+      "city": "jam",
+      "n": 611
+    },
+    {
+      "city": "omidiyeh",
+      "n": 604
+    },
+    {
+      "city": "norabad",
+      "n": 602
+    },
+    {
+      "city": "golpayegan",
+      "n": 594
+    },
+    {
+      "city": "maku",
+      "n": 594
+    },
+    {
+      "city": "shaft",
+      "n": 580
+    },
+    {
+      "city": "boroujen",
+      "n": 571
+    },
+    {
+      "city": "azna",
+      "n": 555
+    },
+    {
+      "city": "koohsar",
+      "n": 548
+    },
+    {
+      "city": "abadeh",
+      "n": 529
+    },
+    {
+      "city": "fasham-city",
+      "n": 513
+    },
+    {
+      "city": "tuyserkan",
+      "n": 509
+    },
+    {
+      "city": "falavarjan",
+      "n": 506
+    },
+    {
+      "city": "darab",
+      "n": 505
+    },
+    {
+      "city": "lordegan",
+      "n": 498
+    },
+    {
+      "city": "absard",
+      "n": 498
+    },
+    {
+      "city": "nashtarud",
+      "n": 491
+    },
+    {
+      "city": "aliabad-katul",
+      "n": 489
+    },
+    {
+      "city": "kamyaran",
+      "n": 487
+    },
+    {
+      "city": "azadshahr-golestan",
+      "n": 486
+    },
+    {
+      "city": "kangavar",
+      "n": 477
+    },
+    {
+      "city": "firuzkooh",
+      "n": 474
+    },
+    {
+      "city": "asadabad",
+      "n": 464
+    },
+    {
+      "city": "khalkhal",
+      "n": 462
+    },
+    {
+      "city": "ardakan",
+      "n": 461
+    },
+    {
+      "city": "sarpol-zahab",
+      "n": 451
+    },
+    {
+      "city": "abbasabad-mazandaran",
+      "n": 450
+    },
+    {
+      "city": "meybod",
+      "n": 445
+    },
+    {
+      "city": "khash",
+      "n": 444
+    },
+    {
+      "city": "salmas",
+      "n": 437
+    },
+    {
+      "city": "Kordkuy",
+      "n": 435
+    },
+    {
+      "city": "mahabad",
+      "n": 434
+    },
+    {
+      "city": "aran-va-bidgol",
+      "n": 429
+    },
+    {
+      "city": "firuzabad",
+      "n": 427
+    },
+    {
+      "city": "kahnooj",
+      "n": 423
+    },
+    {
+      "city": "sarein",
+      "n": 423
+    },
+    {
+      "city": "sonqor",
+      "n": 421
+    },
+    {
+      "city": "chaboksar",
+      "n": 420
+    },
+    {
+      "city": "asalem",
+      "n": 416
+    },
+    {
+      "city": "khorramdarreh",
+      "n": 411
+    },
+    {
+      "city": "eshtehard",
+      "n": 406
+    },
+    {
+      "city": "amlash",
+      "n": 386
+    },
+    {
+      "city": "kelarabad",
+      "n": 379
+    },
+    {
+      "city": "javanrud",
+      "n": 375
+    },
+    {
+      "city": "dehloran",
+      "n": 364
+    },
+    {
+      "city": "ferdosiye",
+      "n": 361
+    },
+    {
+      "city": "baft",
+      "n": 354
+    },
+    {
+      "city": "ghayen",
+      "n": 350
+    },
+    {
+      "city": "susangerd",
+      "n": 344
+    },
+    {
+      "city": "shirgah",
+      "n": 343
+    },
+    {
+      "city": "shadeghan",
+      "n": 336
+    },
+    {
+      "city": "kelachay",
+      "n": 334
+    },
+    {
+      "city": "bijar",
+      "n": 333
+    },
+    {
+      "city": "shahedshahr",
+      "n": 330
+    },
+    {
+      "city": "eyvan",
+      "n": 328
+    },
+    {
+      "city": "kalale",
+      "n": 326
+    },
+    {
+      "city": "tankaman",
+      "n": 324
+    },
+    {
+      "city": "eqbaliyeh",
+      "n": 323
+    },
+    {
+      "city": "gonabad",
+      "n": 322
+    },
+    {
+      "city": "aleshtar",
+      "n": 320
+    },
+    {
+      "city": "behshahr",
+      "n": 317
+    },
+    {
+      "city": "vahidieh",
+      "n": 310
+    },
+    {
+      "city": "qeydar",
+      "n": 309
+    },
+    {
+      "city": "khoram-abad",
+      "n": 308
+    },
+    {
+      "city": "baneh",
+      "n": 306
+    },
+    {
+      "city": "khormoj",
+      "n": 305
+    },
+    {
+      "city": "taleqan",
+      "n": 300
+    },
+    {
+      "city": "dehgolan",
+      "n": 291
+    },
+    {
+      "city": "bonab",
+      "n": 289
+    },
+    {
+      "city": "zarghan",
+      "n": 288
+    },
+    {
+      "city": "ashkhaneh",
+      "n": 284
+    },
+    {
+      "city": "azarshahr",
+      "n": 281
+    },
+    {
+      "city": "bahar-city",
+      "n": 277
+    },
+    {
+      "city": "sahneh",
+      "n": 275
+    },
+    {
+      "city": "neyriz",
+      "n": 274
+    },
+    {
+      "city": "daran",
+      "n": 269
+    },
+    {
+      "city": "mobarakeh",
+      "n": 266
+    },
+    {
+      "city": "minoodasht",
+      "n": 262
+    },
+    {
+      "city": "bandar-torkaman",
+      "n": 260
+    },
+    {
+      "city": "sarab",
+      "n": 260
+    },
+    {
+      "city": "hachirud",
+      "n": 260
+    },
+    {
+      "city": "katalem-sadatshahr",
+      "n": 259
+    },
+    {
+      "city": "pareh-sar",
+      "n": 256
+    },
+    {
+      "city": "lenjan",
+      "n": 253
+    },
+    {
+      "city": "baghershahr",
+      "n": 251
+    },
+    {
+      "city": "torghabeh-city",
+      "n": 251
+    },
+    {
+      "city": "naqadeh",
+      "n": 246
+    },
+    {
+      "city": "ziraab",
+      "n": 241
+    },
+    {
+      "city": "abdanan",
+      "n": 239
+    },
+    {
+      "city": "mahalat",
+      "n": 239
+    },
+    {
+      "city": "khansar",
+      "n": 237
+    },
+    {
+      "city": "javadabad",
+      "n": 237
+    },
+    {
+      "city": "ferdows",
+      "n": 233
+    },
+    {
+      "city": "tabas",
+      "n": 230
+    },
+    {
+      "city": "marzan-abad",
+      "n": 229
+    },
+    {
+      "city": "taft",
+      "n": 225
+    },
+    {
+      "city": "shazand",
+      "n": 224
+    },
+    {
+      "city": "aq-qala",
+      "n": 223
+    },
+    {
+      "city": "mohajeran",
+      "n": 223
+    },
+    {
+      "city": "lar",
+      "n": 221
+    },
+    {
+      "city": "raheem-abad",
+      "n": 221
+    },
+    {
+      "city": "emamzadeh-abdollah",
+      "n": 219
+    },
+    {
+      "city": "shahin-dej",
+      "n": 216
+    },
+    {
+      "city": "pol-dokhtar",
+      "n": 213
+    },
+    {
+      "city": "bardsir",
+      "n": 209
+    },
+    {
+      "city": "mehriz",
+      "n": 208
+    },
+    {
+      "city": "dayyer",
+      "n": 204
+    },
+    {
+      "city": "koumeleh",
+      "n": 203
+    },
+    {
+      "city": "eqlid",
+      "n": 198
+    },
+    {
+      "city": "lamerd",
+      "n": 198
+    },
+    {
+      "city": "ahmadsar-gourab",
+      "n": 194
+    },
+    {
+      "city": "galikesh",
+      "n": 192
+    },
+    {
+      "city": "neka",
+      "n": 192
+    },
+    {
+      "city": "kabudrahang",
+      "n": 190
+    },
+    {
+      "city": "fazel-abad",
+      "n": 188
+    },
+    {
+      "city": "shanderman",
+      "n": 180
+    },
+    {
+      "city": "toutkabon",
+      "n": 179
+    },
+    {
+      "city": "farahabad",
+      "n": 176
+    },
+    {
+      "city": "mahan",
+      "n": 173
+    },
+    {
+      "city": "abrisham-isfahan",
+      "n": 172
+    },
+    {
+      "city": "asara",
+      "n": 170
+    },
+    {
+      "city": "rostam-abad",
+      "n": 162
+    },
+    {
+      "city": "pirbazar",
+      "n": 160
+    },
+    {
+      "city": "mehran",
+      "n": 159
+    },
+    {
+      "city": "harsin",
+      "n": 158
+    },
+    {
+      "city": "otaghvar",
+      "n": 157
+    },
+    {
+      "city": "gourab-zarmikh",
+      "n": 157
+    },
+    {
+      "city": "tulam-shahr",
+      "n": 150
+    },
+    {
+      "city": "polsefid",
+      "n": 147
+    },
+    {
+      "city": "semirom",
+      "n": 147
+    },
+    {
+      "city": "roudbaneh",
+      "n": 145
+    },
+    {
+      "city": "saman-city",
+      "n": 145
+    },
+    {
+      "city": "lisar",
+      "n": 144
+    },
+    {
+      "city": "delijan",
+      "n": 144
+    },
+    {
+      "city": "germi",
+      "n": 142
+    },
+    {
+      "city": "shirud",
+      "n": 139
+    },
+    {
+      "city": "hamidia",
+      "n": 135
+    },
+    {
+      "city": "namin",
+      "n": 131
+    },
+    {
+      "city": "molkabad",
+      "n": 130
+    },
+    {
+      "city": "ramiyan",
+      "n": 126
+    },
+    {
+      "city": "taybad",
+      "n": 125
+    },
+    {
+      "city": "sisakht",
+      "n": 125
+    },
+    {
+      "city": "farrokhshahr",
+      "n": 124
+    },
+    {
+      "city": "galougah-babol",
+      "n": 124
+    },
+    {
+      "city": "loulman",
+      "n": 121
+    },
+    {
+      "city": "shelman",
+      "n": 120
+    },
+    {
+      "city": "kilan",
+      "n": 119
+    },
+    {
+      "city": "juybar",
+      "n": 118
+    },
+    {
+      "city": "dargahan",
+      "n": 113
+    },
+    {
+      "city": "ghamsar",
+      "n": 112
+    },
+    {
+      "city": "rudbar",
+      "n": 111
+    },
+    {
+      "city": "ramshir",
+      "n": 111
+    },
+    {
+      "city": "marzikola",
+      "n": 109
+    },
+    {
+      "city": "bisotun",
+      "n": 108
+    },
+    {
+      "city": "deylaman",
+      "n": 106
+    },
+    {
+      "city": "bafq",
+      "n": 101
+    },
+    {
+      "city": "hendijan",
+      "n": 100
+    },
+    {
+      "city": "zahak",
+      "n": 100
+    },
+    {
+      "city": "shemshak",
+      "n": 95
+    },
+    {
+      "city": "rankouh",
+      "n": 93
+    },
+    {
+      "city": "konarak",
+      "n": 93
+    },
+    {
+      "city": "bandar-gaz",
+      "n": 90
+    },
+    {
+      "city": "makloan",
+      "n": 89
+    },
+    {
+      "city": "hamidiyeh",
+      "n": 88
+    },
+    {
+      "city": "bahnamir",
+      "n": 88
+    },
+    {
+      "city": "kiakola",
+      "n": 86
+    },
+    {
+      "city": "abali",
+      "n": 86
+    },
+    {
+      "city": "pool",
+      "n": 86
+    },
+    {
+      "city": "tahergurab",
+      "n": 86
+    },
+    {
+      "city": "ghorogh",
+      "n": 85
+    },
+    {
+      "city": "dabudasht",
+      "n": 82
+    },
+    {
+      "city": "khan-bin",
+      "n": 82
+    },
+    {
+      "city": "kiasar",
+      "n": 80
+    },
+    {
+      "city": "khaf",
+      "n": 80
+    },
+    {
+      "city": "piranshahr",
+      "n": 79
+    },
+    {
+      "city": "chamran-town",
+      "n": 74
+    },
+    {
+      "city": "dalkhani",
+      "n": 74
+    },
+    {
+      "city": "lavandevil",
+      "n": 71
+    },
+    {
+      "city": "reyneh",
+      "n": 71
+    },
+    {
+      "city": "barah-sar",
+      "n": 70
+    },
+    {
+      "city": "manjil",
+      "n": 69
+    },
+    {
+      "city": "aalasht",
+      "n": 69
+    },
+    {
+      "city": "masuleh",
+      "n": 69
+    },
+    {
+      "city": "bardaskan",
+      "n": 68
+    },
+    {
+      "city": "shal",
+      "n": 68
+    },
+    {
+      "city": "hormuz",
+      "n": 67
+    },
+    {
+      "city": "sorkhan-kalateh",
+      "n": 66
+    },
+    {
+      "city": "sourek",
+      "n": 61
+    },
+    {
+      "city": "takht",
+      "n": 59
+    },
+    {
+      "city": "gomishan",
+      "n": 58
+    },
+    {
+      "city": "mohr",
+      "n": 57
+    },
+    {
+      "city": "kojur",
+      "n": 57
+    },
+    {
+      "city": "ziyabar",
+      "n": 56
+    },
+    {
+      "city": "amirkala",
+      "n": 56
+    },
+    {
+      "city": "galugah-babol",
+      "n": 56
+    },
+    {
+      "city": "akand",
+      "n": 55
+    },
+    {
+      "city": "zargarshahr",
+      "n": 54
+    },
+    {
+      "city": "haviq",
+      "n": 54
+    },
+    {
+      "city": "baladeh",
+      "n": 49
+    },
+    {
+      "city": "chobar",
+      "n": 49
+    },
+    {
+      "city": "sardasht",
+      "n": 47
+    },
+    {
+      "city": "paeen-holar",
+      "n": 45
+    },
+    {
+      "city": "loshan",
+      "n": 41
+    },
+    {
+      "city": "vajargah",
+      "n": 41
+    },
+    {
+      "city": "gahvareh",
+      "n": 41
+    },
+    {
+      "city": "gazanak",
+      "n": 41
+    },
+    {
+      "city": "khoshroud-pey",
+      "n": 38
+    },
+    {
+      "city": "farim",
+      "n": 38
+    },
+    {
+      "city": "hadi-shahr",
+      "n": 38
+    },
+    {
+      "city": "rostamkola",
+      "n": 37
+    },
+    {
+      "city": "babakan",
+      "n": 37
+    },
+    {
+      "city": "jelin",
+      "n": 36
+    },
+    {
+      "city": "oshnavieh",
+      "n": 36
+    },
+    {
+      "city": "nodeh-khandoz",
+      "n": 36
+    },
+    {
+      "city": "jirandeh",
+      "n": 36
+    },
+    {
+      "city": "kouhi-kheyl",
+      "n": 36
+    },
+    {
+      "city": "negin-shahr",
+      "n": 32
+    },
+    {
+      "city": "arjmand",
+      "n": 31
+    },
+    {
+      "city": "sadegh-abad",
+      "n": 28
+    },
+    {
+      "city": "nokandeh",
+      "n": 25
+    },
+    {
+      "city": "mazrae-katool",
+      "n": 22
+    },
+    {
+      "city": "simin-shahr",
+      "n": 22
+    },
+    {
+      "city": "boluk",
+      "n": 21
+    },
+    {
+      "city": "khalil-shahr",
+      "n": 20
+    },
+    {
+      "city": "arateh",
+      "n": 20
+    },
+    {
+      "city": "daland",
+      "n": 19
+    },
+    {
+      "city": "alghajar",
+      "n": 18
+    },
+    {
+      "city": "gatab",
+      "n": 17
+    },
+    {
+      "city": "khour",
+      "n": 16
+    },
+    {
+      "city": "faragi",
+      "n": 15
+    },
+    {
+      "city": "astaneh-sara",
+      "n": 14
+    },
+    {
+      "city": "tabaghdeh",
+      "n": 12
+    },
+    {
+      "city": "sangdovin",
+      "n": 12
+    },
+    {
+      "city": "sijval",
+      "n": 10
+    },
+    {
+      "city": "inche-borun",
+      "n": 8
+    },
+    {
+      "city": "qasemabad-khaf",
+      "n": 7
+    },
+    {
+      "city": "anbaralum",
+      "n": 7
+    },
+    {
+      "city": "dozin",
+      "n": 7
+    },
+    {
+      "city": "goli-dagh",
+      "n": 5
+    },
+    {
+      "city": "maraveh-tapeh",
+      "n": 5
+    },
+    {
+      "city": "khoour",
+      "n": 3
+    },
+    {
+      "city": null,
+      "n": 2
+    },
+    {
+      "city": "yanghagh",
+      "n": 2
+    },
+    {
+      "city": "tatar-olya",
+      "n": 1
+    }
+  ],
+  "category_values": {
+    "cat2_slug": [
+      {
+        "value": "residential-sell",
+        "n": 558708
+      },
+      {
+        "value": "residential-rent",
+        "n": 276558
+      },
+      {
+        "value": "commercial-rent",
+        "n": 76567
+      },
+      {
+        "value": "commercial-sell",
+        "n": 38861
+      },
+      {
+        "value": "temporary-rent",
+        "n": 29903
+      },
+      {
+        "value": "real-estate-services",
+        "n": 19403
+      }
+    ],
+    "cat3_slug": [
+      {
+        "value": "apartment-sell",
+        "n": 303385
+      },
+      {
+        "value": "apartment-rent",
+        "n": 211880
+      },
+      {
+        "value": "plot-old",
+        "n": 133570
+      },
+      {
+        "value": "house-villa-sell",
+        "n": 121753
+      },
+      {
+        "value": "house-villa-rent",
+        "n": 64678
+      },
+      {
+        "value": "shop-rent",
+        "n": 45993
+      },
+      {
+        "value": "shop-sell",
+        "n": 21855
+      },
+      {
+        "value": "office-rent",
+        "n": 21418
+      },
+      {
+        "value": "suite-apartment",
+        "n": 16465
+      },
+      {
+        "value": "presell",
+        "n": 15781
+      },
+      {
+        "value": "villa",
+        "n": 12899
+      },
+      {
+        "value": "industry-agriculture-business-sell",
+        "n": 11851
+      },
+      {
+        "value": "industry-agriculture-business-rent",
+        "n": 9155
+      },
+      {
+        "value": "office-sell",
+        "n": 5155
+      },
+      {
+        "value": "partnership",
+        "n": 3622
+      },
+      {
+        "value": "workspace",
+        "n": 539
+      },
+      {
+        "value": null,
+        "n": 1
+      }
+    ],
+    "price_mode": [
+      {
+        "value": "مقطوع",
+        "n": 566444
+      },
+      {
+        "value": null,
+        "n": 426394
+      },
+      {
+        "value": "توافقی",
+        "n": 5260
+      },
+      {
+        "value": "مجانی",
+        "n": 1902
+      }
+    ],
+    "property_type": [
+      {
+        "value": null,
+        "n": 972943
+      },
+      {
+        "value": "jungle",
+        "n": 16614
+      },
+      {
+        "value": "beach",
+        "n": 3990
+      },
+      {
+        "value": "other",
+        "n": 3832
+      },
+      {
+        "value": "jungle-mountain",
+        "n": 2399
+      },
+      {
+        "value": "mountain",
+        "n": 222
+      }
+    ]
+  },
+  "selection_sql": "city_slug='tehran' AND cat2_slug='residential-sell' AND cat3_slug='apartment-sell'",
+  "tehran_apartment_sale_rows": 84586,
+  "selected_months": [
+    {
+      "month": "2020-02",
+      "n": 1
+    },
+    {
+      "month": "2021-11",
+      "n": 1
+    },
+    {
+      "month": "2022-10",
+      "n": 1
+    },
+    {
+      "month": "2023-04",
+      "n": 1
+    },
+    {
+      "month": "2023-05",
+      "n": 1
+    },
+    {
+      "month": "2023-07",
+      "n": 4
+    },
+    {
+      "month": "2023-08",
+      "n": 2
+    },
+    {
+      "month": "2023-09",
+      "n": 2
+    },
+    {
+      "month": "2023-10",
+      "n": 3
+    },
+    {
+      "month": "2023-11",
+      "n": 12
+    },
+    {
+      "month": "2023-12",
+      "n": 15
+    },
+    {
+      "month": "2024-01",
+      "n": 37
+    },
+    {
+      "month": "2024-02",
+      "n": 41
+    },
+    {
+      "month": "2024-03",
+      "n": 85
+    },
+    {
+      "month": "2024-04",
+      "n": 651
+    },
+    {
+      "month": "2024-05",
+      "n": 10024
+    },
+    {
+      "month": "2024-06",
+      "n": 9743
+    },
+    {
+      "month": "2024-07",
+      "n": 10117
+    },
+    {
+      "month": "2024-08",
+      "n": 9846
+    },
+    {
+      "month": "2024-09",
+      "n": 9447
+    },
+    {
+      "month": "2024-10",
+      "n": 11028
+    },
+    {
+      "month": "2024-11",
+      "n": 11467
+    },
+    {
+      "month": "2024-12",
+      "n": 11802
+    },
+    {
+      "month": "2025-01",
+      "n": 234
+    },
+    {
+      "month": "2025-02",
+      "n": 21
+    }
+  ],
+  "missing_selected": {
+    "cat2_slug": 0,
+    "cat3_slug": 0,
+    "city_slug": 0,
+    "neighborhood_slug": 0,
+    "created_at_month": 0,
+    "user_type": 47557,
+    "description": 0,
+    "title": 5,
+    "rent_mode": 84586,
+    "rent_value": 84586,
+    "rent_to_single": 84586,
+    "rent_type": 84586,
+    "price_mode": 0,
+    "price_value": 2,
+    "credit_mode": 84586,
+    "credit_value": 84586,
+    "rent_credit_transform": 84586,
+    "transformable_price": 84586,
+    "transformable_credit": 84586,
+    "transformed_credit": 84586,
+    "transformable_rent": 84586,
+    "transformed_rent": 84586,
+    "land_size": 84586,
+    "building_size": 1,
+    "deed_type": 27580,
+    "has_business_deed": 84586,
+    "floor": 2,
+    "rooms_count": 1,
+    "total_floors_count": 27520,
+    "unit_per_floor": 28538,
+    "has_balcony": 26402,
+    "has_elevator": 1,
+    "has_warehouse": 2,
+    "has_parking": 1,
+    "construction_year": 0,
+    "is_rebuilt": 22682,
+    "has_water": 84586,
+    "has_warm_water_provider": 32051,
+    "has_electricity": 84586,
+    "has_gas": 84586,
+    "has_heating_system": 31509,
+    "has_cooling_system": 31005,
+    "has_restroom": 28257,
+    "has_security_guard": 84586,
+    "has_barbecue": 84586,
+    "building_direction": 34864,
+    "has_pool": 84586,
+    "has_jacuzzi": 84586,
+    "has_sauna": 84586,
+    "floor_material": 28401,
+    "property_type": 84586,
+    "regular_person_capacity": 84586,
+    "extra_person_capacity": 84586,
+    "cost_per_extra_person": 84586,
+    "rent_price_on_regular_days": 84586,
+    "rent_price_on_special_days": 84586,
+    "rent_price_at_weekends": 84586,
+    "location_latitude": 21460,
+    "location_longitude": 21460,
+    "location_radius": 43349
+  },
+  "numeric_selected": {
+    "price_value": {
+      "missing": 2,
+      "parse_failure": 0,
+      "nonpositive_or_nonfinite": 0,
+      "min": 1.0,
+      "quantiles": [
+        50000000.0,
+        3594750000.0,
+        6800000000.0,
+        12900000000.0,
+        92467999999.9993
+      ],
+      "max": 90000000000000.0
+    },
+    "building_size": {
+      "missing": 1,
+      "parse_failure": 0,
+      "nonpositive_or_nonfinite": 0,
+      "min": 1.0,
+      "quantiles": [
+        37.0,
+        60.0,
+        82.0,
+        115.0,
+        300.0
+      ],
+      "max": 9999999.0
+    },
+    "location_latitude": {
+      "missing": 21460,
+      "parse_failure": 0,
+      "nonpositive_or_nonfinite": 0,
+      "min": 26.493432998657227,
+      "quantiles": [
+        35.59430980682373,
+        35.685285568237305,
+        35.72516059875488,
+        35.75431823730469,
+        35.81312847137451
+      ],
+      "max": 38.26470184326172
+    },
+    "location_longitude": {
+      "missing": 21460,
+      "parse_failure": 0,
+      "nonpositive_or_nonfinite": 0,
+      "min": 45.229461669921875,
+      "quantiles": [
+        51.16210651397705,
+        51.330074310302734,
+        51.376325607299805,
+        51.454161643981934,
+        51.55199432373047
+      ],
+      "max": 60.86650848388672
+    },
+    "location_radius": {
+      "missing": 43349,
+      "parse_failure": 0,
+      "nonpositive_or_nonfinite": 1622,
+      "min": 0.0,
+      "quantiles": [
+        0.0,
+        500.0,
+        500.0,
+        500.0,
+        500.0
+      ],
+      "max": 500.0
+    }
+  },
+  "coordinates_selected": {
+    "both_present": 63126,
+    "valid_world": 63126,
+    "in_study_bbox": 62929
+  },
+  "radius_selected": [
+    {
+      "radius": null,
+      "n": 43349
+    },
+    {
+      "radius": "500",
+      "n": 39100
+    },
+    {
+      "radius": "0",
+      "n": 1622
+    },
+    {
+      "radius": "300",
+      "n": 515
+    }
+  ],
+  "exact_duplicates_selected": {
+    "groups": 0,
+    "excess_rows": 0
+  },
+  "potential_duplicates_selected": {
+    "key": [
+      "neighborhood_slug",
+      "created_at_month",
+      "price_value",
+      "building_size",
+      "rooms_count",
+      "construction_year",
+      "floor",
+      "has_parking",
+      "has_elevator",
+      "has_warehouse",
+      "location_latitude",
+      "location_longitude"
+    ],
+    "groups": 65,
+    "excess_rows": 83,
+    "caution": "Shared coarse coordinates and attributes can describe distinct dwellings; not property identifiers."
+  },
+  "characteristic_values": {
+    "price_mode": [
+      {
+        "value": "مقطوع",
+        "n": 84584
+      },
+      {
+        "value": "توافقی",
+        "n": 2
+      }
+    ],
+    "rooms_count": [
+      {
+        "value": "دو",
+        "n": 42669
+      },
+      {
+        "value": "یک",
+        "n": 24283
+      },
+      {
+        "value": "سه",
+        "n": 15870
+      },
+      {
+        "value": "چهار",
+        "n": 1358
+      },
+      {
+        "value": "پنج یا بیشتر",
+        "n": 219
+      },
+      {
+        "value": "بدون اتاق",
+        "n": 186
+      },
+      {
+        "value": null,
+        "n": 1
+      }
+    ],
+    "construction_year": [
+      {
+        "value": "۱۴۰۳",
+        "n": 11620
+      },
+      {
+        "value": "۱۴۰۲",
+        "n": 4989
+      },
+      {
+        "value": "۱۳۸۵",
+        "n": 4801
+      },
+      {
+        "value": "۱۳۹۵",
+        "n": 4330
+      },
+      {
+        "value": "۱۳۹۰",
+        "n": 3961
+      },
+      {
+        "value": "۱۳۹۳",
+        "n": 3703
+      },
+      {
+        "value": "۱۳۹۷",
+        "n": 3494
+      },
+      {
+        "value": "۱۳۹۶",
+        "n": 3374
+      },
+      {
+        "value": "۱۴۰۰",
+        "n": 3324
+      },
+      {
+        "value": "۱۳۸۸",
+        "n": 3256
+      },
+      {
+        "value": "۱۳۹۴",
+        "n": 3228
+      },
+      {
+        "value": "۱۳۹۸",
+        "n": 3149
+      },
+      {
+        "value": "۱۳۸۳",
+        "n": 2986
+      },
+      {
+        "value": "۱۴۰۱",
+        "n": 2855
+      },
+      {
+        "value": "۱۳۸۰",
+        "n": 2652
+      },
+      {
+        "value": "۱۳۹۲",
+        "n": 2610
+      },
+      {
+        "value": "۱۳۹۹",
+        "n": 2418
+      },
+      {
+        "value": "۱۳۸۶",
+        "n": 2337
+      },
+      {
+        "value": "۱۳۸۴",
+        "n": 2304
+      },
+      {
+        "value": "۱۳۸۷",
+        "n": 2264
+      },
+      {
+        "value": "۱۳۸۹",
+        "n": 2009
+      },
+      {
+        "value": "۱۳۹۱",
+        "n": 1921
+      },
+      {
+        "value": "۱۳۸۲",
+        "n": 1901
+      },
+      {
+        "value": "۱۳۸۱",
+        "n": 1038
+      },
+      {
+        "value": "قبل از ۱۳۷۰",
+        "n": 991
+      },
+      {
+        "value": "۱۳۷۵",
+        "n": 608
+      },
+      {
+        "value": "۱۳۷۸",
+        "n": 598
+      },
+      {
+        "value": "۱۳۷۹",
+        "n": 442
+      },
+      {
+        "value": "۱۳۷۷",
+        "n": 341
+      },
+      {
+        "value": "۱۳۷۱",
+        "n": 307
+      },
+      {
+        "value": "۱۳۷۳",
+        "n": 247
+      },
+      {
+        "value": "۱۳۷۶",
+        "n": 235
+      },
+      {
+        "value": "۱۳۷۲",
+        "n": 165
+      },
+      {
+        "value": "۱۳۷۴",
+        "n": 128
+      }
+    ],
+    "floor": [
+      {
+        "value": "2",
+        "n": 18649
+      },
+      {
+        "value": "3",
+        "n": 17876
+      },
+      {
+        "value": "1",
+        "n": 16364
+      },
+      {
+        "value": "4",
+        "n": 13993
+      },
+      {
+        "value": "5",
+        "n": 7940
+      },
+      {
+        "value": "0",
+        "n": 2358
+      },
+      {
+        "value": "6",
+        "n": 2038
+      },
+      {
+        "value": "7",
+        "n": 912
+      },
+      {
+        "value": "10",
+        "n": 674
+      },
+      {
+        "value": "8",
+        "n": 612
+      },
+      {
+        "value": "9",
+        "n": 519
+      },
+      {
+        "value": "11",
+        "n": 419
+      },
+      {
+        "value": "-1",
+        "n": 332
+      },
+      {
+        "value": "12",
+        "n": 325
+      },
+      {
+        "value": "14",
+        "n": 245
+      },
+      {
+        "value": "15",
+        "n": 216
+      },
+      {
+        "value": "13",
+        "n": 186
+      },
+      {
+        "value": "16",
+        "n": 140
+      },
+      {
+        "value": "17",
+        "n": 129
+      },
+      {
+        "value": "20",
+        "n": 101
+      },
+      {
+        "value": "18",
+        "n": 100
+      },
+      {
+        "value": "19",
+        "n": 82
+      },
+      {
+        "value": "30+",
+        "n": 61
+      },
+      {
+        "value": "25",
+        "n": 58
+      },
+      {
+        "value": "21",
+        "n": 57
+      },
+      {
+        "value": "22",
+        "n": 45
+      },
+      {
+        "value": "23",
+        "n": 40
+      },
+      {
+        "value": "30",
+        "n": 27
+      },
+      {
+        "value": "24",
+        "n": 27
+      },
+      {
+        "value": "28",
+        "n": 21
+      },
+      {
+        "value": "27",
+        "n": 15
+      },
+      {
+        "value": "26",
+        "n": 13
+      },
+      {
+        "value": "29",
+        "n": 10
+      },
+      {
+        "value": null,
+        "n": 2
+      }
+    ],
+    "total_floors_count": [
+      {
+        "value": null,
+        "n": 27520
+      },
+      {
+        "value": "5",
+        "n": 22725
+      },
+      {
+        "value": "4",
+        "n": 19387
+      },
+      {
+        "value": "3",
+        "n": 4391
+      },
+      {
+        "value": "6",
+        "n": 3977
+      },
+      {
+        "value": "7",
+        "n": 1087
+      },
+      {
+        "value": "10",
+        "n": 626
+      },
+      {
+        "value": "11",
+        "n": 536
+      },
+      {
+        "value": "8",
+        "n": 514
+      },
+      {
+        "value": "2",
+        "n": 514
+      },
+      {
+        "value": "14",
+        "n": 388
+      },
+      {
+        "value": "9",
+        "n": 386
+      },
+      {
+        "value": "15",
+        "n": 339
+      },
+      {
+        "value": "12",
+        "n": 317
+      },
+      {
+        "value": "20",
+        "n": 247
+      },
+      {
+        "value": "16",
+        "n": 244
+      },
+      {
+        "value": "18",
+        "n": 203
+      },
+      {
+        "value": "25",
+        "n": 197
+      },
+      {
+        "value": "21",
+        "n": 195
+      },
+      {
+        "value": "19",
+        "n": 151
+      },
+      {
+        "value": "30",
+        "n": 129
+      },
+      {
+        "value": "13",
+        "n": 99
+      },
+      {
+        "value": "17",
+        "n": 93
+      },
+      {
+        "value": "30+",
+        "n": 84
+      },
+      {
+        "value": "29",
+        "n": 69
+      },
+      {
+        "value": "22",
+        "n": 60
+      },
+      {
+        "value": "24",
+        "n": 37
+      },
+      {
+        "value": "26",
+        "n": 29
+      },
+      {
+        "value": "23",
+        "n": 14
+      },
+      {
+        "value": "27",
+        "n": 12
+      },
+      {
+        "value": "28",
+        "n": 8
+      },
+      {
+        "value": "unselect",
+        "n": 8
+      }
+    ],
+    "has_parking": [
+      {
+        "value": "true",
+        "n": 68240
+      },
+      {
+        "value": "false",
+        "n": 16345
+      },
+      {
+        "value": null,
+        "n": 1
+      }
+    ],
+    "has_elevator": [
+      {
+        "value": "true",
+        "n": 63772
+      },
+      {
+        "value": "false",
+        "n": 20813
+      },
+      {
+        "value": null,
+        "n": 1
+      }
+    ],
+    "has_warehouse": [
+      {
+        "value": "true",
+        "n": 76170
+      },
+      {
+        "value": "false",
+        "n": 8414
+      },
+      {
+        "value": null,
+        "n": 2
+      }
+    ]
+  },
+  "price_contract": {
+    "denomination": "source units; not established for the dataset",
+    "total_price_verified": false,
+    "evidence": "Pinned dataset card lists financial fields but gives no denomination or explicit total-versus-unit-price contract. Related live API documentation is not a mapping guarantee for this historical export.",
+    "per_m2_enabled": false
+  },
+  "date_conflict": "Source card claims six months in 2024. Observed month distributions are authoritative for sample construction; inspect counts before fixing the window.",
+  "inferred_schema": [
+    {
+      "column_name": "cat2_slug",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "cat3_slug",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "city_slug",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "neighborhood_slug",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "created_at_month",
+      "column_type": "TIMESTAMP",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "user_type",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "description",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "title",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "rent_mode",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "rent_value",
+      "column_type": "BIGINT",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "rent_to_single",
+      "column_type": "BOOLEAN",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "rent_type",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "price_mode",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "price_value",
+      "column_type": "BIGINT",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "credit_mode",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "credit_value",
+      "column_type": "BIGINT",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "rent_credit_transform",
+      "column_type": "BOOLEAN",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "transformable_price",
+      "column_type": "BOOLEAN",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "transformable_credit",
+      "column_type": "BIGINT",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "transformed_credit",
+      "column_type": "BIGINT",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "transformable_rent",
+      "column_type": "BIGINT",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "transformed_rent",
+      "column_type": "BIGINT",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "land_size",
+      "column_type": "BIGINT",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "building_size",
+      "column_type": "BIGINT",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "deed_type",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_business_deed",
+      "column_type": "BOOLEAN",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "floor",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "rooms_count",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "total_floors_count",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "unit_per_floor",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_balcony",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_elevator",
+      "column_type": "BOOLEAN",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_warehouse",
+      "column_type": "BOOLEAN",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_parking",
+      "column_type": "BOOLEAN",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "construction_year",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "is_rebuilt",
+      "column_type": "BOOLEAN",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_water",
+      "column_type": "BOOLEAN",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_warm_water_provider",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_electricity",
+      "column_type": "BOOLEAN",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_gas",
+      "column_type": "BOOLEAN",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_heating_system",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_cooling_system",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_restroom",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_security_guard",
+      "column_type": "BOOLEAN",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_barbecue",
+      "column_type": "BOOLEAN",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "building_direction",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_pool",
+      "column_type": "BOOLEAN",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_jacuzzi",
+      "column_type": "BOOLEAN",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "has_sauna",
+      "column_type": "BOOLEAN",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "floor_material",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "property_type",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "regular_person_capacity",
+      "column_type": "BIGINT",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "extra_person_capacity",
+      "column_type": "VARCHAR",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "cost_per_extra_person",
+      "column_type": "BIGINT",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "rent_price_on_regular_days",
+      "column_type": "BIGINT",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "rent_price_on_special_days",
+      "column_type": "BIGINT",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "rent_price_at_weekends",
+      "column_type": "BIGINT",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "location_latitude",
+      "column_type": "DOUBLE",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "location_longitude",
+      "column_type": "DOUBLE",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    },
+    {
+      "column_name": "location_radius",
+      "column_type": "BIGINT",
+      "null": "YES",
+      "key": null,
+      "default": null,
+      "extra": null
+    }
+  ],
+  "source": {
+    "url": "https://huggingface.co/datasets/divarofficial/real_estate_ads/resolve/e9446ee97b8e6eb9bd62bdfd7548f1bc8973be85/real_estate_ads.csv?download=true",
+    "sha256": "e5760fe1325a195e6682c371457bfecd51d255c518756e3cbea234b8163a801f",
+    "bytes": 780721338,
+    "retrieved_at_utc": "2026-10-22T19:06:22Z",
+    "repository": "divarofficial/real_estate_ads",
+    "revision": "e9446ee97b8e6eb9bd62bdfd7548f1bc8973be85"
+  }
+}

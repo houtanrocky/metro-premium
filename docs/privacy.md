@@ -1,0 +1,9 @@
+# Privacy and public-data boundary
+
+The raw export is anonymized, but approximate coordinates can still be sensitive. We do not infer addresses, contact sellers, restore seller identity or display listing-level points. Description/title and seller-related fields are audited only for aggregate null counts and exact-duplicate processing inside local ignored storage. The downstream selected Parquet excludes those text fields.
+
+The public research JSON is constructed from an explicit field list. Only neighborhood-month aggregates with at least 30 records are eligible. Price and routing summaries require their own 30 measured observations; insufficient measures remain null, rather than borrowing the full group denominator. In this release all empirical price/access fields are missing, and neighborhood eligibility for ranking is false.
+
+The site offers only fixed month/category counts and published neighborhood quality summaries. Search selects already-published aggregates; it cannot ask arbitrary overlapping subsets or return underlying observations. Browser source downloads contain no individual housing coordinates, identifiers or descriptions. Map interaction uses only a distinct OSM street layer and cannot reveal listings. The recursive export guard rejects listing field names and nonfinite values.
+
+n≥30 is a suppression policy, not a mathematical anonymity or differential privacy guarantee. Public source counts and quality ratios still deserve review before combining with external information. Do not add fine-grid layers, exact origin tooltips, unrestricted property filters or JSON endpoints without a new privacy assessment. Synthetic fixtures are separate, publicly labeled test data; their arbitrary projected origins do not identify actual Tehran properties.

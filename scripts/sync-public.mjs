@@ -14,3 +14,6 @@ copyFileSync('artifacts/reports/network-validation.json',`${dest}/data/network-v
 copyFileSync('artifacts/figures/source-months.png',`${dest}/data/source-months.png`);
 copyFileSync('data/public/walking-preview.geojson',`${dest}/data/walking-preview.geojson`);
 copyFileSync('data/public/synthetic-demo.json',`${dest}/data/synthetic-demo.json`);
+mkdirSync(`${dest}/licenses`,{recursive:true});
+copyFileSync('node_modules/@fontsource/vazirmatn/LICENSE',`${dest}/licenses/vazirmatn.txt`);
+copyFileSync('DATA-LICENSE.md',`${dest}/data/notices.md`);

@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "kind": "synthetic_demo",
+  "warning": "SYNTHETIC ONLY — not observations from Tehran",
+  "seed": 20261022,
+  "n": 1200,
+  "neighborhoods": [],
+  "bands": [
+    {
+      "month": "2024-06",
+      "band": 0,
+      "n": 299,
+      "median_per_m2": 39023051.58815677,
+      "q25": 34234288.271898255,
+      "q75": 44923490.29120431
+    },
+    {
+      "month": "2024-06",
+      "band": 1,
+      "n": 222,
+      "median_per_m2": 35168376.205234185,
+      "q25": 31173661.856994893,
+      "q75": 40140510.43318238
+    },
+    {
+      "month": "2024-06",
+      "band": 2,
+      "n": 63,
+      "median_per_m2": 36609960.58021163,
+      "q25": 31651935.042539805,
+      "q75": 41591915.77101345
+    },
+    {
+      "month": "2024-07",
+      "band": 0,
+      "n": 285,
+      "median_per_m2": 38664478.24527476,
+      "q25": 34653198.532449245,
+      "q75": 44824318.43012119
+    },
+    {
+      "month": "2024-07",
+      "band": 1,
+      "n": 238,
+      "median_per_m2": 35647570.04944378,
+      "q25": 31399959.790425662,
+      "q75": 40203107.79568924
+    },
+    {
+      "month": "2024-07",
+      "band": 2,
+      "n": 93,
+      "median_per_m2": 34223049.24240475,
+      "q25": 30409733.548097998,
+      "q75": 37597540.77574007
+    }
+  ],
+  "models": [
+    {
+      "name": "M1",
+      "status": "estimated",
+      "formula": "log_price ~ distance_km",
+      "n": 1200,
+      "clusters": 40,
+      "distance_coefficient_per_km": -0.14235494324352554,
+      "confidence_interval_95": [
+        -0.16927117220168722,
+        -0.11543871428536387
+      ],
+      "association_percent_per_km": -13.2686645169976,
+      "association_percent_ci_95": [
+        -15.572007290523567,
+        -10.902482538581253
+      ],
+      "r_squared": 0.06671818576857313,
+      "condition_number": 3.705319678645014,
+      "breusch_pagan_pvalue": 0.7452168743177945,
+      "max_cooks_distance": 0.01298580554562326,
+      "residual_quantiles": [
+        -0.4545437593524473,
+        -0.12845904733551095,
+        -0.005718034337597544,
+        0.13130905973600715,
+        0.47230208097062104
+      ],
+      "exploratory_knn_moran_i": 0.0036628286263152834,
+      "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+    },
+    {
+      "name": "M2",
+      "status": "estimated",
+      "formula": "log_price ~ distance_km + log_area + rooms_count + construction_year + floor + C(has_parking) + C(has_elevator) + C(has_warehouse)",
+      "n": 1200,
+      "clusters": 40,
+      "distance_coefficient_per_km": -0.13511831368176275,
+      "confidence_interval_95": [
+        -0.16316826380613658,
+        -0.10706836355738891
+      ],
+      "association_percent_per_km": -12.638745474333998,
+      "association_percent_ci_95": [
+        -15.055175500599322,
+        -10.153575132148921
+      ],
+      "r_squared": 0.2041285311292873,
+      "condition_number": 153707.14785743674,
+      "breusch_pagan_pvalue": 0.8745181442012382,
+      "max_cooks_distance": 0.008090626976234668,
+      "residual_quantiles": [
+        -0.43060095867427717,
+        -0.11894434453703351,
+        -0.0011868929125586902,
+        0.12067230943639107,
+        0.4485830634361125
+      ],
+      "exploratory_knn_moran_i": 0.007773374079327572,
+      "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+    },
+    {
+      "name": "M3",
+      "status": "estimated",
+      "formula": "log_price ~ distance_km + log_area + rooms_count + construction_year + floor + C(has_parking) + C(has_elevator) + C(has_warehouse) + C(neighborhood_slug) + C(month)",
+      "n": 1200,
+      "clusters": 40,
+      "distance_coefficient_per_km": -0.13498391853769254,
+      "confidence_interval_95": [
+        -0.1634635738363942,
+        -0.10650426323899087
+      ],
+      "association_percent_per_km": -12.627003756948637,
+      "association_percent_ci_95": [
+        -15.080256855722324,
+        -10.102878437607618
+      ],
+      "r_squared": 0.25540169816810077,
+      "condition_number": 156864.95751330908,
+      "breusch_pagan_pvalue": 0.20180905057308637,
+      "max_cooks_distance": 0.01208461026822598,
+      "residual_quantiles": [
+        -0.40314524493473075,
+        -0.11831800012795135,
+        0.002767241897293715,
+        0.11664122394695298,
+        0.42517793912518836
+      ],
+      "exploratory_knn_moran_i": 0.009668273475031545,
+      "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+    }
+  ],
+  "uncertainty": {
+    "assumption": "Uniform area within disk; scenario, not an estimated error distribution",
+    "draws": 200,
+    "successful_draws": 200,
+    "failure_fraction": 0.0,
+    "classification_change_fraction_among_successful": 0.8,
+    "network_m_quantiles": [
+      429.9280942523936,
+      561.5554741793728,
+      676.3291917530812
+    ]
+  }
+}

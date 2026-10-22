@@ -1,0 +1,13 @@
+{
+  "status": "blocked",
+  "models": [],
+  "reason": "Price semantics and complete verified network are required",
+  "descriptives": {
+    "n": 11767,
+    "area_median_m2": 85.0,
+    "area_iqr_m2": [
+      61.0,
+      116.0
+    ]
+  }
+}

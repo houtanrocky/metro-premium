@@ -86,6 +86,8 @@ def figures(payload, folder):
     fig.text(.02,.025,'Historical asking listings, not transactions | No empirical metro-price finding | MetroPremium',fontsize=8)
     fig.savefig(folder/'figure.png',dpi=240)
     fig.savefig(folder/'figure.svg',metadata={'Date':None})
+    svg_path=folder/'figure.svg'
+    svg_path.write_text('\n'.join(line.rstrip() for line in svg_path.read_text(encoding='utf-8').splitlines())+'\n',encoding='utf-8')
     plt.close(fig)
 
 def main():

@@ -1,0 +1,47 @@
+{
+  "flow": [
+    {
+      "stage": "tehran_apartment_sale",
+      "before": 84586,
+      "after": 84586,
+      "excluded": 0
+    },
+    {
+      "stage": "parseable_month",
+      "before": 84586,
+      "after": 84586,
+      "excluded": 0
+    },
+    {
+      "stage": "single_month:2024-12",
+      "before": 84586,
+      "after": 11802,
+      "excluded": 72784
+    },
+    {
+      "stage": "fixed_positive_finite_price",
+      "before": 11802,
+      "after": 11802,
+      "excluded": 0
+    },
+    {
+      "stage": "area_range",
+      "before": 11802,
+      "after": 11767,
+      "excluded": 35
+    }
+  ],
+  "period": "2024-12",
+  "final_rows": 11767,
+  "coordinate_valid_rows": 9851,
+  "known_radius_rows": 3302,
+  "routable_candidate_rows": 3110,
+  "duplicate_candidates": 36,
+  "tail_flagged": 0,
+  "price_contract": {
+    "denomination": "source units; not established for the dataset",
+    "total_price_verified": false,
+    "evidence": "Pinned dataset card lists financial fields but gives no denomination or explicit total-versus-unit-price contract. Related live API documentation is not a mapping guarantee for this historical export.",
+    "per_m2_enabled": false
+  }
+}

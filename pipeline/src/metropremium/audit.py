@@ -1,11 +1,14 @@
 """Audit the entire immutable source with DuckDB. Never publish row-level text."""
 import json
 import duckdb
-from .provenance import write_json
+from .provenance import write_json, digest
 
 SELECTION = "city_slug='tehran' AND cat2_slug='residential-sell' AND cat3_slug='apartment-sell'"
 
 def audit_source(source, output):
+    metadata=json.loads(source.with_suffix('.csv.source.json').read_text(encoding='utf-8'))
+    if metadata.get('sha256') and digest(source)!=metadata['sha256']:
+        raise ValueError('Source CSV checksum differs from acquisition provenance')
     con = duckdb.connect(str(output / 'audit-work.duckdb'))
     con.execute("SET threads=4")
     con.execute("SET memory_limit='2GB'")
@@ -35,7 +38,7 @@ def audit_source(source, output):
     # Infer actual parseable logical types independently of CSV storage strings.
     inferred = rows("DESCRIBE SELECT * FROM read_csv('" + str(source).replace("'","''") + "', header=true, sample_size=-1, strict_mode=true)")
     report["inferred_schema"] = inferred
-    report['source'] = json.loads(source.with_suffix('.csv.source.json').read_text(encoding='utf-8'))
+    report['source'] = metadata
     write_json(output / "audit.json", report)
     # Numeric/categorical source fields only: no descriptions, title or seller information.
     keep = ['cat2_slug','cat3_slug','city_slug','neighborhood_slug','created_at_month','price_mode','price_value','building_size','construction_year','rooms_count','floor','total_floors_count','has_parking','has_elevator','has_warehouse','location_latitude','location_longitude','location_radius']

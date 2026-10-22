@@ -5,6 +5,7 @@ from metropremium.provenance import ROOT
 from metropremium.cleaning import prepare
 from metropremium.synthetic import demo
 import yaml
+import pytest
 
 def test_actual_csv_schema_categories_nulls_and_duplicate_counts(tmp_path):
     config=yaml.safe_load((ROOT/'configs/smoke.yaml').read_text())
@@ -26,3 +27,10 @@ def test_actual_csv_schema_categories_nulls_and_duplicate_counts(tmp_path):
     assert report['missing_all']['property_type']==4
     assert len(pd.read_parquet(parquet))==3
     assert report['price_contract']['per_m2_enabled'] is False
+
+def test_changed_source_bytes_are_not_accepted_as_pinned_source(tmp_path):
+    source=tmp_path/'source.csv'
+    source.write_text('unexpected,changed\n1,2\n',encoding='utf-8')
+    source.with_suffix('.csv.source.json').write_text(json.dumps({'sha256':'0'*64}))
+    with pytest.raises(ValueError,match='checksum'):
+        audit_source(source,tmp_path)

@@ -18,4 +18,5 @@ artifacts/audits/latest.json
 pipeline/.venv/
 apps/web/public/data/
 apps/web/public/research/
+apps/web/public/licenses/
 *.tsbuildinfo

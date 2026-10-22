@@ -7,6 +7,7 @@ try{
     const page=await browser.newPage({viewport:{width,height},deviceScaleFactor:1});
     await page.goto('http://127.0.0.1:5173/');
     await page.getByRole('heading',{level:1}).waitFor();
+    await page.locator('[data-rendered-streets=true]').waitFor();
     await page.evaluate(()=>document.fonts.ready);
     await page.screenshot({path:`artifacts/screenshots/${name}.png`});
     await page.screenshot({path:`artifacts/screenshots/${name}-full.png`,fullPage:true});
