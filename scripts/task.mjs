@@ -18,10 +18,11 @@ switch(command){
     break;
   case 'acquire': run(python,['scripts/acquire.py',...args]);break;
   case 'acquire-osm': run(python,['scripts/acquire_osm.py',...args]);break;
+  case 'metro-reference': run(python,['scripts/metro_reference.py',...args]);break;
   case 'test':
     run(python,['-m','pytest','pipeline/tests','-q']);
     npm(['test']);npm(['run','typecheck']);npm(['run','check:docs']);npm(['run','build']);break;
   case 'dev':npm(['run','dev']);break;
-  case 'help':console.log('setup | acquire | acquire-osm | audit-data | prepare-data | build-networks | compute-accessibility | analyze | export-public-data | report | reproduce | smoke | test | dev');break;
+  case 'help':console.log('setup | acquire | acquire-osm | metro-reference | audit-data | prepare-data | build-networks | compute-accessibility | analyze | export-public-data | report | reproduce | smoke | test | dev');break;
   default:run(python,['-m','metropremium.cli',command,...args]);
 }

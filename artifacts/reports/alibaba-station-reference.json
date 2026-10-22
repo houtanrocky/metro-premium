@@ -1,0 +1,1524 @@
+{
+  "source_url": "https://www.alibaba.ir/mag/tehran/tehran-ci/tehran-subway-guide/",
+  "source_role": "User-selected secondary station identity and order reference",
+  "copyright_policy": "Factual station identifiers extracted for comparison; no article prose or illustrations redistributed; not covered by OSM ODbL or project MIT automatically",
+  "page_metadata": {
+    "title": "نقشه مترو تهران ۱۴۰۴: دانلود باکیفیت+آخرین تغییرات|علی‌بابا",
+    "visible_heading": "نقشه مترو تهران ۱۴۰۵: دانلود با کیفیت بالا + راهنمای کامل خطوط",
+    "published_time_raw": "۱۴۰۲-۰۳-۰۶\\۲۰:۴۹:۳۳",
+    "modified_time_raw": "۱۴۰۵-۰۱-۰۸\\۱۱:۲۳:۰۱",
+    "date_handling": "Retained as source strings; Persian-calendar values are not silently parsed as Gregorian."
+  },
+  "routes": [
+    {
+      "id": "1",
+      "parent_line": "1",
+      "branch": false,
+      "heading": "خط ۱ متروی تهران: خط تجریش – کهریزک",
+      "stations": [
+        {
+          "position": 1,
+          "name": "تجریش",
+          "normalized_name": "تجریش",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 2,
+          "name": "قیطریه",
+          "normalized_name": "قیطریه",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 3,
+          "name": "شهید صدر",
+          "normalized_name": "شهیدصدر",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 4,
+          "name": "قلهک",
+          "normalized_name": "قلهک",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 5,
+          "name": "دکتر شریعتی",
+          "normalized_name": "دکترشریعتی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 6,
+          "name": "میرداماد",
+          "normalized_name": "میرداماد",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 7,
+          "name": "شهید حقانی",
+          "normalized_name": "شهیدحقانی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 8,
+          "name": "شهید همت",
+          "normalized_name": "شهیدهمت",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 9,
+          "name": "مصلی امام خمینی (ره)",
+          "normalized_name": "مصلیامامخمینیره",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 10,
+          "name": "شهید بهشتی",
+          "normalized_name": "شهیدبهشتی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 11,
+          "name": "شهید مفتح",
+          "normalized_name": "شهیدمفتح",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 12,
+          "name": "شهدای هفتم تیر",
+          "normalized_name": "شهدایهفتمتیر",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 13,
+          "name": "طالقانی",
+          "normalized_name": "طالقانی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 14,
+          "name": "دروازه دولت",
+          "normalized_name": "دروازهدولت",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 15,
+          "name": "سعدی",
+          "normalized_name": "سعدی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 16,
+          "name": "امام خمینی",
+          "normalized_name": "امامخمینی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 17,
+          "name": "پانزده خرداد",
+          "normalized_name": "پانزدهخرداد",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 18,
+          "name": "خیام",
+          "normalized_name": "خیام",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 19,
+          "name": "میدان محمدیه",
+          "normalized_name": "میدانمحمدیه",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 20,
+          "name": "شوش",
+          "normalized_name": "شوش",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 21,
+          "name": "پایانه جنوب",
+          "normalized_name": "پایانهجنوب",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 22,
+          "name": "شهید بخارایی",
+          "normalized_name": "شهیدبخارایی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 23,
+          "name": "علی‌آباد",
+          "normalized_name": "علیآباد",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 24,
+          "name": "جوانمرد قصاب",
+          "normalized_name": "جوانمردقصاب",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 25,
+          "name": "شهر ری",
+          "normalized_name": "شهرری",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 26,
+          "name": "پالایشگاه",
+          "normalized_name": "پالایشگاه",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 27,
+          "name": "شاهد-باقرشهر",
+          "normalized_name": "شاهدباقرشهر",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 28,
+          "name": "حرم امام خمینی",
+          "normalized_name": "حرمامامخمینی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 29,
+          "name": "کهریزک",
+          "normalized_name": "کهریزک",
+          "operational_status": "not_established",
+          "opening_date": null
+        }
+      ],
+      "declared_station_count": 29,
+      "extracted_station_count": 29
+    },
+    {
+      "id": "2",
+      "parent_line": "2",
+      "branch": false,
+      "heading": "خط ۲ مترو تهران: خط صادقیه – فرهنگ‌سرا",
+      "stations": [
+        {
+          "position": 1,
+          "name": "تهران (صادقیه)",
+          "normalized_name": "تهرانصادقیه",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 2,
+          "name": "طرشت",
+          "normalized_name": "طرشت",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 3,
+          "name": "دانشگاه شریف",
+          "normalized_name": "دانشگاهشریف",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 4,
+          "name": "شادمان",
+          "normalized_name": "شادمان",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 5,
+          "name": "شهید نواب سفوی",
+          "normalized_name": "شهیدنوابسفوی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 6,
+          "name": "میدان حر",
+          "normalized_name": "میدانحر",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 7,
+          "name": "دانشگاه امام علی",
+          "normalized_name": "دانشگاهامامعلی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 8,
+          "name": "حسن‌آباد",
+          "normalized_name": "حسنآباد",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 9,
+          "name": "امام خمینی",
+          "normalized_name": "امامخمینی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 10,
+          "name": "ملت",
+          "normalized_name": "ملت",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 11,
+          "name": "بهارستان",
+          "normalized_name": "بهارستان",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 12,
+          "name": "دروازه شمیران",
+          "normalized_name": "دروازهشمیران",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 13,
+          "name": "امام حسین",
+          "normalized_name": "امامحسین",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 14,
+          "name": "شهید مدنی",
+          "normalized_name": "شهیدمدنی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 15,
+          "name": "سبلان",
+          "normalized_name": "سبلان",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 16,
+          "name": "فدک",
+          "normalized_name": "فدک",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 17,
+          "name": "جانبازان",
+          "normalized_name": "جانبازان",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 18,
+          "name": "سرسبز",
+          "normalized_name": "سرسبز",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 19,
+          "name": "دانشگاه علم و صنعت",
+          "normalized_name": "دانشگاهعلموصنعت",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 20,
+          "name": "شهید باقری",
+          "normalized_name": "شهیدباقری",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 21,
+          "name": "تهرانپارس",
+          "normalized_name": "تهرانپارس",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 22,
+          "name": "فرهنگ‌سرا",
+          "normalized_name": "فرهنگسرا",
+          "operational_status": "not_established",
+          "opening_date": null
+        }
+      ],
+      "declared_station_count": 22,
+      "extracted_station_count": 22
+    },
+    {
+      "id": "3",
+      "parent_line": "3",
+      "branch": false,
+      "heading": "خط ۳ مترو تهران: خط قائم – آزادگان",
+      "stations": [
+        {
+          "position": 1,
+          "name": "قائم",
+          "normalized_name": "قائم",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 2,
+          "name": "شهید محلاتی",
+          "normalized_name": "شهیدمحلاتی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 3,
+          "name": "اقدسیه",
+          "normalized_name": "اقدسیه",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 4,
+          "name": "نوبنیاد",
+          "normalized_name": "نوبنیاد",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 5,
+          "name": "حسین‌آباد",
+          "normalized_name": "حسینآباد",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 6,
+          "name": "میدان هروی",
+          "normalized_name": "میدانهروی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 7,
+          "name": "شهید زین‌الدین",
+          "normalized_name": "شهیدزینالدین",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 8,
+          "name": "خواجه عبدالله انصاری",
+          "normalized_name": "خواجهعبداللهانصاری",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 9,
+          "name": "شهید صیاد شیرازی",
+          "normalized_name": "شهیدصیادشیرازی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 10,
+          "name": "شهید قدوسی",
+          "normalized_name": "شهیدقدوسی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 11,
+          "name": "سهروردی",
+          "normalized_name": "سهروردی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 12,
+          "name": "شهید بهشتی",
+          "normalized_name": "شهیدبهشتی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 13,
+          "name": "میرزای شیرازی",
+          "normalized_name": "میرزایشیرازی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 14,
+          "name": "میدان جهاد",
+          "normalized_name": "میدانجهاد",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 15,
+          "name": "میدان ولیعصر",
+          "normalized_name": "میدانولیعصر",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 16,
+          "name": "تئاتر شهر",
+          "normalized_name": "تئاترشهر",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 17,
+          "name": "منیریه",
+          "normalized_name": "منیریه",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 18,
+          "name": "راه آهن",
+          "normalized_name": "راهآهن",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 19,
+          "name": "جوادیه",
+          "normalized_name": "جوادیه",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 20,
+          "name": "زمزم",
+          "normalized_name": "زمزم",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 21,
+          "name": "شهرک شریعتی",
+          "normalized_name": "شهرکشریعتی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 22,
+          "name": "عبدل آباد",
+          "normalized_name": "عبدلآباد",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 23,
+          "name": "نعمت آباد",
+          "normalized_name": "نعمتآباد",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 24,
+          "name": "آزادگان",
+          "normalized_name": "آزادگان",
+          "operational_status": "not_established",
+          "opening_date": null
+        }
+      ],
+      "declared_station_count": 25,
+      "extracted_station_count": 24
+    },
+    {
+      "id": "4",
+      "parent_line": "4",
+      "branch": false,
+      "heading": "خط ۴ نقشه مترو تهران: خط شهید کلاه دوز – ارم سبز (علامه جعفری)",
+      "stations": [
+        {
+          "position": 1,
+          "name": "شهید کلاهدوز",
+          "normalized_name": "شهیدکلاهدوز",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 2,
+          "name": "نیروی هوایی",
+          "normalized_name": "نیرویهوایی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 3,
+          "name": "نبرد",
+          "normalized_name": "نبرد",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 4,
+          "name": "پیروزی",
+          "normalized_name": "پیروزی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 5,
+          "name": "ابن سینا",
+          "normalized_name": "ابنسینا",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 6,
+          "name": "میدان شهدا",
+          "normalized_name": "میدانشهدا",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 7,
+          "name": "دروازه شمیران",
+          "normalized_name": "دروازهشمیران",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 8,
+          "name": "دروازه دولت",
+          "normalized_name": "دروازهدولت",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 9,
+          "name": "فردوسی",
+          "normalized_name": "فردوسی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 10,
+          "name": "تئاتر شهر",
+          "normalized_name": "تئاترشهر",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 11,
+          "name": "میدان انقلاب اسلامی",
+          "normalized_name": "میدانانقلاباسلامی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 12,
+          "name": "توحید",
+          "normalized_name": "توحید",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 13,
+          "name": "شادمان",
+          "normalized_name": "شادمان",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 14,
+          "name": "دکتر حبیب‌الله",
+          "normalized_name": "دکترحبیبالله",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 15,
+          "name": "استاد معین",
+          "normalized_name": "استادمعین",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 16,
+          "name": "میدان آزادی",
+          "normalized_name": "میدانآزادی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 17,
+          "name": "بیمه",
+          "normalized_name": "بیمه",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 18,
+          "name": "شهرک اکباتان",
+          "normalized_name": "شهرکاکباتان",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 19,
+          "name": "ارم سبز",
+          "normalized_name": "ارمسبز",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 20,
+          "name": "علامه جعفری",
+          "normalized_name": "علامهجعفری",
+          "operational_status": "not_established",
+          "opening_date": null
+        }
+      ],
+      "declared_station_count": 20,
+      "extracted_station_count": 20
+    },
+    {
+      "id": "5",
+      "parent_line": "5",
+      "branch": false,
+      "heading": "خط ۵ متروی تهران: خط گلشهر – صادقیه (تهران)",
+      "stations": [
+        {
+          "position": 1,
+          "name": "شهید سلیمانی",
+          "normalized_name": "شهیدسلیمانی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 2,
+          "name": "شهید فخری زاده",
+          "normalized_name": "شهیدفخریزاده",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 3,
+          "name": "گلشهر",
+          "normalized_name": "گلشهر",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 4,
+          "name": "محمدشهر",
+          "normalized_name": "محمدشهر",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 5,
+          "name": "کرج",
+          "normalized_name": "کرج",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 6,
+          "name": "اتمسفر",
+          "normalized_name": "اتمسفر",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 7,
+          "name": "گرم دره",
+          "normalized_name": "گرمدره",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 8,
+          "name": "وردآورد",
+          "normalized_name": "وردآورد",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 9,
+          "name": "ایران خودرو",
+          "normalized_name": "ایرانخودرو",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 10,
+          "name": "چیتگر",
+          "normalized_name": "چیتگر",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 11,
+          "name": "ورزشگاه آزادی",
+          "normalized_name": "ورزشگاهآزادی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 12,
+          "name": "ارم سبز",
+          "normalized_name": "ارمسبز",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 13,
+          "name": "تهران (صادقیه)",
+          "normalized_name": "تهرانصادقیه",
+          "operational_status": "not_established",
+          "opening_date": null
+        }
+      ],
+      "declared_station_count": 13,
+      "extracted_station_count": 13
+    },
+    {
+      "id": "6",
+      "parent_line": "6",
+      "branch": false,
+      "heading": "خط ۶ مترو تهران",
+      "stations": [
+        {
+          "position": 1,
+          "name": "شهدای دولت آباد",
+          "normalized_name": "شهدایدولتآباد",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 2,
+          "name": "کیان شهر",
+          "normalized_name": "کیانشهر",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 3,
+          "name": "بعثت",
+          "normalized_name": "بعثت",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 4,
+          "name": "شهید رضایی",
+          "normalized_name": "شهیدرضایی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 5,
+          "name": "امیرکبیر",
+          "normalized_name": "امیرکبیر",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 6,
+          "name": "میدان شهدا",
+          "normalized_name": "میدانشهدا",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 7,
+          "name": "امام حسین",
+          "normalized_name": "امامحسین",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 8,
+          "name": "شهدای هفتم تیر",
+          "normalized_name": "شهدایهفتمتیر",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 9,
+          "name": "میدان حضرت ولی عصر (عج)",
+          "normalized_name": "میدانحضرتولیعصرعج",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 10,
+          "name": "بوستان لاله",
+          "normalized_name": "بوستانلاله",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 11,
+          "name": "کارگر",
+          "normalized_name": "کارگر",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 12,
+          "name": "دانشگاه تربیت مدرس",
+          "normalized_name": "دانشگاهتربیتمدرس",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 13,
+          "name": "شهرک آزمایش",
+          "normalized_name": "شهرکآزمایش",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 14,
+          "name": "مرزداران",
+          "normalized_name": "مرزداران",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 15,
+          "name": "یادگار امام",
+          "normalized_name": "یادگارامام",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 16,
+          "name": "شهید اشرفی اصفهانی",
+          "normalized_name": "شهیداشرفیاصفهانی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 17,
+          "name": "شهید ستاری",
+          "normalized_name": "شهیدستاری",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 18,
+          "name": "شهر زیبا",
+          "normalized_name": "شهرزیبا",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 19,
+          "name": "شهران",
+          "normalized_name": "شهران",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 20,
+          "name": "شهید آرمان علی وردی (کوهسار)",
+          "normalized_name": "شهیدآرمانعلیوردیکوهسار",
+          "operational_status": "not_established",
+          "opening_date": null
+        }
+      ],
+      "declared_station_count": 17,
+      "extracted_station_count": 20
+    },
+    {
+      "id": "7",
+      "parent_line": "7",
+      "branch": false,
+      "heading": "خط ۷ متروی تهران: خط بسیج – میدان کتاب",
+      "stations": [
+        {
+          "position": 1,
+          "name": "میدان کتاب",
+          "normalized_name": "میدانکتاب",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 2,
+          "name": "شهید دادمان",
+          "normalized_name": "شهیددادمان",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 3,
+          "name": "میدان صنعت",
+          "normalized_name": "میدانصنعت",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 4,
+          "name": "برج میلاد تهران",
+          "normalized_name": "برجمیلادتهران",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 5,
+          "name": "بوستان گفتگو",
+          "normalized_name": "بوستانگفتگو",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 6,
+          "name": "دانشگاه تربیت مدرس",
+          "normalized_name": "دانشگاهتربیتمدرس",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 7,
+          "name": "مدافعان سلامت",
+          "normalized_name": "مدافعانسلامت",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 8,
+          "name": "توحید",
+          "normalized_name": "توحید",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 9,
+          "name": "شهید نواب صفوی",
+          "normalized_name": "شهیدنوابصفوی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 10,
+          "name": "رودکی",
+          "normalized_name": "رودکی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 11,
+          "name": "کمیل",
+          "normalized_name": "کمیل",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 12,
+          "name": "بریانک",
+          "normalized_name": "بریانک",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 13,
+          "name": "هلال احمر",
+          "normalized_name": "هلالاحمر",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 14,
+          "name": "مهدیه",
+          "normalized_name": "مهدیه",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 15,
+          "name": "میدان محمدیه",
+          "normalized_name": "میدانمحمدیه",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 16,
+          "name": "مولوی",
+          "normalized_name": "مولوی",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 17,
+          "name": "میدان قیام",
+          "normalized_name": "میدانقیام",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 18,
+          "name": "شهدای هفده شهریور",
+          "normalized_name": "شهدایهفدهشهریور",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 19,
+          "name": "چهل تن دولاب",
+          "normalized_name": "چهلتندولاب",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 20,
+          "name": "آهنگ",
+          "normalized_name": "آهنگ",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 21,
+          "name": "بسیج",
+          "normalized_name": "بسیج",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 22,
+          "name": "ورزشگاه تختی",
+          "normalized_name": "ورزشگاهتختی",
+          "operational_status": "not_established",
+          "opening_date": null
+        }
+      ],
+      "declared_station_count": 22,
+      "extracted_station_count": 22
+    },
+    {
+      "id": "1-airport",
+      "parent_line": "1",
+      "branch": true,
+      "heading": "خط انشعابی فرودگاه امام خمینی: خط شاهد – فرودگاه امام خمینی",
+      "stations": [
+        {
+          "position": 1,
+          "name": "شاهد – باقرشهر",
+          "normalized_name": "شاهدباقرشهر",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 2,
+          "name": "نمایشگاه شهر آفتاب",
+          "normalized_name": "نمایشگاهشهرآفتاب",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 3,
+          "name": "فرودگاه امام خمینی",
+          "normalized_name": "فرودگاهامامخمینی",
+          "operational_status": "not_established",
+          "opening_date": null
+        }
+      ],
+      "declared_station_count": null,
+      "extracted_station_count": 3
+    },
+    {
+      "id": "4-airport",
+      "parent_line": "4",
+      "branch": true,
+      "heading": "خط انشعابی فرودگاه مهرآباد: خط بیمه – پایانه ۴ و ۶ فرودگاه مهرآباد",
+      "stations": [
+        {
+          "position": 1,
+          "name": "بیمه",
+          "normalized_name": "بیمه",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 2,
+          "name": "پایانه ۱ و ۲ فرودگاه مهرآباد",
+          "normalized_name": "پایانه1و2فرودگاهمهرآباد",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 3,
+          "name": "پایانه ۴ و ۶ فرودگاه مهرآباد",
+          "normalized_name": "پایانه4و6فرودگاهمهرآباد",
+          "operational_status": "not_established",
+          "opening_date": null
+        }
+      ],
+      "declared_station_count": null,
+      "extracted_station_count": 3
+    },
+    {
+      "id": "5-hashtgerd",
+      "parent_line": "5",
+      "branch": true,
+      "heading": "خط انشعابی هشتگرد: خط گل‌شهر – شهید سپهبد قاسم سلیمانی",
+      "stations": [
+        {
+          "position": 1,
+          "name": "گل‌شهر",
+          "normalized_name": "گلشهر",
+          "operational_status": "not_established",
+          "opening_date": null
+        },
+        {
+          "position": 2,
+          "name": "شهید سپهبد قاسم سلیمانی",
+          "normalized_name": "شهیدسپهبدقاسمسلیمانی",
+          "operational_status": "not_established",
+          "opening_date": null
+        }
+      ],
+      "declared_station_count": null,
+      "extracted_station_count": 2
+    }
+  ],
+  "alias_claims": [
+    {
+      "line": "1",
+      "station": "شهدای هفتم تیر",
+      "alternative_names": [
+        "میدان هفت تیر"
+      ],
+      "identity_status": "source_claim_unreviewed"
+    },
+    {
+      "line": "1",
+      "station": "امام خمینی",
+      "alternative_names": [
+        "توپخانه",
+        "پارک شهر"
+      ],
+      "identity_status": "source_claim_unreviewed"
+    },
+    {
+      "line": "1",
+      "station": "پانزده خرداد",
+      "alternative_names": [
+        "بازار تهران",
+        "چهارراه گلوبندک"
+      ],
+      "identity_status": "source_claim_unreviewed"
+    },
+    {
+      "line": "1",
+      "station": "میدان محمدیه",
+      "alternative_names": [
+        "میدان اعدام"
+      ],
+      "identity_status": "source_claim_unreviewed"
+    },
+    {
+      "line": "1",
+      "station": "شهید بخارایی",
+      "alternative_names": [
+        "خزانه"
+      ],
+      "identity_status": "source_claim_unreviewed"
+    },
+    {
+      "line": "1",
+      "station": "حرم مطهر امام خمینی",
+      "alternative_names": [
+        "بهشت زهرا (س)"
+      ],
+      "identity_status": "source_claim_unreviewed"
+    },
+    {
+      "line": "3",
+      "station": "میدان جهاد",
+      "alternative_names": [
+        "فاطمی"
+      ],
+      "identity_status": "source_claim_unreviewed"
+    },
+    {
+      "line": "3",
+      "station": "تئاتر شهر",
+      "alternative_names": [
+        "چهارراه ولی‌عصر (عج)"
+      ],
+      "identity_status": "source_claim_unreviewed"
+    },
+    {
+      "line": "5",
+      "station": "شهید فخری‌زاده",
+      "alternative_names": [
+        "ماموت"
+      ],
+      "identity_status": "source_claim_unreviewed"
+    },
+    {
+      "line": "5",
+      "station": "شهید سپهبد قاسم سلیمانی",
+      "alternative_names": [
+        "هشتگرد"
+      ],
+      "identity_status": "source_claim_unreviewed"
+    },
+    {
+      "line": "6",
+      "station": "شهید آرمان علی‌وردی",
+      "alternative_names": [
+        "کوهسار"
+      ],
+      "identity_status": "source_claim_unreviewed"
+    },
+    {
+      "line": "7",
+      "station": "مدافعان سلامت",
+      "alternative_names": [
+        "ستارخان",
+        "باقرخان",
+        "میدان توحید"
+      ],
+      "identity_status": "source_claim_unreviewed"
+    }
+  ],
+  "shared_name_candidates": [
+    {
+      "normalized_name": "شهیدبهشتی",
+      "guide_routes": [
+        "1",
+        "3"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "normalized_name": "شهدایهفتمتیر",
+      "guide_routes": [
+        "1",
+        "6"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "normalized_name": "دروازهدولت",
+      "guide_routes": [
+        "1",
+        "4"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "normalized_name": "امامخمینی",
+      "guide_routes": [
+        "1",
+        "2"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "normalized_name": "میدانمحمدیه",
+      "guide_routes": [
+        "1",
+        "7"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "normalized_name": "شاهدباقرشهر",
+      "guide_routes": [
+        "1",
+        "1-airport"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "normalized_name": "تهرانصادقیه",
+      "guide_routes": [
+        "2",
+        "5"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "normalized_name": "شادمان",
+      "guide_routes": [
+        "2",
+        "4"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "normalized_name": "دروازهشمیران",
+      "guide_routes": [
+        "2",
+        "4"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "normalized_name": "امامحسین",
+      "guide_routes": [
+        "2",
+        "6"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "normalized_name": "تئاترشهر",
+      "guide_routes": [
+        "3",
+        "4"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "normalized_name": "میدانشهدا",
+      "guide_routes": [
+        "4",
+        "6"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "normalized_name": "توحید",
+      "guide_routes": [
+        "4",
+        "7"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "normalized_name": "بیمه",
+      "guide_routes": [
+        "4",
+        "4-airport"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "normalized_name": "ارمسبز",
+      "guide_routes": [
+        "4",
+        "5"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "normalized_name": "گلشهر",
+      "guide_routes": [
+        "5",
+        "5-hashtgerd"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "normalized_name": "دانشگاهتربیتمدرس",
+      "guide_routes": [
+        "6",
+        "7"
+      ],
+      "transfer_verified": false
+    }
+  ],
+  "discrepancies": [
+    {
+      "route": "3",
+      "kind": "guide_internal_count_conflict",
+      "declared": 25,
+      "listed": 24
+    },
+    {
+      "route": "6",
+      "kind": "guide_internal_count_conflict",
+      "declared": 17,
+      "listed": 20
+    },
+    {
+      "route": "5",
+      "kind": "heading_endpoint_ambiguity",
+      "heading_mentions": "گلشهر",
+      "listed_first": "شهید سلیمانی",
+      "listed_last": "تهران (صادقیه)",
+      "resolution": "No operating terminus inferred"
+    },
+    {
+      "route": "7",
+      "kind": "heading_endpoint_ambiguity",
+      "heading_mentions": "بسیج",
+      "listed_first": "میدان کتاب",
+      "listed_last": "ورزشگاه تختی",
+      "resolution": "No operating terminus inferred"
+    },
+    {
+      "kind": "page_title_year_conflict",
+      "metadata_years": [
+        "1404"
+      ],
+      "visible_heading_years": [
+        "1405"
+      ],
+      "resolution": "Neither year proves network validity date"
+    }
+  ],
+  "linked_schematic_pdfs": [
+    "https://cdn.alibaba.ir/ostorage/alibaba-mag/wp-content/uploads/2025/01/Tehran-subway-map-PDF.pdf"
+  ],
+  "coordinate_policy": "Guide names and schematic do not create geographic coordinates. No geocoding or geometry inference performed.",
+  "historical_eligibility_verified": false,
+  "source_sha256": "cd5f1e5e1bc70140539c4f06f749b1ee182c46199d37c9f10df831462bb8330d",
+  "acquisition": {
+    "url": "https://www.alibaba.ir/mag/tehran/tehran-ci/tehran-subway-guide/",
+    "retrieved_utc": "2026-10-22T20:13:15.836611+00:00",
+    "timestamp_note": "Timestamp records provenance registration after the direct HTTP 200 acquisition during this session; exact HTTP retrieval instant was not captured.",
+    "sha256": "cd5f1e5e1bc70140539c4f06f749b1ee182c46199d37c9f10df831462bb8330d",
+    "bytes": 733439,
+    "content_type": "text/html; charset=UTF-8"
+  },
+  "linked_schematic_acquisitions": [
+    {
+      "url": "https://cdn.alibaba.ir/ostorage/alibaba-mag/wp-content/uploads/2025/01/Tehran-subway-map-PDF.pdf",
+      "retrieved_utc": "2026-10-22T20:13:16.977535+00:00",
+      "sha256": "53e39c66e976754aab8d05d097b50de3f68a115e07efd9f47a266bc8cbb63a3c",
+      "bytes": 1763789,
+      "content_type": "application/pdf",
+      "source_role": "User-supplied secondary metro reference; publication and reuse rights not established"
+    }
+  ]
+}

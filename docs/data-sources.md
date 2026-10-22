@@ -19,3 +19,5 @@ Download sidecars contain exact URLs, bytes, UTC time and hashes. An initial sha
 The source card supplies an ODbL license label but not a dataset-specific monetary denomination or total-price contract. Its cited code/repository links also use naming variants; the actual API repository ID above is authoritative for acquisition. No currency conversion is supported.
 
 The provided reference image was absent. No replacement was generated. No live Divar records, personal details, guessed coordinates, made-up station sequences, or housing heatmaps were acquired or fabricated.
+
+The owner later supplied [Alibaba's Tehran subway guide](https://www.alibaba.ir/mag/tehran/tehran-ci/tehran-subway-guide/). A cached HTML snapshot and linked schematic PDF now support station-name/order comparisons, with separate source hashes and rights notices. The [reference audit](../research/references/alibaba-guide-audit.md) documents extracted counts, alias candidates and disagreements. The guide does not supply approved entrance coordinates or historical eligibility; its embedded Google map is not ingested.

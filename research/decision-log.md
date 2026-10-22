@@ -19,3 +19,10 @@ Append dated entries; do not silently rewrite previous empirical conclusions.
 - First dependency audit identified advisories in initially selected MapLibre/Vitest versions. Updated dependency constraints rather than using an unreviewed forced audit fix. Exact installed dependencies are locked.
 - All public source/derived database notices remain separate from MIT code. Publication remains local; no remote repository, sponsor affiliation or deployment was invented.
 - Visual QA caught a MapLibre v6 worker-loading failure and a lazy-CSS container-height conflict that a canvas-existence test missed. Bundled the worker using the official Vite worker URL approach and fixed map-container sizing. Strengthened browser tests to require rendered street features, a visible map region and no map error. Re-ran desktop/mobile accessibility and interaction tests.
+
+## 2026-10-22 — Owner-supplied Alibaba metro reference
+
+- Acquired the owner-selected guide and its linked schematic PDF, keeping original copyrighted page/assets in ignored raw storage. Added deterministic extraction, cache/hash verification and offline comparison commands.
+- Extracted 150 main-line station entries, eight branch entries and twelve alias-table claims. These are memberships/claims, not 158 unique operating stations. Found 116 exact orthographic-name candidates against cached OSM route members; fuzzy suggestions remain unaccepted.
+- Recorded internal guide count conflicts on lines 3 and 6, endpoint presentation ambiguities on lines 5 and 7, and conflicting metadata/visible-title years. None were resolved by inventing an opening date or connection.
+- Added secondary-reference evidence to network reports. No public metro geometry, transfers, entrance eligibility or historical-access gate was promoted solely on this evidence. No guide prose, schematic image or proprietary embedded map was added to public assets. Earlier feasibility findings remain unchanged.

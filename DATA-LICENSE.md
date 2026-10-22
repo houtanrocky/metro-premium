@@ -10,3 +10,5 @@ Original application and pipeline code are MIT licensed. Input data and database
 - Vazirmatn font files are supplied by `@fontsource/vazirmatn` under the SIL Open Font License; retain the package license when distributing built font assets.
 
 No raw housing CSV or listing-level derived database is distributed here. Review the [publication policy](docs/licensing.md) before releasing larger derived databases or adding a tile provider.
+
+The owner-supplied Alibaba guide is a secondary research reference. Its article text, diagrams, linked PDF and embedded Google map have no reuse license established here and are excluded from Git/public site assets. Factual station identifiers and comparison records are documented in [the source audit](research/references/alibaba-guide-audit.md); the original-code MIT grant and OSM's ODbL do not automatically license Alibaba's original content.

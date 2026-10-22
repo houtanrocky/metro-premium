@@ -101,6 +101,7 @@ def main():
     source=ROOT/'data/raw/divar'/REVISION/'real_estate_ads.csv'
     inputs = [ROOT/args.config]
     inputs += [p for p in (ROOT/'data/raw/osm').glob('*') if p.is_file()]
+    inputs += [p for p in (ROOT/'data/raw/references/alibaba').glob('*.html*') if p.is_file()]
     if args.command=='audit-data': inputs.append(source)
     with run_record(args.command,config,inputs) as (folder,state):
         (ROOT/'artifacts/reports').mkdir(parents=True,exist_ok=True)

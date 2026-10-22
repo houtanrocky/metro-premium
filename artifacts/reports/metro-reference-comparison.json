@@ -1,0 +1,2006 @@
+{
+  "guide_source": "https://www.alibaba.ir/mag/tehran/tehran-ci/tehran-subway-guide/",
+  "status": "comparison_only",
+  "routes": [
+    {
+      "line": "1",
+      "osm_relation": 19967673,
+      "guide_listed": 29,
+      "osm_members": 29,
+      "exact_name_candidates": 25,
+      "unmatched_or_ambiguous": 4,
+      "order_among_exact_matches": "forward",
+      "matched_subsequence_only": true,
+      "all_adjacencies_verified": false,
+      "matches": [
+        {
+          "guide_position": 1,
+          "guide_name": "تجریش",
+          "status": "exact_name_candidate",
+          "osm_node": 13381264372,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 2,
+          "guide_name": "قیطریه",
+          "status": "exact_name_candidate",
+          "osm_node": 13381264367,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 3,
+          "guide_name": "شهید صدر",
+          "status": "exact_name_candidate",
+          "osm_node": 13381123769,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 4,
+          "guide_name": "قلهک",
+          "status": "exact_name_candidate",
+          "osm_node": 13381123763,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 5,
+          "guide_name": "دکتر شریعتی",
+          "status": "exact_name_candidate",
+          "osm_node": 13381123757,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 6,
+          "guide_name": "میرداماد",
+          "status": "ambiguous",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 13381123738,
+              "name": "شهید حقانی",
+              "similarity": 1.0
+            },
+            {
+              "osm_node": 13381123744,
+              "name": "میرداماد",
+              "similarity": 1.0
+            },
+            {
+              "osm_node": 13380779561,
+              "name": "میدان محمدیه",
+              "similarity": 0.632
+            }
+          ]
+        },
+        {
+          "guide_position": 7,
+          "guide_name": "شهید حقانی",
+          "status": "exact_name_candidate",
+          "osm_node": 13381123738,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 8,
+          "guide_name": "شهید همت",
+          "status": "exact_name_candidate",
+          "osm_node": 13381123740,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 9,
+          "guide_name": "مصلی امام خمینی (ره)",
+          "status": "exact_name_candidate",
+          "osm_node": 13381123733,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 10,
+          "guide_name": "شهید بهشتی",
+          "status": "exact_name_candidate",
+          "osm_node": 13381123728,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 11,
+          "guide_name": "شهید مفتح",
+          "status": "exact_name_candidate",
+          "osm_node": 13381123727,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 12,
+          "guide_name": "شهدای هفتم تیر",
+          "status": "exact_name_candidate",
+          "osm_node": 13381123723,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 13,
+          "guide_name": "طالقانی",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 13380785627,
+              "name": "آیت‌الله طالقانی",
+              "similarity": 0.667
+            },
+            {
+              "osm_node": 13380418856,
+              "name": "پالایشگاه",
+              "similarity": 0.5
+            },
+            {
+              "osm_node": 13381123738,
+              "name": "شهید حقانی",
+              "similarity": 0.5
+            }
+          ]
+        },
+        {
+          "guide_position": 14,
+          "guide_name": "دروازه دولت",
+          "status": "exact_name_candidate",
+          "osm_node": 13380785623,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 15,
+          "guide_name": "سعدی",
+          "status": "exact_name_candidate",
+          "osm_node": 13380785611,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 16,
+          "guide_name": "امام خمینی",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 13380785609,
+              "name": "امام خمینی(ره)",
+              "similarity": 0.9
+            },
+            {
+              "osm_node": 13381123733,
+              "name": "مصلی امام خمینی(ره)",
+              "similarity": 0.75
+            },
+            {
+              "osm_node": 13380418857,
+              "name": "حرم مطهر امام خمینی(ره)",
+              "similarity": 0.667
+            }
+          ]
+        },
+        {
+          "guide_position": 17,
+          "guide_name": "پانزده خرداد",
+          "status": "exact_name_candidate",
+          "osm_node": 13380779588,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 18,
+          "guide_name": "خیام",
+          "status": "exact_name_candidate",
+          "osm_node": 13380779580,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 19,
+          "guide_name": "میدان محمدیه",
+          "status": "exact_name_candidate",
+          "osm_node": 13380779561,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 20,
+          "guide_name": "شوش",
+          "status": "exact_name_candidate",
+          "osm_node": 13380425847,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 21,
+          "guide_name": "پایانه جنوب",
+          "status": "exact_name_candidate",
+          "osm_node": 13380425829,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 22,
+          "guide_name": "شهید بخارایی",
+          "status": "exact_name_candidate",
+          "osm_node": 13380425726,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 23,
+          "guide_name": "علی‌آباد",
+          "status": "exact_name_candidate",
+          "osm_node": 13380418899,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 24,
+          "guide_name": "جوانمرد قصاب",
+          "status": "exact_name_candidate",
+          "osm_node": 13380418872,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 25,
+          "guide_name": "شهر ری",
+          "status": "exact_name_candidate",
+          "osm_node": 13380418863,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 26,
+          "guide_name": "پالایشگاه",
+          "status": "exact_name_candidate",
+          "osm_node": 13380418856,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 27,
+          "guide_name": "شاهد-باقرشهر",
+          "status": "exact_name_candidate",
+          "osm_node": 13203213003,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 28,
+          "guide_name": "حرم امام خمینی",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 13380418857,
+              "name": "حرم مطهر امام خمینی(ره)",
+              "similarity": 0.8
+            },
+            {
+              "osm_node": 13380785609,
+              "name": "امام خمینی(ره)",
+              "similarity": 0.783
+            },
+            {
+              "osm_node": 13381123733,
+              "name": "مصلی امام خمینی(ره)",
+              "similarity": 0.741
+            }
+          ]
+        },
+        {
+          "guide_position": 29,
+          "guide_name": "کهریزک",
+          "status": "exact_name_candidate",
+          "osm_node": 7056721168,
+          "independently_verified": false
+        }
+      ],
+      "osm_members_without_exact_guide_match": [
+        {
+          "osm_node": 13381123744,
+          "names": [
+            "میرداماد"
+          ]
+        },
+        {
+          "osm_node": 13380785627,
+          "names": [
+            "آیت‌الله طالقانی"
+          ]
+        },
+        {
+          "osm_node": 13380785609,
+          "names": [
+            "امام خمینی(ره)"
+          ]
+        },
+        {
+          "osm_node": 13380418857,
+          "names": [
+            "حرم مطهر امام خمینی(ره)"
+          ]
+        }
+      ]
+    },
+    {
+      "line": "2",
+      "osm_relation": 2431321,
+      "guide_listed": 22,
+      "osm_members": 22,
+      "exact_name_candidates": 17,
+      "unmatched_or_ambiguous": 5,
+      "order_among_exact_matches": "forward",
+      "matched_subsequence_only": true,
+      "all_adjacencies_verified": false,
+      "matches": [
+        {
+          "guide_position": 1,
+          "guide_name": "تهران (صادقیه)",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 4453643066,
+              "name": "صادقیه",
+              "similarity": 0.706
+            },
+            {
+              "osm_node": 660628921,
+              "name": "تهرانپارس",
+              "similarity": 0.6
+            },
+            {
+              "osm_node": 14068031505,
+              "name": "شهیدان باقری",
+              "similarity": 0.545
+            }
+          ]
+        },
+        {
+          "guide_position": 2,
+          "guide_name": "طرشت",
+          "status": "exact_name_candidate",
+          "osm_node": 2120217849,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 3,
+          "guide_name": "دانشگاه شریف",
+          "status": "exact_name_candidate",
+          "osm_node": 864404756,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 4,
+          "guide_name": "شادمان",
+          "status": "exact_name_candidate",
+          "osm_node": 5183625749,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 5,
+          "guide_name": "شهید نواب سفوی",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 4452329924,
+              "name": "شهید نواب صفوی",
+              "similarity": 0.917
+            },
+            {
+              "osm_node": 14068031505,
+              "name": "شهیدان باقری",
+              "similarity": 0.609
+            },
+            {
+              "osm_node": 660628303,
+              "name": "شهید مدنی",
+              "similarity": 0.6
+            }
+          ]
+        },
+        {
+          "guide_position": 6,
+          "guide_name": "میدان حر",
+          "status": "exact_name_candidate",
+          "osm_node": 654082162,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 7,
+          "guide_name": "دانشگاه امام علی",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 3778792864,
+              "name": "دانشگاه امام علی(ع)",
+              "similarity": 0.966
+            },
+            {
+              "osm_node": 864404756,
+              "name": "دانشگاه شریف",
+              "similarity": 0.64
+            },
+            {
+              "osm_node": 660628852,
+              "name": "دانشگاه علم و صنعت",
+              "similarity": 0.621
+            }
+          ]
+        },
+        {
+          "guide_position": 8,
+          "guide_name": "حسن‌آباد",
+          "status": "exact_name_candidate",
+          "osm_node": 3691224155,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 9,
+          "guide_name": "امام خمینی",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 5186262280,
+              "name": "امام خمینی(ره)",
+              "similarity": 0.9
+            },
+            {
+              "osm_node": 660628277,
+              "name": "امام حسین(ع)",
+              "similarity": 0.667
+            },
+            {
+              "osm_node": 5183625749,
+              "name": "شادمان",
+              "similarity": 0.533
+            }
+          ]
+        },
+        {
+          "guide_position": 10,
+          "guide_name": "ملت",
+          "status": "exact_name_candidate",
+          "osm_node": 659784460,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 11,
+          "guide_name": "بهارستان",
+          "status": "exact_name_candidate",
+          "osm_node": 659782107,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 12,
+          "guide_name": "دروازه شمیران",
+          "status": "exact_name_candidate",
+          "osm_node": 660627035,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 13,
+          "guide_name": "امام حسین",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 660628277,
+              "name": "امام حسین(ع)",
+              "similarity": 0.941
+            },
+            {
+              "osm_node": 5186262280,
+              "name": "امام خمینی(ره)",
+              "similarity": 0.632
+            },
+            {
+              "osm_node": 5183625749,
+              "name": "شادمان",
+              "similarity": 0.571
+            }
+          ]
+        },
+        {
+          "guide_position": 14,
+          "guide_name": "شهید مدنی",
+          "status": "exact_name_candidate",
+          "osm_node": 660628303,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 15,
+          "guide_name": "سبلان",
+          "status": "exact_name_candidate",
+          "osm_node": 660628364,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 16,
+          "guide_name": "فدک",
+          "status": "exact_name_candidate",
+          "osm_node": 3080821096,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 17,
+          "guide_name": "جانبازان",
+          "status": "exact_name_candidate",
+          "osm_node": 4674995987,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 18,
+          "guide_name": "سرسبز",
+          "status": "exact_name_candidate",
+          "osm_node": 660628705,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 19,
+          "guide_name": "دانشگاه علم و صنعت",
+          "status": "exact_name_candidate",
+          "osm_node": 660628852,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 20,
+          "guide_name": "شهید باقری",
+          "status": "exact_name_candidate",
+          "osm_node": 14068031505,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 21,
+          "guide_name": "تهرانپارس",
+          "status": "exact_name_candidate",
+          "osm_node": 660628921,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 22,
+          "guide_name": "فرهنگ‌سرا",
+          "status": "exact_name_candidate",
+          "osm_node": 2169691367,
+          "independently_verified": false
+        }
+      ],
+      "osm_members_without_exact_guide_match": [
+        {
+          "osm_node": 4453643066,
+          "names": [
+            "صادقیه"
+          ]
+        },
+        {
+          "osm_node": 4452329924,
+          "names": [
+            "شهید نواب صفوی",
+            "ایستگاه مترو شهید نواب صفوی"
+          ]
+        },
+        {
+          "osm_node": 3778792864,
+          "names": [
+            "دانشگاه امام علی(ع)"
+          ]
+        },
+        {
+          "osm_node": 5186262280,
+          "names": [
+            "امام خمینی(ره)"
+          ]
+        },
+        {
+          "osm_node": 660628277,
+          "names": [
+            "امام حسین(ع)"
+          ]
+        }
+      ]
+    },
+    {
+      "line": "3",
+      "osm_relation": 5366249,
+      "guide_listed": 24,
+      "osm_members": 25,
+      "exact_name_candidates": 24,
+      "unmatched_or_ambiguous": 0,
+      "order_among_exact_matches": "forward",
+      "matched_subsequence_only": true,
+      "all_adjacencies_verified": false,
+      "matches": [
+        {
+          "guide_position": 1,
+          "guide_name": "قائم",
+          "status": "exact_name_candidate",
+          "osm_node": 3778861797,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 2,
+          "guide_name": "شهید محلاتی",
+          "status": "exact_name_candidate",
+          "osm_node": 3778861792,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 3,
+          "guide_name": "اقدسیه",
+          "status": "exact_name_candidate",
+          "osm_node": 3778861791,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 4,
+          "guide_name": "نوبنیاد",
+          "status": "exact_name_candidate",
+          "osm_node": 3778861790,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 5,
+          "guide_name": "حسین‌آباد",
+          "status": "exact_name_candidate",
+          "osm_node": 3778861789,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 6,
+          "guide_name": "میدان هروی",
+          "status": "exact_name_candidate",
+          "osm_node": 12457390951,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 7,
+          "guide_name": "شهید زین‌الدین",
+          "status": "exact_name_candidate",
+          "osm_node": 4453205974,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 8,
+          "guide_name": "خواجه عبدالله انصاری",
+          "status": "exact_name_candidate",
+          "osm_node": 14072135589,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 9,
+          "guide_name": "شهید صیاد شیرازی",
+          "status": "exact_name_candidate",
+          "osm_node": 3778861786,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 10,
+          "guide_name": "شهید قدوسی",
+          "status": "exact_name_candidate",
+          "osm_node": 12457390952,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 11,
+          "guide_name": "سهروردی",
+          "status": "exact_name_candidate",
+          "osm_node": 14071134416,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 12,
+          "guide_name": "شهید بهشتی",
+          "status": "exact_name_candidate",
+          "osm_node": 5188238058,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 13,
+          "guide_name": "میرزای شیرازی",
+          "status": "exact_name_candidate",
+          "osm_node": 2831259303,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 14,
+          "guide_name": "میدان جهاد",
+          "status": "exact_name_candidate",
+          "osm_node": 2831259315,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 15,
+          "guide_name": "میدان ولیعصر",
+          "status": "exact_name_candidate",
+          "osm_node": 10760685494,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 16,
+          "guide_name": "تئاتر شهر",
+          "status": "exact_name_candidate",
+          "osm_node": 2169732979,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 17,
+          "guide_name": "منیریه",
+          "status": "exact_name_candidate",
+          "osm_node": 3649760926,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 18,
+          "guide_name": "راه آهن",
+          "status": "exact_name_candidate",
+          "osm_node": 12457390950,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 19,
+          "guide_name": "جوادیه",
+          "status": "exact_name_candidate",
+          "osm_node": 3641204693,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 20,
+          "guide_name": "زمزم",
+          "status": "exact_name_candidate",
+          "osm_node": 5190555599,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 21,
+          "guide_name": "شهرک شریعتی",
+          "status": "exact_name_candidate",
+          "osm_node": 3649760928,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 22,
+          "guide_name": "عبدل آباد",
+          "status": "exact_name_candidate",
+          "osm_node": 4453604919,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 23,
+          "guide_name": "نعمت آباد",
+          "status": "exact_name_candidate",
+          "osm_node": 4453614390,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 24,
+          "guide_name": "آزادگان",
+          "status": "exact_name_candidate",
+          "osm_node": 3649760925,
+          "independently_verified": false
+        }
+      ],
+      "osm_members_without_exact_guide_match": [
+        {
+          "osm_node": 4453224428,
+          "names": [
+            "مهدیه",
+            "ایستگاه مترو مهدیه"
+          ]
+        }
+      ]
+    },
+    {
+      "line": "4",
+      "osm_relation": 443307,
+      "guide_listed": 20,
+      "osm_members": 20,
+      "exact_name_candidates": 16,
+      "unmatched_or_ambiguous": 4,
+      "order_among_exact_matches": "reverse",
+      "matched_subsequence_only": true,
+      "all_adjacencies_verified": false,
+      "matches": [
+        {
+          "guide_position": 1,
+          "guide_name": "شهید کلاهدوز",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 4553519985,
+              "name": "ایستگاه مترو شهید کلاهدوز",
+              "similarity": 0.667
+            },
+            {
+              "osm_node": 5188247276,
+              "name": "دروازه دولت",
+              "similarity": 0.476
+            },
+            {
+              "osm_node": 6438071583,
+              "name": "میدان شهدا",
+              "similarity": 0.4
+            }
+          ]
+        },
+        {
+          "guide_position": 2,
+          "guide_name": "نیروی هوایی",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 2169732980,
+              "name": "ایستگاه مترو نیرو هوایی",
+              "similarity": 0.6
+            },
+            {
+              "osm_node": 4544628125,
+              "name": "پیروزی",
+              "similarity": 0.5
+            },
+            {
+              "osm_node": 5188247276,
+              "name": "دروازه دولت",
+              "similarity": 0.4
+            }
+          ]
+        },
+        {
+          "guide_position": 3,
+          "guide_name": "نبرد",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 2169732969,
+              "name": "ایستگاه مترو نبرد",
+              "similarity": 0.421
+            },
+            {
+              "osm_node": 660624968,
+              "name": "فردوسی",
+              "similarity": 0.4
+            },
+            {
+              "osm_node": 6438071583,
+              "name": "میدان شهدا",
+              "similarity": 0.308
+            }
+          ]
+        },
+        {
+          "guide_position": 4,
+          "guide_name": "پیروزی",
+          "status": "exact_name_candidate",
+          "osm_node": 4544628125,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 5,
+          "guide_name": "ابن سینا",
+          "status": "exact_name_candidate",
+          "osm_node": 14075125226,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 6,
+          "guide_name": "میدان شهدا",
+          "status": "exact_name_candidate",
+          "osm_node": 6438071583,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 7,
+          "guide_name": "دروازه شمیران",
+          "status": "exact_name_candidate",
+          "osm_node": 5188341404,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 8,
+          "guide_name": "دروازه دولت",
+          "status": "exact_name_candidate",
+          "osm_node": 5188247276,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 9,
+          "guide_name": "فردوسی",
+          "status": "exact_name_candidate",
+          "osm_node": 660624968,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 10,
+          "guide_name": "تئاتر شهر",
+          "status": "exact_name_candidate",
+          "osm_node": 5162910434,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 11,
+          "guide_name": "میدان انقلاب اسلامی",
+          "status": "exact_name_candidate",
+          "osm_node": 2169732952,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 12,
+          "guide_name": "توحید",
+          "status": "exact_name_candidate",
+          "osm_node": 4452444057,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 13,
+          "guide_name": "شادمان",
+          "status": "exact_name_candidate",
+          "osm_node": 654081655,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 14,
+          "guide_name": "دکتر حبیب‌الله",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 4558309639,
+              "name": "دکتر حبیب اله",
+              "similarity": 0.957
+            },
+            {
+              "osm_node": 3930789262,
+              "name": "بیمه",
+              "similarity": 0.375
+            },
+            {
+              "osm_node": 5188341404,
+              "name": "دروازه شمیران",
+              "similarity": 0.333
+            }
+          ]
+        },
+        {
+          "guide_position": 15,
+          "guide_name": "استاد معین",
+          "status": "exact_name_candidate",
+          "osm_node": 2169732984,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 16,
+          "guide_name": "میدان آزادی",
+          "status": "exact_name_candidate",
+          "osm_node": 2169732950,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 17,
+          "guide_name": "بیمه",
+          "status": "exact_name_candidate",
+          "osm_node": 3930789262,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 18,
+          "guide_name": "شهرک اکباتان",
+          "status": "exact_name_candidate",
+          "osm_node": 2169732956,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 19,
+          "guide_name": "ارم سبز",
+          "status": "exact_name_candidate",
+          "osm_node": 5161529740,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 20,
+          "guide_name": "علامه جعفری",
+          "status": "exact_name_candidate",
+          "osm_node": 10860300370,
+          "independently_verified": false
+        }
+      ],
+      "osm_members_without_exact_guide_match": [
+        {
+          "osm_node": 4558309639,
+          "names": [
+            "دکتر حبیب اله"
+          ]
+        },
+        {
+          "osm_node": 2169732969,
+          "names": [
+            "ایستگاه مترو نبرد"
+          ]
+        },
+        {
+          "osm_node": 2169732980,
+          "names": [
+            "ایستگاه مترو نیرو هوایی"
+          ]
+        },
+        {
+          "osm_node": 4553519985,
+          "names": [
+            "ایستگاه مترو شهید کلاهدوز"
+          ]
+        }
+      ]
+    },
+    {
+      "line": "5",
+      "osm_relation": 443301,
+      "guide_listed": 13,
+      "osm_members": 13,
+      "exact_name_candidates": 2,
+      "unmatched_or_ambiguous": 11,
+      "order_among_exact_matches": "forward",
+      "matched_subsequence_only": true,
+      "all_adjacencies_verified": false,
+      "matches": [
+        {
+          "guide_position": 1,
+          "guide_name": "شهید سلیمانی",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 7954477623,
+              "name": "ایستگاه مترو شهید قاسم سلیمانی",
+              "similarity": 0.595
+            },
+            {
+              "osm_node": 11737927452,
+              "name": "ایستگاه مترو شهید فخری زاده",
+              "similarity": 0.353
+            },
+            {
+              "osm_node": 28972987,
+              "name": "ایستگاه مترو ایران خودرو",
+              "similarity": 0.25
+            }
+          ]
+        },
+        {
+          "guide_position": 2,
+          "guide_name": "شهید فخری زاده",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 11737927452,
+              "name": "ایستگاه مترو شهید فخری زاده",
+              "similarity": 0.686
+            },
+            {
+              "osm_node": 14058433945,
+              "name": "صادقیه",
+              "similarity": 0.333
+            },
+            {
+              "osm_node": 7954477623,
+              "name": "ایستگاه مترو شهید قاسم سلیمانی",
+              "similarity": 0.316
+            }
+          ]
+        },
+        {
+          "guide_position": 3,
+          "guide_name": "گلشهر",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 234515534,
+              "name": "ایستگاه مترو گلشهر",
+              "similarity": 0.476
+            },
+            {
+              "osm_node": 7954477623,
+              "name": "ایستگاه مترو شهید قاسم سلیمانی",
+              "similarity": 0.364
+            },
+            {
+              "osm_node": 4219347504,
+              "name": "ایستگاه مترو محمد شهر",
+              "similarity": 0.348
+            }
+          ]
+        },
+        {
+          "guide_position": 4,
+          "guide_name": "محمدشهر",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 4219347504,
+              "name": "ایستگاه مترو محمد شهر",
+              "similarity": 0.56
+            },
+            {
+              "osm_node": 234515534,
+              "name": "ایستگاه مترو گلشهر",
+              "similarity": 0.348
+            },
+            {
+              "osm_node": 315075904,
+              "name": "ایستگاه مترو گرمدره",
+              "similarity": 0.333
+            }
+          ]
+        },
+        {
+          "guide_position": 5,
+          "guide_name": "کرج",
+          "status": "exact_name_candidate",
+          "osm_node": 14066056332,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 6,
+          "guide_name": "اتمسفر",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 234514733,
+              "name": "ایستگاه مترو اتمسفر",
+              "similarity": 0.522
+            },
+            {
+              "osm_node": 5604726870,
+              "name": "ارم سبز",
+              "similarity": 0.5
+            },
+            {
+              "osm_node": 14066056332,
+              "name": "کرج",
+              "similarity": 0.4
+            }
+          ]
+        },
+        {
+          "guide_position": 7,
+          "guide_name": "گرم دره",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 315075904,
+              "name": "ایستگاه مترو گرمدره",
+              "similarity": 0.522
+            },
+            {
+              "osm_node": 7954477623,
+              "name": "ایستگاه مترو شهید قاسم سلیمانی",
+              "similarity": 0.5
+            },
+            {
+              "osm_node": 4219347504,
+              "name": "ایستگاه مترو محمد شهر",
+              "similarity": 0.417
+            }
+          ]
+        },
+        {
+          "guide_position": 8,
+          "guide_name": "وردآورد",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 234513683,
+              "name": "ایستگاه مترو وردآورد",
+              "similarity": 0.56
+            },
+            {
+              "osm_node": 315075904,
+              "name": "ایستگاه مترو گرمدره",
+              "similarity": 0.333
+            },
+            {
+              "osm_node": 14066056332,
+              "name": "کرج",
+              "similarity": 0.333
+            }
+          ]
+        },
+        {
+          "guide_position": 9,
+          "guide_name": "ایران خودرو",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 28972987,
+              "name": "ایستگاه مترو ایران خودرو",
+              "similarity": 0.645
+            },
+            {
+              "osm_node": 315075904,
+              "name": "ایستگاه مترو گرمدره",
+              "similarity": 0.444
+            },
+            {
+              "osm_node": 14066056332,
+              "name": "کرج",
+              "similarity": 0.417
+            }
+          ]
+        },
+        {
+          "guide_position": 10,
+          "guide_name": "چیتگر",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 7954477623,
+              "name": "ایستگاه مترو شهید قاسم سلیمانی",
+              "similarity": 0.545
+            },
+            {
+              "osm_node": 5604727121,
+              "name": "ایستگاه مترو چیتگر",
+              "similarity": 0.476
+            },
+            {
+              "osm_node": 14066056332,
+              "name": "کرج",
+              "similarity": 0.421
+            }
+          ]
+        },
+        {
+          "guide_position": 11,
+          "guide_name": "ورزشگاه آزادی",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 5604726884,
+              "name": "ایستگاه مترو ورزشگاه آزادی",
+              "similarity": 0.686
+            },
+            {
+              "osm_node": 14066056332,
+              "name": "کرج",
+              "similarity": 0.353
+            },
+            {
+              "osm_node": 11737927452,
+              "name": "ایستگاه مترو شهید فخری زاده",
+              "similarity": 0.343
+            }
+          ]
+        },
+        {
+          "guide_position": 12,
+          "guide_name": "ارم سبز",
+          "status": "exact_name_candidate",
+          "osm_node": 5604726870,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 13,
+          "guide_name": "تهران (صادقیه)",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 14058433945,
+              "name": "صادقیه",
+              "similarity": 0.706
+            },
+            {
+              "osm_node": 5604726884,
+              "name": "ایستگاه مترو ورزشگاه آزادی",
+              "similarity": 0.412
+            },
+            {
+              "osm_node": 28972987,
+              "name": "ایستگاه مترو ایران خودرو",
+              "similarity": 0.375
+            }
+          ]
+        }
+      ],
+      "osm_members_without_exact_guide_match": [
+        {
+          "osm_node": 7954477623,
+          "names": [
+            "ایستگاه مترو شهید قاسم سلیمانی",
+            "هشتگرد"
+          ]
+        },
+        {
+          "osm_node": 11737927452,
+          "names": [
+            "ایستگاه مترو شهید فخری زاده",
+            "ماموت"
+          ]
+        },
+        {
+          "osm_node": 234515534,
+          "names": [
+            "ایستگاه مترو گلشهر"
+          ]
+        },
+        {
+          "osm_node": 4219347504,
+          "names": [
+            "ایستگاه مترو محمد شهر",
+            "ماهدشت"
+          ]
+        },
+        {
+          "osm_node": 234514733,
+          "names": [
+            "ایستگاه مترو اتمسفر"
+          ]
+        },
+        {
+          "osm_node": 315075904,
+          "names": [
+            "ایستگاه مترو گرمدره"
+          ]
+        },
+        {
+          "osm_node": 234513683,
+          "names": [
+            "ایستگاه مترو وردآورد"
+          ]
+        },
+        {
+          "osm_node": 28972987,
+          "names": [
+            "ایستگاه مترو ایران خودرو"
+          ]
+        },
+        {
+          "osm_node": 5604727121,
+          "names": [
+            "ایستگاه مترو چیتگر"
+          ]
+        },
+        {
+          "osm_node": 5604726884,
+          "names": [
+            "ایستگاه مترو ورزشگاه آزادی"
+          ]
+        },
+        {
+          "osm_node": 14058433945,
+          "names": [
+            "صادقیه"
+          ]
+        }
+      ]
+    },
+    {
+      "line": "6",
+      "osm_relation": 5697303,
+      "guide_listed": 20,
+      "osm_members": 26,
+      "exact_name_candidates": 15,
+      "unmatched_or_ambiguous": 5,
+      "order_among_exact_matches": "reverse",
+      "matched_subsequence_only": true,
+      "all_adjacencies_verified": false,
+      "matches": [
+        {
+          "guide_position": 1,
+          "guide_name": "شهدای دولت آباد",
+          "status": "exact_name_candidate",
+          "osm_node": 3815454692,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 2,
+          "guide_name": "کیان شهر",
+          "status": "exact_name_candidate",
+          "osm_node": 3853324444,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 3,
+          "guide_name": "بعثت",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 5930756414,
+              "name": "ایستگاه مترو بعثت",
+              "similarity": 0.421
+            },
+            {
+              "osm_node": 3853324397,
+              "name": "بوستان لاله",
+              "similarity": 0.286
+            },
+            {
+              "osm_node": 3784648882,
+              "name": "دانشگاه تربیت مدرس",
+              "similarity": 0.2
+            }
+          ]
+        },
+        {
+          "guide_position": 4,
+          "guide_name": "شهید رضایی",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 10235224668,
+              "name": "شهید ستاری",
+              "similarity": 0.667
+            },
+            {
+              "osm_node": 3853324357,
+              "name": "شهید آرمان علی وردی",
+              "similarity": 0.64
+            },
+            {
+              "osm_node": 10761286147,
+              "name": "شهدای کن",
+              "similarity": 0.625
+            }
+          ]
+        },
+        {
+          "guide_position": 5,
+          "guide_name": "امیرکبیر",
+          "status": "exact_name_candidate",
+          "osm_node": 3815454729,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 6,
+          "guide_name": "میدان شهدا",
+          "status": "exact_name_candidate",
+          "osm_node": 660627594,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 7,
+          "guide_name": "امام حسین",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 13426743991,
+              "name": "امام حسین(ع)",
+              "similarity": 0.941
+            },
+            {
+              "osm_node": 3815454724,
+              "name": "میدان خراسان",
+              "similarity": 0.421
+            },
+            {
+              "osm_node": 3815456823,
+              "name": "یادگار امام(ره)",
+              "similarity": 0.4
+            }
+          ]
+        },
+        {
+          "guide_position": 8,
+          "guide_name": "شهدای هفتم تیر",
+          "status": "exact_name_candidate",
+          "osm_node": 3815456757,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 9,
+          "guide_name": "میدان حضرت ولی عصر (عج)",
+          "status": "exact_name_candidate",
+          "osm_node": 3853324399,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 10,
+          "guide_name": "بوستان لاله",
+          "status": "exact_name_candidate",
+          "osm_node": 3853324397,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 11,
+          "guide_name": "کارگر",
+          "status": "exact_name_candidate",
+          "osm_node": 3853324374,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 12,
+          "guide_name": "دانشگاه تربیت مدرس",
+          "status": "exact_name_candidate",
+          "osm_node": 3784648882,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 13,
+          "guide_name": "شهرک آزمایش",
+          "status": "exact_name_candidate",
+          "osm_node": 3815456806,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 14,
+          "guide_name": "مرزداران",
+          "status": "exact_name_candidate",
+          "osm_node": 3815456820,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 15,
+          "guide_name": "یادگار امام",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 3815456823,
+              "name": "یادگار امام(ره)",
+              "similarity": 0.909
+            },
+            {
+              "osm_node": 3815454724,
+              "name": "میدان خراسان",
+              "similarity": 0.476
+            },
+            {
+              "osm_node": 3815456820,
+              "name": "مرزداران",
+              "similarity": 0.444
+            }
+          ]
+        },
+        {
+          "guide_position": 16,
+          "guide_name": "شهید اشرفی اصفهانی",
+          "status": "exact_name_candidate",
+          "osm_node": 3815456838,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 17,
+          "guide_name": "شهید ستاری",
+          "status": "exact_name_candidate",
+          "osm_node": 10235224668,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 18,
+          "guide_name": "شهر زیبا",
+          "status": "exact_name_candidate",
+          "osm_node": 11263536540,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 19,
+          "guide_name": "شهران",
+          "status": "exact_name_candidate",
+          "osm_node": 3853324358,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 20,
+          "guide_name": "شهید آرمان علی وردی (کوهسار)",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 3853324357,
+              "name": "شهید آرمان علی وردی",
+              "similarity": 0.842
+            },
+            {
+              "osm_node": 10235224668,
+              "name": "شهید ستاری",
+              "similarity": 0.452
+            },
+            {
+              "osm_node": 3815454724,
+              "name": "میدان خراسان",
+              "similarity": 0.424
+            }
+          ]
+        }
+      ],
+      "osm_members_without_exact_guide_match": [
+        {
+          "osm_node": 3853324357,
+          "names": [
+            "شهید آرمان علی وردی",
+            "کوهسار"
+          ]
+        },
+        {
+          "osm_node": 10761286147,
+          "names": [
+            "شهدای کن"
+          ]
+        },
+        {
+          "osm_node": 3815456860,
+          "names": [
+            "آیت الله کاشانی"
+          ]
+        },
+        {
+          "osm_node": 3815456823,
+          "names": [
+            "یادگار امام(ره)"
+          ]
+        },
+        {
+          "osm_node": 3853324412,
+          "names": [
+            "مریم مقدس(س)",
+            "شهید نجات اللهی"
+          ]
+        },
+        {
+          "osm_node": 10759924012,
+          "names": [
+            "بهار شیراز",
+            "بیمارستان خانواده"
+          ]
+        },
+        {
+          "osm_node": 13426509301,
+          "names": [
+            "سرباز وطن"
+          ]
+        },
+        {
+          "osm_node": 13426743991,
+          "names": [
+            "امام حسین(ع)"
+          ]
+        },
+        {
+          "osm_node": 3815454724,
+          "names": [
+            "میدان خراسان"
+          ]
+        },
+        {
+          "osm_node": 9149513247,
+          "names": [
+            "ایستگاه مترو شهید رضایی"
+          ]
+        },
+        {
+          "osm_node": 5930756414,
+          "names": [
+            "ایستگاه مترو بعثت"
+          ]
+        }
+      ]
+    },
+    {
+      "line": "7",
+      "osm_relation": 7429356,
+      "guide_listed": 22,
+      "osm_members": 22,
+      "exact_name_candidates": 17,
+      "unmatched_or_ambiguous": 5,
+      "order_among_exact_matches": "forward",
+      "matched_subsequence_only": true,
+      "all_adjacencies_verified": false,
+      "matches": [
+        {
+          "guide_position": 1,
+          "guide_name": "میدان کتاب",
+          "status": "exact_name_candidate",
+          "osm_node": 3784648857,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 2,
+          "guide_name": "شهید دادمان",
+          "status": "exact_name_candidate",
+          "osm_node": 10746895094,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 3,
+          "guide_name": "میدان صنعت",
+          "status": "exact_name_candidate",
+          "osm_node": 3784648885,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 4,
+          "guide_name": "برج میلاد تهران",
+          "status": "exact_name_candidate",
+          "osm_node": 3784648884,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 5,
+          "guide_name": "بوستان گفتگو",
+          "status": "exact_name_candidate",
+          "osm_node": 3784648883,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 6,
+          "guide_name": "دانشگاه تربیت مدرس",
+          "status": "exact_name_candidate",
+          "osm_node": 5190423569,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 7,
+          "guide_name": "مدافعان سلامت",
+          "status": "exact_name_candidate",
+          "osm_node": 10126282787,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 8,
+          "guide_name": "توحید",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 9360432983,
+              "name": "ایستگاه مترو توحید",
+              "similarity": 0.476
+            },
+            {
+              "osm_node": 3784648875,
+              "name": "مولوی",
+              "similarity": 0.4
+            },
+            {
+              "osm_node": 5193453622,
+              "name": "میدان محمدیه",
+              "similarity": 0.4
+            }
+          ]
+        },
+        {
+          "guide_position": 9,
+          "guide_name": "شهید نواب صفوی",
+          "status": "exact_name_candidate",
+          "osm_node": 3784648880,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 10,
+          "guide_name": "رودکی",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 3784648879,
+              "name": "ایستگاه مترو رودکی",
+              "similarity": 0.476
+            },
+            {
+              "osm_node": 3784648769,
+              "name": "ایستگاه مترو کمیل",
+              "similarity": 0.4
+            },
+            {
+              "osm_node": 3784648875,
+              "name": "مولوی",
+              "similarity": 0.4
+            }
+          ]
+        },
+        {
+          "guide_position": 11,
+          "guide_name": "کمیل",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 3784648875,
+              "name": "مولوی",
+              "similarity": 0.444
+            },
+            {
+              "osm_node": 3784648877,
+              "name": "مهدیه",
+              "similarity": 0.444
+            },
+            {
+              "osm_node": 5193453622,
+              "name": "میدان محمدیه",
+              "similarity": 0.444
+            }
+          ]
+        },
+        {
+          "guide_position": 12,
+          "guide_name": "بریانک",
+          "status": "unmatched",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 3784648857,
+              "name": "میدان کتاب",
+              "similarity": 0.533
+            },
+            {
+              "osm_node": 3784648884,
+              "name": "برج میلاد تهران",
+              "similarity": 0.526
+            },
+            {
+              "osm_node": 4981028494,
+              "name": "ایستگاه مترو بریانک",
+              "similarity": 0.522
+            }
+          ]
+        },
+        {
+          "guide_position": 13,
+          "guide_name": "هلال احمر",
+          "status": "exact_name_candidate",
+          "osm_node": 14075125224,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 14,
+          "guide_name": "مهدیه",
+          "status": "exact_name_candidate",
+          "osm_node": 3784648877,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 15,
+          "guide_name": "میدان محمدیه",
+          "status": "exact_name_candidate",
+          "osm_node": 5193453622,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 16,
+          "guide_name": "مولوی",
+          "status": "ambiguous",
+          "osm_node": null,
+          "independently_verified": false,
+          "suggestions_for_manual_review": [
+            {
+              "osm_node": 3784648875,
+              "name": "مولوی",
+              "similarity": 1.0
+            },
+            {
+              "osm_node": 5193453622,
+              "name": "میدان محمدیه",
+              "similarity": 1.0
+            },
+            {
+              "osm_node": 3784648877,
+              "name": "مهدیه",
+              "similarity": 0.4
+            }
+          ]
+        },
+        {
+          "guide_position": 17,
+          "guide_name": "میدان قیام",
+          "status": "exact_name_candidate",
+          "osm_node": 3784645934,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 18,
+          "guide_name": "شهدای هفده شهریور",
+          "status": "exact_name_candidate",
+          "osm_node": 9817359618,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 19,
+          "guide_name": "چهل تن دولاب",
+          "status": "exact_name_candidate",
+          "osm_node": 3784645922,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 20,
+          "guide_name": "آهنگ",
+          "status": "exact_name_candidate",
+          "osm_node": 3784648871,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 21,
+          "guide_name": "بسیج",
+          "status": "exact_name_candidate",
+          "osm_node": 3784648870,
+          "independently_verified": false
+        },
+        {
+          "guide_position": 22,
+          "guide_name": "ورزشگاه تختی",
+          "status": "exact_name_candidate",
+          "osm_node": 3784648869,
+          "independently_verified": false
+        }
+      ],
+      "osm_members_without_exact_guide_match": [
+        {
+          "osm_node": 9360432983,
+          "names": [
+            "ایستگاه مترو توحید"
+          ]
+        },
+        {
+          "osm_node": 3784648879,
+          "names": [
+            "ایستگاه مترو رودکی"
+          ]
+        },
+        {
+          "osm_node": 3784648769,
+          "names": [
+            "ایستگاه مترو کمیل"
+          ]
+        },
+        {
+          "osm_node": 4981028494,
+          "names": [
+            "ایستگاه مترو بریانک"
+          ]
+        },
+        {
+          "osm_node": 3784648875,
+          "names": [
+            "مولوی",
+            "ایستگاه مترو مولوی"
+          ]
+        }
+      ]
+    }
+  ],
+  "total_main_line_entries": 150,
+  "total_exact_name_candidates": 116,
+  "public_routes_enabled": false,
+  "public_stations_enabled": false,
+  "limitations": [
+    "Exact normalized names establish correspondence candidates, not operational status or historical eligibility.",
+    "Fuzzy suggestions and guide alias claims are never automatically accepted.",
+    "Subsequence order agreement cannot verify omitted stations, transfers, route geometry or adjacent service.",
+    "Branch segmentation and changed endpoints require manual review."
+  ],
+  "guide_sha256": "cd5f1e5e1bc70140539c4f06f749b1ee182c46199d37c9f10df831462bb8330d",
+  "osm_sha256": "20e771e4af00c9b59d6a63c64955da869c51d00e7b19c8b4f6c174a8a31e2491"
+}

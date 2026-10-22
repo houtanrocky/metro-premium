@@ -109,6 +109,54 @@
     ],
     "sha256": "20e771e4af00c9b59d6a63c64955da869c51d00e7b19c8b4f6c174a8a31e2491"
   },
+  "secondary_reference": {
+    "source": "https://www.alibaba.ir/mag/tehran/tehran-ci/tehran-subway-guide/",
+    "sha256": "cd5f1e5e1bc70140539c4f06f749b1ee182c46199d37c9f10df831462bb8330d",
+    "main_line_entries": 150,
+    "exact_name_candidates": 116,
+    "source_discrepancies": [
+      {
+        "route": "3",
+        "kind": "guide_internal_count_conflict",
+        "declared": 25,
+        "listed": 24
+      },
+      {
+        "route": "6",
+        "kind": "guide_internal_count_conflict",
+        "declared": 17,
+        "listed": 20
+      },
+      {
+        "route": "5",
+        "kind": "heading_endpoint_ambiguity",
+        "heading_mentions": "گلشهر",
+        "listed_first": "شهید سلیمانی",
+        "listed_last": "تهران (صادقیه)",
+        "resolution": "No operating terminus inferred"
+      },
+      {
+        "route": "7",
+        "kind": "heading_endpoint_ambiguity",
+        "heading_mentions": "بسیج",
+        "listed_first": "میدان کتاب",
+        "listed_last": "ورزشگاه تختی",
+        "resolution": "No operating terminus inferred"
+      },
+      {
+        "kind": "page_title_year_conflict",
+        "metadata_years": [
+          "1404"
+        ],
+        "visible_heading_years": [
+          "1405"
+        ],
+        "resolution": "Neither year proves network validity date"
+      }
+    ],
+    "status": "comparison_only",
+    "public_approval_changed": false
+  },
   "walking": {
     "nodes": 666,
     "directed_edges": 1452,

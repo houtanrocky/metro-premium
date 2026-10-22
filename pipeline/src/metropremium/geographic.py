@@ -75,6 +75,11 @@ def build_networks(folder):
         report['metro'] = inspect_metro(raw/'metro.json')
     else:
         report['metro'] = {'status':'unavailable','reason':'No successful cached Overpass extract'}
+    guide=ROOT/'data/raw/references/alibaba/tehran-subway-guide.html'
+    if guide.exists() and (raw/'metro.json').exists():
+        from .metro_reference import build_reference_report
+        reference,comparison=build_reference_report(guide,raw/'metro.json',folder)
+        report['secondary_reference']={'source':reference['source_url'],'sha256':reference['source_sha256'],'main_line_entries':comparison['total_main_line_entries'],'exact_name_candidates':comparison['total_exact_name_candidates'],'source_discrepancies':reference['discrepancies'],'status':'comparison_only','public_approval_changed':False}
     if (raw/'walk-smoke.osm').exists():
         graph,entrances,walk = walking_from_xml(raw/'walk-smoke.osm')
         # Actual OSM street segments, not listing points or interpolated price surfaces.

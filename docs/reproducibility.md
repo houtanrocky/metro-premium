@@ -12,6 +12,7 @@
 | `acquire` | Network, ~1 GB free for raw CSV | Fetch official pinned metadata/card/CSV, never source rows from a viewer |
 | `audit-data` | Official cached CSV | Strict full-source audit, selected Parquet, immutable evidence |
 | `acquire-osm` | Network | Cache seven relations and a bounded street XML; no tile fetch |
+| `metro-reference --offline` | Cached Alibaba guide/PDF and OSM metro JSON | Extract factual line/branch sequences and compare station-name/order candidates; omit `--offline` for first acquisition |
 | `prepare-data` | Completed full audit | Recode and filter a single-month analytical candidate sample |
 | `build-networks` | Cached OSM inputs | Build tiny directed metric graph, candidate and validation reports |
 | `compute-accessibility` | Audit, optional OSM | Run preparation; empirical routing explicitly blocked while verification incomplete |
