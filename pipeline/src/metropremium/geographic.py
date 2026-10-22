@@ -10,24 +10,35 @@ from .provenance import write_json, digest
 
 def walking_from_xml(path):
     tree = ET.parse(path)
-    nodes = {}
+    elements = []
     for node in tree.findall('node'):
-        tags = {t.attrib['k']:t.attrib['v'] for t in node.findall('tag')}
-        x,y = project(float(node.attrib['lon']),float(node.attrib['lat']))
-        nodes[int(node.attrib['id'])] = dict(x=x,y=y,tags=tags,lon=float(node.attrib['lon']),lat=float(node.attrib['lat']))
+        elements.append({'type':'node','id':int(node.attrib['id']),'lon':float(node.attrib['lon']),'lat':float(node.attrib['lat']),'tags':{t.attrib['k']:t.attrib['v'] for t in node.findall('tag')}})
+    for way in tree.findall('way'):
+        elements.append({'type':'way','id':int(way.attrib['id']),'nodes':[int(n.attrib['ref']) for n in way.findall('nd')],'tags':{t.attrib['k']:t.attrib['v'] for t in way.findall('tag')}})
+    return walking_from_elements(elements)
+
+
+def walking_from_elements(elements):
+    """Same conservative importer for historical Overpass JSON and smoke XML."""
+    nodes = {}
+    for node in elements:
+        if node['type'] != 'node': continue
+        x,y = project(node['lon'],node['lat'])
+        nodes[node['id']] = dict(x=x,y=y,tags=node.get('tags',{}),lon=node['lon'],lat=node['lat'])
     graph = nx.DiGraph(crs='EPSG:32639',source='OSM map API',historical=False)
     allowed = {'footway','path','pedestrian','steps','living_street','residential','service','tertiary','secondary','primary','unclassified','tertiary_link','secondary_link','primary_link','track','cycleway'}
     omitted = {'ways_access':0,'ways_not_walkable':0,'barrier_edges':0}
     blocked = {n for n,v in nodes.items() if v['tags'].get('foot')=='no' or v['tags'].get('access') in {'no','private'} or v['tags'].get('barrier') in {'wall','fence','retaining_wall'}}
-    for way in tree.findall('way'):
-        tags = {t.attrib['k']:t.attrib['v'] for t in way.findall('tag')}
+    for way in elements:
+        if way['type'] != 'way': continue
+        tags = way.get('tags',{})
         if tags.get('highway') not in allowed or (tags.get('highway')=='cycleway' and tags.get('foot') not in {'yes','designated','permissive'}):
             omitted['ways_not_walkable']+=1
             continue
         if tags.get('foot') in {'no','private'} or (tags.get('access') in {'no','private'} and tags.get('foot') not in {'yes','designated','permissive'}):
             omitted['ways_access']+=1
             continue
-        refs = [int(n.attrib['ref']) for n in way.findall('nd')]
+        refs = way.get('nodes',[])
         oneway = tags.get('oneway:foot','no')
         for a,b in zip(refs,refs[1:]):
             if a not in nodes or b not in nodes or a in blocked or b in blocked:
@@ -35,7 +46,7 @@ def walking_from_xml(path):
                 continue
             for n in [a,b]: graph.add_node(n,**nodes[n])
             length = math.hypot(nodes[a]['x']-nodes[b]['x'],nodes[a]['y']-nodes[b]['y'])
-            attrs = {'length':length,'osmid':int(way.attrib['id']),'highway':tags['highway']}
+            attrs = {'length':length,'osmid':way['id'],'highway':tags['highway']}
             pairs = [(b,a)] if oneway=='-1' else [(a,b)] if oneway in {'yes','1','true'} else [(a,b),(b,a)]
             for u,v in pairs:
                 if not graph.has_edge(u,v) or graph[u][v]['length']>length:

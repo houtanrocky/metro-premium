@@ -24,5 +24,15 @@ export function validateResearch(value:unknown):ResearchData {
     return n.price_n<30||!validPrice(q1)||!validPrice(n.median_per_m2)||!validPrice(q3)||q1>n.median_per_m2||n.median_per_m2>q3;
   });
   if(invalidNeighborhood) throw Error('خروجی از دروازه انتشار عبور نکرده است.');
+  const m=d.mapped_reference;
+  if(m){
+    const integer=(v:unknown)=>Number.isSafeInteger(v)&&Number(v)>=0;
+    const probability=(v:unknown)=>typeof v==='number'&&Number.isFinite(v)&&v>=0&&v<=1;
+    if(m.schema_version!==1||m.status!=='exploratory_mapped_reference'||m.primary_quality_gate_passed!==false||m.public_routes_enabled!==false||m.public_stations_enabled!==false||m.period!==d.scope.period||m.unit!=='toman_per_m2'||m.snapshot!=='2024-12-01T00:00:00Z'||typeof m.warning!=='string'||m.warning.length<60||!m.scope||m.scope.price_valid_rows!==d.scope.analysis_rows||!Object.values(m.scope).every(integer)||m.scope.supported_route_rows>m.scope.coordinate_known_radius_candidates||m.scope.coordinate_known_radius_candidates>d.scope.analysis_rows||m.scope.retained_entrances_after_snapping>m.scope.retained_entrances_before_snapping||!m.coverage||!Object.values(m.coverage).every(integer)||Object.values(m.coverage).reduce((a,b)=>a+b,0)!==d.scope.analysis_rows||m.coverage.ok!==m.scope.supported_route_rows)throw Error('دامنه تحلیل اکتشافی معتبر نیست.');
+    if(!m.network_m||m.network_m.n!==m.scope.supported_route_rows||!validPrice(m.network_m.median)||!m.ratio||m.ratio.n!==m.network_m.n||!validPrice(m.ratio.median)||!Array.isArray(m.bands)||new Set(m.bands.map(b=>b.band)).size!==m.bands.length||m.bands.some(b=>!integer(b.band)||b.band>3||!integer(b.n)||b.n<30||b.month!==m.period||![b.q25,b.median_per_m2,b.q75].every(validPrice)||b.q25>b.median_per_m2||b.median_per_m2>b.q75)||m.bands.reduce((a,b)=>a+b.n,0)>m.scope.supported_route_rows)throw Error('خلاصه فاصله یا قیمت اکتشافی معتبر نیست.');
+    const u=m.location_uncertainty;
+    if(!u||!integer(u.draws_per_origin)||u.draws_per_origin<1||!probability(u.failure_fraction)||!(u.classification_change_fraction_among_successful_nominal_supported===null||probability(u.classification_change_fraction_among_successful_nominal_supported)))throw Error('خلاصه عدم قطعیت مکان معتبر نیست.');
+    if(!m.models?.diagnostics||!Array.isArray(m.models.models)||m.models.models.some(model=>model.status==='estimated'&&(!integer(model.n)||model.n!<100||!integer(model.clusters)||model.clusters!<30||!Number.isFinite(model.association_percent_per_km)||!Array.isArray(model.association_percent_ci_95)||model.association_percent_ci_95.length!==2||!model.association_percent_ci_95.every(Number.isFinite)||model.association_percent_ci_95[0]>model.association_percent_ci_95[1])))throw Error('برآورد آماری اکتشافی معتبر نیست.');
+  }
   return d;
 }

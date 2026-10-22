@@ -10,7 +10,7 @@ REPO = "divarofficial/real_estate_ads"
 REV = "e9446ee97b8e6eb9bd62bdfd7548f1bc8973be85"
 ROOT = Path(__file__).resolve().parents[1]
 
-def fetch(url, path):
+def fetch(url, path, timeout=90):
     if path.exists():
         sidecar=path.with_suffix(path.suffix+'.source.json')
         if not sidecar.exists():
@@ -27,7 +27,7 @@ def fetch(url, path):
     part = path.with_suffix(path.suffix + ".part")
     total = 0
     last = time.monotonic()
-    with urllib.request.urlopen(req, timeout=90) as response, part.open("wb") as out:
+    with urllib.request.urlopen(req, timeout=timeout) as response, part.open("wb") as out:
         while chunk := response.read(4 * 1024 * 1024):
             out.write(chunk)
             total += len(chunk)

@@ -1,5 +1,7 @@
 """Metric graph routing: exact over the modeled snapped-node graph, not the physical city."""
 import math
+import heapq
+from itertools import count
 import networkx as nx
 import numpy as np
 from pyproj import Transformer
@@ -71,7 +73,22 @@ class Router:
             self.entrances.append(candidate)
             if not reverse.has_edge(source,node) or reverse[source][node]['length'] > snap:
                 reverse.add_edge(source,node,length=float(snap),entrance_id=e['id'])
-        self.distances, self.paths = nx.single_source_dijkstra(reverse,source,weight='length')
+        # Store one distance and destination label per node, not a complete path
+        # per node (which can grow quadratically on city-scale chains).
+        self.distances, self.destinations = {}, {}
+        pending = []
+        serial = count()
+        for node, attrs in reverse[source].items():
+            heapq.heappush(pending, (attrs['length'], next(serial), node, attrs['entrance_id']))
+        while pending:
+            distance, _, node, destination = heapq.heappop(pending)
+            if node in self.distances:
+                continue
+            self.distances[node] = distance
+            self.destinations[node] = destination
+            for neighbor, attrs in reverse[node].items():
+                if neighbor not in self.distances:
+                    heapq.heappush(pending, (distance + attrs['length'], next(serial), neighbor, destination))
         self.reverse = reverse
         self.source = source
         self.entrance_tree = cKDTree([(e['x'],e['y']) for e in self.entrances]) if self.entrances else None
@@ -90,8 +107,7 @@ class Router:
         if node not in self.distances:
             return dict(result,status='unreachable')
         walking = float(snap + self.distances[node])
-        chosen_node = self.paths[node][1]
-        chosen = self.reverse[self.source][chosen_node]['entrance_id']
+        chosen = self.destinations[node]
         return dict(result,status='ok',entrance_id=chosen,network_m=walking,walking_minutes=walking/self.speed,ratio=walking/euclidean if euclidean>0 else None,band=band(walking),connector_assumption='Straight connectors to nearest graph node; physical access not certified')
 
     def perturb(self, x, y, radius, seed=0, draws=100):

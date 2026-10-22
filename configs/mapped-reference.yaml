@@ -1,0 +1,16 @@
+mode: empirical
+seed: 20261022
+walking_speed_m_per_min: 80
+distance_bands_m: [500, 1000, 1500]
+min_public_group: 30
+max_snap_m: 100
+location_radius_max_m: 500
+size_range_m2: [20, 500]
+period: auto-largest-2024-month
+network_scope: historical-mapped-reference
+price_contract: configs/price-contract.yaml
+snapshot: '2024-12-01T00:00:00Z'
+location_draws: 30
+model_perturbation_draws: 10
+spatial_bootstrap_draws: 199
+spatial_block_m: 2000

@@ -56,8 +56,17 @@ def empirical(config, folder, state):
     write_json(folder/'housing-descriptives.json',housing)
     pd.DataFrame(housing['variants']).to_csv(folder/'housing-descriptives.csv',index=False)
     housing_figure(housing,folder,contract)
-    write_json(folder/'analysis.json',{'status':'descriptive_only_network_blocked','models':[],'reason':'Housing price descriptions computed using owner-confirmed total asking prices in toman; metro associations require a verified network','price_contract':contract,'descriptives':housing})
+    analysis={'status':'descriptive_only_network_blocked','models':[],'reason':'Housing price descriptions computed using owner-confirmed total asking prices in toman; primary metro associations require an operationally verified network','price_contract':contract,'descriptives':housing}
     payload = public_payload(audit,flow,cleaned,network,state,housing)
+    if config.get('network_scope')=='historical-mapped-reference':
+        from .mapped_network import mapped_analysis
+        mapped=mapped_analysis(cleaned,config,folder)
+        analysis['mapped_reference_extension']=mapped
+        payload['mapped_reference']=mapped
+        payload['gates'][1].update(status='partial',reason='شبکه معابر تاریخی و زیرمجموعه ورودی‌های ثبت‌شده بررسی و مسیریابی شدند؛ کامل بودن ورودی‌ها و بهره‌برداری تاریخی هنوز تأیید نشده است.')
+        payload['gates'][2].update(status='partial',reason='مدل‌های اکتشافی برای فاصله تا زیرمجموعه ورودی‌های ثبت‌شده اجرا شدند؛ نتیجه اصلی درباره دسترسی عملیاتی مترو همچنان تأیید نشده است.')
+        state['validation'].append('Exploratory historical mapped-subset routes, models and uncertainty executed; primary operational-access gate remains closed')
+    write_json(folder/'analysis.json',analysis)
     assert_public_safe(payload)
     write_json(folder/'public.json',payload)
     state['validation'] += ['No listing coordinates in public export','Price-per-m2 uses owner-confirmed total price in toman, without currency conversion','Metro association estimates remain blocked pending network validation','Full-source audit preserved as published-documentation evidence']
@@ -123,7 +132,7 @@ def main():
     source=ROOT/'data/raw/divar'/REVISION/'real_estate_ads.csv'
     inputs = [ROOT/args.config]
     if config.get('price_contract'): inputs.append(ROOT/config['price_contract'])
-    inputs += [p for p in (ROOT/'data/raw/osm').glob('*') if p.is_file()]
+    inputs += [p for p in (ROOT/'data/raw/osm').rglob('*') if p.is_file() and not p.name.endswith('.part')]
     inputs += [p for p in (ROOT/'data/raw/references/alibaba').glob('*.html*') if p.is_file()]
     if args.command=='audit-data': inputs.append(source)
     with run_record(args.command,config,inputs) as (folder,state):
@@ -154,6 +163,12 @@ def main():
                         shutil.copyfile(folder/filename,ROOT/'artifacts/reports'/filename)
                     for filename in ['housing-descriptives.json','housing-descriptives.csv']:
                         shutil.copyfile(folder/filename,ROOT/'artifacts/reports'/filename)
+                    for filename in ['mapped-analysis.json','mapped-entrance-inventory.json','mapped-location-sensitivity.json','station-entrance-review.csv']:
+                        if (folder/filename).exists():
+                            shutil.copyfile(folder/filename,ROOT/'artifacts/reports'/filename)
+                    for filename in ['mapped-accessibility.png','mapped-accessibility.svg']:
+                        if (folder/filename).exists():
+                            shutil.copyfile(folder/filename,ROOT/'artifacts/figures'/filename)
                     for filename in ['housing-price-summary.png','housing-price-summary.svg']:
                         if (folder/filename).exists():
                             shutil.copyfile(folder/filename,ROOT/'artifacts/figures'/filename)

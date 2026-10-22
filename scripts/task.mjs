@@ -18,6 +18,7 @@ switch(command){
     break;
   case 'acquire': run(python,['scripts/acquire.py',...args]);break;
   case 'acquire-osm': run(python,['scripts/acquire_osm.py',...args]);break;
+  case 'acquire-historical': run(python,['scripts/acquire_historical.py',...args]);break;
   case 'metro-reference': run(python,['scripts/metro_reference.py',...args]);break;
   case 'test':
     run(python,['-m','pytest','pipeline/tests','-q']);
