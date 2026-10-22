@@ -298,6 +298,210 @@
           "sha256": "7646d0ef4e690e9fcd329ceedfb9a25f2e286293a954a5210b1a26f6a0889891"
         }
       ]
+    },
+    {
+      "run_id": "20261022T204239-57dcb433",
+      "command": "reproduce",
+      "config": {
+        "mode": "empirical",
+        "seed": 20261022,
+        "walking_speed_m_per_min": 80,
+        "distance_bands_m": [
+          500,
+          1000,
+          1500
+        ],
+        "min_public_group": 30,
+        "max_snap_m": 100,
+        "location_radius_max_m": 500,
+        "size_range_m2": [
+          20,
+          500
+        ],
+        "period": "auto-largest-2024-month",
+        "network_scope": "smoke-only",
+        "price_contract": "configs/price-contract.yaml"
+      },
+      "dataset_revision": "e9446ee97b8e6eb9bd62bdfd7548f1bc8973be85",
+      "started_utc": "2026-10-22T20:42:39.451166+00:00",
+      "git_commit": "c4f6031afc4a4c91a3e59ce421dffbd9de1395b5",
+      "git_dirty": false,
+      "python": "3.13.7",
+      "packages": {
+        "certifi": "2026.10.19",
+        "charset-normalizer": "3.5.2",
+        "colorama": "0.4.6",
+        "contourpy": "1.4.0",
+        "cycler": "0.12.1",
+        "duckdb": "1.5.6",
+        "fonttools": "4.67.0",
+        "geopandas": "1.2.0",
+        "idna": "3.20",
+        "iniconfig": "2.3.1",
+        "kiwisolver": "1.5.1",
+        "matplotlib": "3.11.2",
+        "metropremium": "0.1.0",
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "osmnx": "2.1.1",
+        "packaging": "26.3",
+        "pandas": "2.3.3",
+        "patsy": "1.0.3",
+        "pillow": "13.0.0",
+        "pluggy": "1.7.0",
+        "pyarrow": "26.0.0",
+        "Pygments": "2.21.0",
+        "pyogrio": "0.13.0",
+        "pyparsing": "3.3.3",
+        "pyproj": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dateutil": "3.0.0",
+        "pytz": "2026.5",
+        "PyYAML": "6.0.3",
+        "requests": "2.34.2",
+        "scipy": "1.18.1",
+        "shapely": "2.2.0",
+        "six": "1.17.0",
+        "statsmodels": "0.14.6",
+        "tzdata": "2026.5",
+        "urllib3": "2.8.0"
+      },
+      "inputs": [
+        {
+          "path": "configs\\full.yaml",
+          "sha256": "80f677fd08a6a51497a5d13b0ea133d872580a9f1542427baf413199b0867c71"
+        },
+        {
+          "path": "configs\\price-contract.yaml",
+          "sha256": "0a804c86ad5f192b9c6ee8de4245d0c36d47e4037ddd566b054a8310e6a22899"
+        },
+        {
+          "path": "data\\raw\\osm\\acquisition-20261022T191003Z.json",
+          "sha256": "ce8897d90ee2e2cd0fa2db3004d0e28f5c11539735c211d7f51cd9c31138ff20"
+        },
+        {
+          "path": "data\\raw\\osm\\metro.json",
+          "sha256": "20e771e4af00c9b59d6a63c64955da869c51d00e7b19c8b4f6c174a8a31e2491"
+        },
+        {
+          "path": "data\\raw\\osm\\metro.json.source.json",
+          "sha256": "29562f401b969b996d49c16d568d460208a6c44a9c3e65048e08eed450992930"
+        },
+        {
+          "path": "data\\raw\\osm\\walk-smoke.osm",
+          "sha256": "5427c1b838b5571ab25aeb9c04bd75db49aa973dd2d1780307cc7cd6f7577a22"
+        },
+        {
+          "path": "data\\raw\\osm\\walk-smoke.osm.source.json",
+          "sha256": "0c2931c8b3560d68baeb293b7b119bd1237d48715dcfbc166e5278c484d491d7"
+        },
+        {
+          "path": "data\\raw\\references\\alibaba\\tehran-subway-guide.html",
+          "sha256": "cd5f1e5e1bc70140539c4f06f749b1ee182c46199d37c9f10df831462bb8330d"
+        },
+        {
+          "path": "data\\raw\\references\\alibaba\\tehran-subway-guide.html.source.json",
+          "sha256": "ef254f5544c51c80fb189732f4fba27e58c282dadf3a0fe9cbde4c9a4a97128d"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T192554-cde20200\\tehran-source.parquet",
+          "sha256": "1d396613af690c5addee9c4625df7860698ce24d1641d5cac6064d89d92470ab"
+        }
+      ],
+      "outputs": [
+        "artifacts\\runs\\20261022T204239-57dcb433\\alibaba-station-reference.json",
+        "artifacts\\runs\\20261022T204239-57dcb433\\analysis.json",
+        "artifacts\\runs\\20261022T204239-57dcb433\\cleaned.parquet",
+        "artifacts\\runs\\20261022T204239-57dcb433\\entrance-candidates.json",
+        "artifacts\\runs\\20261022T204239-57dcb433\\figure.png",
+        "artifacts\\runs\\20261022T204239-57dcb433\\figure.svg",
+        "artifacts\\runs\\20261022T204239-57dcb433\\housing-descriptives.csv",
+        "artifacts\\runs\\20261022T204239-57dcb433\\housing-descriptives.json",
+        "artifacts\\runs\\20261022T204239-57dcb433\\housing-price-summary.png",
+        "artifacts\\runs\\20261022T204239-57dcb433\\housing-price-summary.svg",
+        "artifacts\\runs\\20261022T204239-57dcb433\\metro-reference-comparison.json",
+        "artifacts\\runs\\20261022T204239-57dcb433\\network-validation.json",
+        "artifacts\\runs\\20261022T204239-57dcb433\\public.json",
+        "artifacts\\runs\\20261022T204239-57dcb433\\sample-flow.json",
+        "artifacts\\runs\\20261022T204239-57dcb433\\walk-smoke-graph.json",
+        "artifacts\\runs\\20261022T204239-57dcb433\\walking-preview.geojson"
+      ],
+      "validation": [
+        "No listing coordinates in public export",
+        "Price-per-m2 uses owner-confirmed total price in toman, without currency conversion",
+        "Metro association estimates remain blocked pending network validation",
+        "Full-source audit preserved as published-documentation evidence"
+      ],
+      "failures": [],
+      "audit_run": "artifacts\\runs\\20261022T192554-cde20200",
+      "status": "completed",
+      "finished_utc": "2026-10-22T20:42:42.499601+00:00",
+      "output_hashes": [
+        {
+          "path": "artifacts\\runs\\20261022T204239-57dcb433\\alibaba-station-reference.json",
+          "sha256": "be4cd340a72ea265be9705ecbe121a8bfbcfc35b204a124986242ce363186755"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T204239-57dcb433\\analysis.json",
+          "sha256": "fe87d3ee2d2033559ab4116d50528e2fc10ee8999f79bc58ced80f92a7e8f54a"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T204239-57dcb433\\cleaned.parquet",
+          "sha256": "7fadd09ad9189b2f7d6a4895625e3498bc864c9b852d6b8c8a7283680def365c"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T204239-57dcb433\\entrance-candidates.json",
+          "sha256": "128ff71ab3920ffd5c7bed5df96206a8f795891495eb7bc1494e902ebead9515"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T204239-57dcb433\\figure.png",
+          "sha256": "0f8b10d9d22b6aefcbbab2a85385e8c541ee0765718c31aeb2d140c5431daada"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T204239-57dcb433\\figure.svg",
+          "sha256": "193d633b0df28e43ace4da5e7ca49a7066bb00f7ae4ea69e0587da58b120611c"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T204239-57dcb433\\housing-descriptives.csv",
+          "sha256": "ab4fed4aaae41f8f74658a32f1ba7b694e804d44d6fc928a2cfc8b4130fda7b9"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T204239-57dcb433\\housing-descriptives.json",
+          "sha256": "381cbfaf7b259b4bc21ee273f546be05d6d9675ac86a6f559861d1c501e63727"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T204239-57dcb433\\housing-price-summary.png",
+          "sha256": "f8d8beebe5ff616f4f29b2c575c41427171cf8a9ed6d2687161c386913d76ea8"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T204239-57dcb433\\housing-price-summary.svg",
+          "sha256": "3d1c1192f93ffc519946c461635ac44ac7f4544b7e7c82007e8c97844e59dd15"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T204239-57dcb433\\metro-reference-comparison.json",
+          "sha256": "8962ad804bbc8f913a0deb80f6d02df32601524354ef6dc63caccc0a9b26d162"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T204239-57dcb433\\network-validation.json",
+          "sha256": "1afcb13df767431821c4865140e5d8cd8771eb457313c4ad8f512fe6add6e766"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T204239-57dcb433\\public.json",
+          "sha256": "87ba9ee2617376cc42d0a99e01043025eabc73d7747e6c7c2ddde6e7dcaa0d2c"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T204239-57dcb433\\sample-flow.json",
+          "sha256": "2aa880f00cf82d59ab65284d1f12ca13a94daa6c9036355c2871028fc1f25196"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T204239-57dcb433\\walk-smoke-graph.json",
+          "sha256": "f3f520e7bb051498ae343ca0d6db37aa7b21cc3a424b19156968390f4f0727ed"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T204239-57dcb433\\walking-preview.geojson",
+          "sha256": "17f3a1343e2540cc30cfa32a3c28c00a25facb45ae5eb56a043bcffd6b90bd1c"
+        }
+      ]
     }
   ]
 }
