@@ -48,7 +48,7 @@ export default function MapView(){
       <p>هندسه معابر از OpenStreetMap دریافت شده است. این نقشه فقط محدوده کوچک آزمون شبکه را نشان می‌دهد؛ سنجه دسترسی آگهی‌ها نیست.</p>
       <label className="layer"><input type="checkbox" checked={showStreets} onChange={e=>setShowStreets(e.target.checked)}/><span className="line-key"/>معابر محدوده آزمایشی</label>
       <label className="layer disabled"><input type="checkbox" disabled/>ایستگاه‌ها و خطوط مترو <small>در انتظار اعتبارسنجی</small></label>
-      <label className="layer disabled"><input type="checkbox" disabled/>قیمت‌های تجمیع‌شده <small>در انتظار تأیید تعریف قیمت</small></label>
+      <label className="layer disabled"><input type="checkbox" disabled/>نقشه قیمت‌های تجمیع‌شده <small>در انتظار تأیید پوشش جغرافیایی</small></label>
       <p className="small">برای جابه‌جایی از کلیدهای جهت‌نما و برای بزرگ‌نمایی از + و − استفاده کنید. نقشه زمینه خارجی پیش‌فرض بارگیری نمی‌شود.</p>
       <a href="/data/network-validation.json">گزارش پوشش و آزمون مسیرها ↗</a>
     </aside>

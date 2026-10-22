@@ -1,6 +1,6 @@
 # Limitations
 
-1. **No empirical metro premium yet.** The export lacks an explicit verified price-total/unit mapping. Source monetary denomination is unresolved. The initial app deliberately contains no real price/m² results or regression estimates.
+1. **Price evidence and no empirical metro premium yet.** The owner confirmed total apartment asking prices in toman after reviewing actual source records. The application uses that interpretation and labels its evidence source. Publisher verification is not claimed. Individual erroneous/sentinel prices remain possible; descriptive medians/IQR and tail sensitivities are available, but no metro-price regression estimate exists.
 2. **Historical inconsistency.** The dataset card describes six months of 2024; the observed source includes other dates. The primary single-month rule is transparent but does not make the selected month representative.
 3. **A later map is not a historical network.** OSM was retrieved in October 2026. Station opening dates and service status have not been reconstructed for December 2024. No assertion about 2024 accessibility is supported by this extract alone.
 4. **Geographic validation remains partial.** Seven OSM relations and their members are acquired, not independently approved metro routes. Shared/proximate points are not inferred transfers. The missing reference image was not reconstructed. Only a small real walking area is tested; full-Tehran routes are absent.

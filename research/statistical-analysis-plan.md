@@ -6,6 +6,8 @@ Recorded during implementation, before any empirical metro-price model was fit. 
 
 Select the largest observed 2024 Tehran apartment-sale month before inspecting accessibility-price associations. Result: December 2024. Restrict to fixed positive prices and 20–500 m². Do not calculate price/m² until total-price semantics are verified. Use source units if denomination remains unverified. Do not pool nominal years. Primary summaries use median/IQR, n and coverage; no p-value-based headline selection.
 
+Update documented 23 October 2026, before any empirical metro-price model: the owner confirmed that the source field is the total apartment asking price in toman after inspecting real records. The versioned [evidence record](price-interpretation.md) enables `price_value / building_size` in toman/m². This is owner confirmation, not publisher documentation. The planned sample, primary no-tail-removal rule, duplicate flags and network requirements are unchanged.
+
 After independent network verification, use all operational, eligible entrances with a complete buffered walking region. Unknown opening dates remain ineligible for a historical analysis. Alternatively label the analysis as historical listings versus a later reference network, with an independently justified current eligibility set and no historical-access claim. Both options require a versioned scope decision.
 
 ## Model equation

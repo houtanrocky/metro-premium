@@ -56,7 +56,7 @@ We audited the entire official revision, not a few viewer rows. Exact predicates
 
 **Professor:** Why have you not divided `price_value` by size?
 
-**Answer:** The historical export's total-price semantics are not explicitly established. A plausible magnitude is not proof. Currency denomination is a separate issue: if total price were established but currency unknown, source-unit per-m² might be defensible; at present neither unsupported transformation nor toman/rial claim is published.
+**Answer:** Initially the publisher card did not establish total-price semantics or denomination, so the calculation was blocked. After reviewing actual records, the owner confirmed total apartment asking price in toman. We now divide that field by area, without rescaling the currency, and label the evidence as owner confirmation. We do not attribute that statement to Divar. Plausible magnitudes alone were not treated as proof, and individual source errors are still possible.
 
 **Professor:** Do the advertisements represent the Tehran housing market?
 
@@ -86,7 +86,7 @@ The primary listings are December 2024. The downloaded map snapshot is October 2
 
 **Professor:** What have you demonstrated empirically so far?
 
-**Answer:** Complete-source schema/date/category/quality counts, explicit sample construction, and bounded actual OSM graph checks. The software can run cleaning, routing, three models, sensitivities and export on generated data. No empirical metro premium, affordability ranking or historical routing coverage has yet passed its gate.
+**Answer:** Complete-source schema/date/category/quality counts, explicit sample construction, real December 2024 price/m² medians/IQR under the owner-confirmed price interpretation, filtering sensitivities, and bounded actual OSM graph checks. The software can run routing and three models on generated data. No empirical metro premium, price/access ranking or historical routing coverage has yet passed its gate.
 
 **Professor:** What would convince you the result is publishable?
 

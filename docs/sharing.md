@@ -17,3 +17,13 @@ An evidence-supported initial story is the dataset audit:
 Source: [official dataset](https://huggingface.co/datasets/divarofficial/real_estate_ads), pinned revision in the figure metadata/public JSON. Audit date: 22 October 2026; listing months are historical Gregorian months. Link a shared graphic to [findings](../research/findings.md) and [methodology](../research/methodology.md). Preserve ODbL/source attribution.
 
 For future empirical stories, use an allowlisted export with headline, chart, actual n, month, source revision, method label, effect/interval where appropriate, caveat, alt text and technical link. `node scripts/task.mjs report` regenerates current audit figures. `node scripts/task.mjs smoke` emits separately labeled synthetic figures in its private run directory. Neither command posts anything to a social platform.
+
+## Housing-only descriptive figure — 23 October 2026
+
+The owner has confirmed total apartment asking prices in toman. `artifacts/figures/housing-price-summary.png` (2880×1440) and its SVG companion show actual December 2024 observed median/IQR for n=11,767, alongside prespecified tail and duplicate-candidate sensitivities. The footer explicitly identifies owner confirmation and does not claim publisher verification. `report`/`reproduce` regenerate these artifacts and the website offers the PNG download.
+
+Persian headline: «در نمونه آگهی‌های دسامبر ۲۰۲۴، میانه قیمت هر مترمربع حدود ۸۷ میلیون تومان است.»
+
+Alt text: «میانه و بازه میانی قیمت هر مترمربع آگهی‌های فروش آپارتمان تهران در دسامبر ۲۰۲۴؛ میانه حدود ۸۷ میلیون و بازه میانی حدود ۵۸٫۵ تا ۱۲۶٫۷ میلیون تومان است. خلاصه اصلی مقادیر غیرعادی را حفظ می‌کند.»
+
+Caveats: historical asking advertisements, not completed sales or today's market; monetary interpretation supplied by the owner; no metro association estimated. IQR is the middle half of observed prices, not a confidence interval. Link [current findings](../research/findings.md) and [price evidence](../research/price-interpretation.md). Price-versus-metro stories A/B remain unavailable.

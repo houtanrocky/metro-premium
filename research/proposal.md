@@ -20,7 +20,7 @@ Begin with monthly counts, missingness and sample coverage. After price semantic
 
 ## Feasibility outcome of initial implementation
 
-There are enough Tehran apartment-sale records to investigate the questions. A single December 2024 window avoids pooling nominal years. However, price semantics are unverified and the acquired October 2026 network is not a historical reconstruction. These prevent honest empirical metro-price estimates in this release. A full synthetic vertical slice tests the implementation without filling those evidential gaps.
+There are enough Tehran apartment-sale records to investigate the questions. A single December 2024 window avoids pooling nominal years. Price semantics were initially unresolved; the owner subsequently confirmed total apartment asking price in toman after inspecting source examples, enabling real housing-only descriptions with an explicit evidence label. The acquired October 2026 network is not a historical reconstruction, and independent network validation remains incomplete. A full synthetic vertical slice tests the implementation without filling those geographic gaps.
 
 ## Scientific and practical value
 

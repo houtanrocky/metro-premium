@@ -37,11 +37,24 @@
   "known_radius_rows": 3302,
   "routable_candidate_rows": 3110,
   "duplicate_candidates": 36,
-  "tail_flagged": 0,
+  "tail_flagged": 117,
   "price_contract": {
-    "denomination": "source units; not established for the dataset",
-    "total_price_verified": false,
-    "evidence": "Pinned dataset card lists financial fields but gives no denomination or explicit total-versus-unit-price contract. Related live API documentation is not a mapping guarantee for this historical export.",
-    "per_m2_enabled": false
+    "repository": "divarofficial/real_estate_ads",
+    "revision": "e9446ee97b8e6eb9bd62bdfd7548f1bc8973be85",
+    "scope": {
+      "city_slug": "tehran",
+      "cat2_slug": "residential-sell",
+      "cat3_slug": "apartment-sell",
+      "price_mode": "مقطوع"
+    },
+    "denomination": "toman",
+    "price_basis": "total_apartment_asking_price",
+    "total_price_verified": true,
+    "per_m2_enabled": true,
+    "verification_source": "owner_confirmation",
+    "publisher_documentation_verified": false,
+    "documented_date": "2026-10-23",
+    "evidence": "okay the prices are in toman, and the price is for the whole apartment, not per meter",
+    "interpretation_note": "Owner-provided domain confirmation after inspecting actual source records; not a statement from the dataset publisher. No currency conversion is applied."
   }
 }

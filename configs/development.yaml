@@ -9,3 +9,4 @@ size_range_m2: [20, 500]
 period: auto-largest-2024-month
 sample_limit: 5000
 network_scope: smoke-only
+price_contract: configs/price-contract.yaml

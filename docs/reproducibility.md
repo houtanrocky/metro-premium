@@ -28,6 +28,8 @@ Browser tests are `npm run test:e2e`. Run `npx playwright install chromium` if n
 
 `--config configs/development.yaml` selects a documented seeded 5,000-row Tehran-category sample. Full mode consumes all category rows. Smoke mode creates 1,200 synthetic records at artificial projected graph coordinates; none are empirical geographic/property records. Do not use development selection counts as a population audit.
 
+Current full/development configs explicitly load `configs/price-contract.yaml`. Its owner-confirmed total-price/toman interpretation is scoped to the pinned dataset revision and selected apartment-sale population. It is hashed in run provenance and is not publisher verification. Empirical reproduction now also generates housing-price medians/IQR, filtering sensitivities, safe neighborhood distributions, CSV/JSON tables and high-resolution figures; metro estimates remain gated. Synthetic fixtures retain their separately declared arbitrary monetary units.
+
 ## Offline and restart behavior
 
 Acquisition skips existing files and validates their recorded hashes. `.part` files are never accepted as source inputs. A crashed transfer can be retried; completed bytes remain untouched. Source acquisition is separate from analysis, so `--offline` never downloads implicitly. A fresh clone has public aggregates but no CSV/audit-run cache: download then audit to reproduce scientific calculations. Copy the pinned raw folder and corresponding local audit run/pointer to another offline machine if permitted; otherwise re-audit from cached CSV. Do not commit either.

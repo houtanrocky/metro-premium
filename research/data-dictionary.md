@@ -67,7 +67,7 @@ Generated from the complete pinned official CSV audit. CSV raw storage uses VARC
 
 ## Analytical interpretation
 
-Population uses city_slug, cat2_slug and cat3_slug. property_type is not a reliable substitute. created_at_month is parsed as a Gregorian calendar month with observed values overriding the inconsistent card period. price_mode must equal مقطوع, but this does not by itself verify the denomination or total-price semantics of price_value. building_size is documented in square metres. price/m² stays missing until a total-price contract is established.
+Population uses city_slug, cat2_slug and cat3_slug. property_type is not a reliable substitute. created_at_month is parsed as a Gregorian calendar month with observed values overriding the inconsistent card period. price_mode must equal مقطوع, but this does not by itself verify price meaning. The owner subsequently confirmed total apartment asking price in toman; the scope and evidence are recorded in configs/price-contract.yaml and price-interpretation.md. building_size is documented in square metres. Derived per_m2 is price_value divided by building_size, without currency rescaling. Source type/null counts above remain the original audit.
 
 construction_year is Solar Hijri; only literal numeric years in the historical validity range become a year control. Censored text is not converted to a precise age. rooms_count Persian words are recoded using an explicit lookup. Missing floor/room/year information is not zero-filled.
 

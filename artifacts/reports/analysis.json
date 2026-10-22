@@ -1,13 +1,73 @@
 {
-  "status": "blocked",
+  "status": "descriptive_only_network_blocked",
   "models": [],
-  "reason": "Price semantics and complete verified network are required",
+  "reason": "Housing price descriptions computed using owner-confirmed total asking prices in toman; metro associations require a verified network",
+  "price_contract": {
+    "repository": "divarofficial/real_estate_ads",
+    "revision": "e9446ee97b8e6eb9bd62bdfd7548f1bc8973be85",
+    "scope": {
+      "city_slug": "tehran",
+      "cat2_slug": "residential-sell",
+      "cat3_slug": "apartment-sell",
+      "price_mode": "مقطوع"
+    },
+    "denomination": "toman",
+    "price_basis": "total_apartment_asking_price",
+    "total_price_verified": true,
+    "per_m2_enabled": true,
+    "verification_source": "owner_confirmation",
+    "publisher_documentation_verified": false,
+    "documented_date": "2026-10-23",
+    "evidence": "okay the prices are in toman, and the price is for the whole apartment, not per meter",
+    "interpretation_note": "Owner-provided domain confirmation after inspecting actual source records; not a statement from the dataset publisher. No currency conversion is applied."
+  },
   "descriptives": {
+    "status": "computed",
+    "unit": "toman_per_m2",
+    "price_basis": "total_apartment_asking_price_divided_by_area_m2",
+    "period": "2024-12",
     "n": 11767,
+    "median_per_m2": 86986301.36986302,
+    "q25_per_m2": 58541019.9556541,
+    "q75_per_m2": 126666666.66666667,
+    "median_total_asking_price_toman": 7000000000.0,
     "area_median_m2": 85.0,
-    "area_iqr_m2": [
-      61.0,
-      116.0
-    ]
+    "tail_rule": {
+      "quantiles": [
+        0.005,
+        0.995
+      ],
+      "lower_per_m2": 1234.5666666666666,
+      "upper_per_m2": 83671253822.63011,
+      "flagged_n": 117,
+      "default_excludes_tails": false
+    },
+    "variants": [
+      {
+        "name": "all_candidate_records",
+        "n": 11767,
+        "status": "computed",
+        "median_per_m2": 86986301.36986302,
+        "q25_per_m2": 58541019.9556541,
+        "q75_per_m2": 126666666.66666667
+      },
+      {
+        "name": "without_0_5_percent_tails",
+        "n": 11650,
+        "status": "computed",
+        "median_per_m2": 86986301.36986302,
+        "q25_per_m2": 58823529.4117647,
+        "q75_per_m2": 125826612.90322581
+      },
+      {
+        "name": "candidate_deduplicated",
+        "n": 11731,
+        "status": "computed",
+        "median_per_m2": 87142857.14285715,
+        "q25_per_m2": 58559907.83410138,
+        "q75_per_m2": 126881111.68296449
+      }
+    ],
+    "scope_note": "Same-month candidate advertisements including missing-coordinate records; no metro-access restriction. Median and IQR are observed price distributions, not confidence intervals or transaction prices."
   }
 }

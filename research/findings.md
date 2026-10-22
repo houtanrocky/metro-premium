@@ -1,5 +1,25 @@
 # Findings: initial evidence, 22 October 2026
 
+## Current update — 23 October 2026
+
+After inspecting actual source records, the owner confirmed that `price_value` is the **total apartment asking price in toman**. This is recorded as owner-provided evidence in [price-interpretation.md](price-interpretation.md); publisher verification is not claimed. The original audit below is preserved as the earlier evidence state. The change enables division by area without currency rescaling and does not alter the raw data or candidate population.
+
+For the same **11,767 December 2024 records**, the computed median asking price per m² is **86,986,301.37 toman**, with an interquartile range of **58,541,019.96–126,666,666.67 toman/m²**. Median total asking price is **7,000,000,000 toman** and median area is **85 m²**; the median price/area ratio is not computed by dividing those separate medians. These are observed advertisement distributions, not transaction prices, confidence intervals or a description of today's market.
+
+| Prespecified description / sensitivity | n | Median asking price (million toman/m²) | IQR (million toman/m²) |
+|---|---:|---:|---|
+| All candidate records — primary, no price-tail exclusion | 11,767 | 86.9863 | 58.5410–126.6667 |
+| Exclude values outside the 0.5/99.5 percentile bounds | 11,650 | 86.9863 | 58.8235–125.8266 |
+| Remove later attribute-duplicate candidates | 11,731 | 87.1429 | 58.5599–126.8811 |
+
+There are **117 price-tail flags** and **36 later duplicate candidates** in the primary month. Quantile ties mean tail flags are not necessarily exactly 1% of observations. Flagged rows remain in the primary summary. Removing them here is a sensitivity scenario, not a declaration that all flagged rows are erroneous or all retained rows are valid. Attribute matches are not verified repeat properties. Similar overall medians do not prove geographic or model robustness.
+
+The denominator includes records without coordinates; geographic eligibility is not needed for housing-only descriptions. Neighborhood-month price summaries require at least 30 measured values, report median/IQR, and remain ineligible for an affordability/access ranking. No metro distance, price/access coefficient or causal conclusion is estimated. See [computed JSON](../artifacts/reports/housing-descriptives.json), [CSV](../artifacts/reports/housing-descriptives.csv), and the actual figure:
+
+![Median and interquartile range of observed December 2024 Tehran apartment asking prices per square metre, for the primary and two filtering-sensitivity samples; unit interpretation confirmed by the owner](../artifacts/figures/housing-price-summary.png)
+
+## Preserved initial snapshot — before owner price confirmation
+
 These results come from the full official source audit and deterministic cleaning. They do not answer the metro-price association questions yet. Machine-readable evidence: [audit](../artifacts/audits/source-audit.json), [sample flow](../artifacts/reports/sample-flow.json), [network checks](../artifacts/reports/network-validation.json).
 
 ## Dataset audit

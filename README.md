@@ -6,7 +6,7 @@ Exploring Housing Prices Through Urban Network Science.
 
 [فارسی](README.fa.md) · [Research report](research/report.md) · [Actual audit](artifacts/audits/source-audit.json) · [Defense guide](docs/what-i-must-understand.md)
 
-This repository implements an offline-capable Python research pipeline and a Persian React data publication. **The initial release is a research preview, not a metro price-premium finding.** The entire official Divar CSV was downloaded and audited. Price denomination and total-versus-unit semantics remain unresolved for this export. Metro route data was acquired but independent topology and historical opening checks are incomplete. Public price comparisons and metro layers therefore stay disabled.
+This repository implements an offline-capable Python research pipeline and a Persian React data publication. **The release includes descriptive housing-price results; no metro price premium has been estimated.** The entire official Divar CSV was downloaded and audited. After inspecting source records, the owner confirmed that `price_value` is the total apartment asking price in toman. This evidence is recorded explicitly as owner confirmation, without claiming publisher verification. Independent metro topology and historical opening checks remain incomplete, so metro layers and price/access associations remain disabled.
 
 ## Computed evidence
 
@@ -22,7 +22,7 @@ This repository implements an offline-capable Python research pipeline and a Per
 | Candidate rows with in-region coordinates AND known radius 0–500 m | 3,110 |
 | Small OSM walking graph | 666 nodes, 1,452 directed edges, 3 weak components |
 
-These are data-quality findings. **No empirical asking-price-per-m² estimates, neighborhood rankings, or metro regression coefficients have been computed.** Radius 0 is a source label, not proof of an exact property address. The OSM snapshot is October 2026, while listings are historical.
+The December 2024 candidate sample has a median asking price of **86.99 million toman/m²**, with an interquartile range of **58.54–126.67 million toman/m²**. These are observed advertisement descriptions under the owner-confirmed price interpretation. No metro regression coefficients, affordability/access ranking or causal result have been computed. Radius 0 is a source label, not proof of an exact property address. The OSM snapshot is October 2026, while listings are historical. See the [price evidence record](research/price-interpretation.md) and [housing summaries](artifacts/reports/housing-descriptives.json).
 
 ## Quick start
 
@@ -54,7 +54,7 @@ node scripts/task.mjs reproduce --offline  # sample, network checks, honest gate
 
 No command scrapes live Divar. Downloads have separate commands. Repeating research commands creates new `artifacts/runs/<UTC>-<id>/` directories; each contains config, source hashes, package versions, seed, Git state, failures and output hashes. Stable public files are explicit derived views of those immutable runs. Raw inputs are ignored by Git. For the complete command contract, see [reproducibility](docs/reproducibility.md).
 
-`prepare-data`, `compute-accessibility`, `analyze`, `export-public-data`, and `report` also exist. In this initial release, empirical stage commands rerun the inexpensive post-audit preparation and fail closed at unresolved scientific gates. They **do not bypass validation or produce empirical metro measures**. The numerical routing/model/sensitivity engine runs end to end in `smoke` mode. Expanding to metropolitan coverage and reviewing the price contract are required research work, not switches to turn on unsupported results.
+`prepare-data`, `compute-accessibility`, `analyze`, `export-public-data`, and `report` also exist. Empirical stage commands rerun post-audit preparation and real housing-price descriptions while retaining the network gates. They **do not bypass validation or produce empirical metro measures**. The numerical routing/model/sensitivity engine runs end to end in `smoke` mode. Expanding and validating metropolitan network coverage remains required before publishing metro results.
 
 ## Repository
 
@@ -77,7 +77,7 @@ scripts/                    Cross-platform tasks, download, export and QA helper
 
 ## Publication status
 
-Gate 1 is partial: enough records and dates exist, but price semantics are not established. Gate 2 is partial: bounded real graph validation works, but a historically eligible metropolitan metro/walking network has not been verified. Gate 3 blocks empirical inference. Gate 4 permits only audit counts, data-quality summaries, actual street geometry and distinctly synthetic educational examples. Gate 5 records executed engineering checks in [delivery](docs/delivery.md).
+Gate 1 records owner-confirmed price semantics, adequate records and dates; publisher verification is not claimed. Gate 2 is partial: bounded real graph validation works, but a historically eligible metropolitan metro/walking network has not been verified. Gate 3 blocks metro association inference. Gate 4 permits audit counts, aggregate housing-price distributions, data-quality summaries, actual street geometry and distinctly synthetic educational examples. Gate 5 records executed engineering checks in [delivery](docs/delivery.md).
 
 No remote repository was assumed, no GitHub push was made and no site was deployed. Set `VITE_REPOSITORY_URL` only after establishing your real public repository. See [deployment](docs/deployment.md), [limitations](docs/known-limitations.md), and [open research decisions](docs/outstanding-decisions.md).
 

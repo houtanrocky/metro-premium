@@ -14,7 +14,7 @@ Accept only `price_mode='مقطوع'`, finite positive prices, and area 20–500
 
 Coordinates are WGS84 (EPSG:4326) at interchange. The declared rectangular support is longitude 51.05–51.65, latitude 35.45–35.90, a pragmatic analysis extent rather than a verified municipal boundary. Out-of-rectangle records are flagged. Unknown radius is never coded as zero. Preserve nongeographic rows for coverage reporting; routing requires valid coordinates and known radius 0–500 m. All exclusions have before/after counts.
 
-Price denomination and the total-price interpretation are unresolved for the dataset. Related live Kenar API descriptions are suggestive but do not prove the historical export mapping. Therefore `per_m2` is missing for real rows in this release. There is no currency conversion or empirical price model. Once an explicit source contract is verified, record that evidence and make a versioned implementation change rather than silently interpreting old rows.
+At the initial audit, publisher documentation did not establish price denomination or total-versus-unit meaning. On 23 October 2026, after reviewing actual source records, the owner confirmed total apartment asking prices in toman. The versioned [price interpretation](price-interpretation.md) and `configs/price-contract.yaml` record this owner evidence separately from publisher documentation. Real `per_m2` now equals `price_value / building_size`, without currency rescaling. Raw values and the original audit remain unchanged. Descriptive price summaries are enabled; empirical metro-price models still require network validation.
 
 ## Graphs and distances
 

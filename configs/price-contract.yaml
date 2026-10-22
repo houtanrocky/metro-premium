@@ -1,0 +1,16 @@
+repository: divarofficial/real_estate_ads
+revision: e9446ee97b8e6eb9bd62bdfd7548f1bc8973be85
+scope:
+  city_slug: tehran
+  cat2_slug: residential-sell
+  cat3_slug: apartment-sell
+  price_mode: مقطوع
+denomination: toman
+price_basis: total_apartment_asking_price
+total_price_verified: true
+per_m2_enabled: true
+verification_source: owner_confirmation
+publisher_documentation_verified: false
+documented_date: '2026-10-23'
+evidence: "okay the prices are in toman, and the price is for the whole apartment, not per meter"
+interpretation_note: Owner-provided domain confirmation after inspecting actual source records; not a statement from the dataset publisher. No currency conversion is applied.

@@ -17,7 +17,9 @@ test('Persian publication, actual data, real street layer and synthetic path',as
   const neighborhood=page.getByLabel('انتخاب محله');
   const value=await neighborhood.locator('option').nth(1).getAttribute('value');
   await neighborhood.selectOption(value!);
-  await expect(page.getByText('تأیید نشده',{exact:true})).toBeVisible();
+  await expect(page.getByTestId('neighborhood-price')).toContainText('میلیون تومان');
+  await expect(page.getByTestId('overall-price')).toContainText('میلیون تومان');
+  await expect(page.getByText('محاسبه معتبر موجود نیست',{exact:true})).toBeVisible();
   await page.getByRole('checkbox',{name:'معابر محدوده آزمایشی',exact:true}).uncheck();
   await expect(page.getByRole('checkbox',{name:'معابر محدوده آزمایشی',exact:true})).not.toBeChecked();
   await page.getByRole('checkbox',{name:'معابر محدوده آزمایشی',exact:true}).check();
@@ -32,7 +34,7 @@ test('Persian publication, actual data, real street layer and synthetic path',as
   const source=await page.request.get('/data/source-audit.json');
   expect(source.ok()).toBeTruthy();
   expect((await source.json()).total_observed_rows).toBe(1000000);
-  for(const href of ['/research/methodology.md','/research/limitations.md','/data/network-validation.json','/data/source-months.png'])expect((await page.request.get(href)).ok()).toBeTruthy();
+  for(const href of ['/research/methodology.md','/research/limitations.md','/data/network-validation.json','/data/source-months.png','/data/housing-price-summary.png','/data/housing-descriptives.json'])expect((await page.request.get(href)).ok()).toBeTruthy();
   const externalTiles=await page.evaluate(()=>performance.getEntriesByType('resource').map(x=>x.name).filter(n=>n.includes('tile.openstreetmap.org')));
   expect(externalTiles).toEqual([]);
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();

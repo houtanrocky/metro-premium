@@ -5,11 +5,13 @@ export interface Neighborhood {
   known_radius_coverage:number; comparison_eligible:boolean;
 }
 export interface ResearchData {
-  schema_version:1; kind:'empirical_preview'; run_id:string; generated_utc:string;
+  schema_version:2; kind:'empirical_preview'; run_id:string; generated_utc:string;
   source:{repository:string;revision:string;url:string;license:string};
   scope:{source_rows:number;source_columns:number;tehran_apartment_sale_rows:number;analysis_rows:number;period:string;coordinate_valid_rows:number;routable_candidate_rows:number};
   gates:{id:number;status:string;label:string;reason:string}[];
-  price_contract:{denomination:string;total_price_verified:boolean;per_m2_enabled:boolean};
+  price_contract:{denomination:'toman';price_basis:'total_apartment_asking_price';total_price_verified:true;per_m2_enabled:true;verification_source:'owner_confirmation';publisher_documentation_verified:false;revision:string;evidence:string;documented_date:string};
+  housing_descriptives_available:true;
+  housing_prices:{status:'computed';unit:'toman_per_m2';period:string;n:number;median_per_m2:number;q25_per_m2:number;q75_per_m2:number;median_total_asking_price_toman:number;area_median_m2:number;tail_rule:{flagged_n:number;default_excludes_tails:false};variants:{name:string;n:number;status:string;median_per_m2:number|null;q25_per_m2:number|null;q75_per_m2:number|null}[]};
   months:{month:string;n:number}[];radii:{radius:string|null;n:number}[];
   sample_flow:{stage:string;before:number;after:number;excluded:number}[];
   neighborhoods:Neighborhood[];bands:unknown[];models:unknown[];
