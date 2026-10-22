@@ -1,0 +1,28 @@
+name: scientific-and-publication-checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - run: node scripts/task.mjs setup
+      - run: node scripts/task.mjs smoke --offline
+      - run: node scripts/task.mjs test
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: validation-evidence
+          path: |
+            test-results/
+            artifacts/runs/

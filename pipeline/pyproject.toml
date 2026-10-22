@@ -1,0 +1,23 @@
+[project]
+name = "metropremium"
+version = "0.1.0"
+description = "Reproducible, uncertainty-aware housing and metro accessibility research"
+requires-python = ">=3.11"
+dependencies = ["duckdb>=1.4,<2", "pandas>=2.2,<3", "numpy>=2,<3", "networkx>=3.4,<4", "scipy>=1.15,<2", "pyproj>=3.7,<4", "shapely>=2,<3", "statsmodels>=0.14,<0.15", "matplotlib>=3.10,<4", "pyyaml>=6,<7", "requests>=2.32,<3", "pyarrow>=20", "osmnx>=2,<3"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+metropremium = "metropremium.cli:main"
+
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
