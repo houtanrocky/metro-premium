@@ -83,7 +83,7 @@
         0.13130905973600715,
         0.47230208097062104
       ],
-      "exploratory_knn_moran_i": 0.0036628286263152834,
+      "exploratory_knn_moran_i": -0.01724804030587481,
       "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
     },
     {
@@ -113,7 +113,7 @@
         0.12067230943639107,
         0.4485830634361125
       ],
-      "exploratory_knn_moran_i": 0.007773374079327572,
+      "exploratory_knn_moran_i": -0.010632738586961028,
       "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
     },
     {
@@ -143,7 +143,7 @@
         0.11664122394695298,
         0.42517793912518836
       ],
-      "exploratory_knn_moran_i": 0.009668273475031545,
+      "exploratory_knn_moran_i": -0.005060315766045129,
       "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
     }
   ],

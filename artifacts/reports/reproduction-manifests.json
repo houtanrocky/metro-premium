@@ -1,0 +1,303 @@
+{
+  "scope": "Safe run provenance; file hashes are not downloadable private row data",
+  "runs": [
+    {
+      "run_id": "20261022T195538-5a807f02",
+      "command": "reproduce",
+      "config": {
+        "mode": "empirical",
+        "seed": 20261022,
+        "walking_speed_m_per_min": 80,
+        "distance_bands_m": [
+          500,
+          1000,
+          1500
+        ],
+        "min_public_group": 30,
+        "max_snap_m": 100,
+        "location_radius_max_m": 500,
+        "size_range_m2": [
+          20,
+          500
+        ],
+        "period": "auto-largest-2024-month",
+        "network_scope": "smoke-only"
+      },
+      "dataset_revision": "e9446ee97b8e6eb9bd62bdfd7548f1bc8973be85",
+      "started_utc": "2026-10-22T19:55:38.525102+00:00",
+      "git_commit": "fd44f81a40d0c5c8117e157953e2f957fcb64e90",
+      "git_dirty": false,
+      "python": "3.13.7",
+      "packages": {
+        "certifi": "2026.10.19",
+        "charset-normalizer": "3.5.2",
+        "colorama": "0.4.6",
+        "contourpy": "1.4.0",
+        "cycler": "0.12.1",
+        "duckdb": "1.5.6",
+        "fonttools": "4.67.0",
+        "geopandas": "1.2.0",
+        "idna": "3.20",
+        "iniconfig": "2.3.1",
+        "kiwisolver": "1.5.1",
+        "matplotlib": "3.11.2",
+        "metropremium": "0.1.0",
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "osmnx": "2.1.1",
+        "packaging": "26.3",
+        "pandas": "2.3.3",
+        "patsy": "1.0.3",
+        "pillow": "13.0.0",
+        "pluggy": "1.7.0",
+        "pyarrow": "26.0.0",
+        "Pygments": "2.21.0",
+        "pyogrio": "0.13.0",
+        "pyparsing": "3.3.3",
+        "pyproj": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dateutil": "3.0.0",
+        "pytz": "2026.5",
+        "PyYAML": "6.0.3",
+        "requests": "2.34.2",
+        "scipy": "1.18.1",
+        "shapely": "2.2.0",
+        "six": "1.17.0",
+        "statsmodels": "0.14.6",
+        "tzdata": "2026.5",
+        "urllib3": "2.8.0"
+      },
+      "inputs": [
+        {
+          "path": "configs\\full.yaml",
+          "sha256": "b69e956198512c339fb53565224d5efdab22a487fefc7ffd6419dbafef296755"
+        },
+        {
+          "path": "data\\raw\\osm\\acquisition-20261022T191003Z.json",
+          "sha256": "ce8897d90ee2e2cd0fa2db3004d0e28f5c11539735c211d7f51cd9c31138ff20"
+        },
+        {
+          "path": "data\\raw\\osm\\metro.json",
+          "sha256": "20e771e4af00c9b59d6a63c64955da869c51d00e7b19c8b4f6c174a8a31e2491"
+        },
+        {
+          "path": "data\\raw\\osm\\metro.json.source.json",
+          "sha256": "29562f401b969b996d49c16d568d460208a6c44a9c3e65048e08eed450992930"
+        },
+        {
+          "path": "data\\raw\\osm\\walk-smoke.osm",
+          "sha256": "5427c1b838b5571ab25aeb9c04bd75db49aa973dd2d1780307cc7cd6f7577a22"
+        },
+        {
+          "path": "data\\raw\\osm\\walk-smoke.osm.source.json",
+          "sha256": "0c2931c8b3560d68baeb293b7b119bd1237d48715dcfbc166e5278c484d491d7"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T192554-cde20200\\tehran-source.parquet",
+          "sha256": "1d396613af690c5addee9c4625df7860698ce24d1641d5cac6064d89d92470ab"
+        }
+      ],
+      "outputs": [
+        "artifacts\\runs\\20261022T195538-5a807f02\\analysis.json",
+        "artifacts\\runs\\20261022T195538-5a807f02\\cleaned.parquet",
+        "artifacts\\runs\\20261022T195538-5a807f02\\entrance-candidates.json",
+        "artifacts\\runs\\20261022T195538-5a807f02\\figure.png",
+        "artifacts\\runs\\20261022T195538-5a807f02\\figure.svg",
+        "artifacts\\runs\\20261022T195538-5a807f02\\network-validation.json",
+        "artifacts\\runs\\20261022T195538-5a807f02\\public.json",
+        "artifacts\\runs\\20261022T195538-5a807f02\\sample-flow.json",
+        "artifacts\\runs\\20261022T195538-5a807f02\\walk-smoke-graph.json",
+        "artifacts\\runs\\20261022T195538-5a807f02\\walking-preview.geojson"
+      ],
+      "validation": [
+        "No listing coordinates in public export",
+        "Price-per-m2 and metro claims blocked pending source contracts",
+        "Full-source audit referenced"
+      ],
+      "failures": [],
+      "audit_run": "artifacts\\runs\\20261022T192554-cde20200",
+      "status": "completed",
+      "finished_utc": "2026-10-22T19:55:41.059446+00:00",
+      "output_hashes": [
+        {
+          "path": "artifacts\\runs\\20261022T195538-5a807f02\\analysis.json",
+          "sha256": "c8de2e6ada549bd287c5d57a30e5bbb6cf4f8ffa7e59041a52fee9bb41ce3f67"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T195538-5a807f02\\cleaned.parquet",
+          "sha256": "cfdefe0f35db60e4a85ba3ff326875034787712cb8ffaac88ed669b578bab132"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T195538-5a807f02\\entrance-candidates.json",
+          "sha256": "128ff71ab3920ffd5c7bed5df96206a8f795891495eb7bc1494e902ebead9515"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T195538-5a807f02\\figure.png",
+          "sha256": "0f8b10d9d22b6aefcbbab2a85385e8c541ee0765718c31aeb2d140c5431daada"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T195538-5a807f02\\figure.svg",
+          "sha256": "193d633b0df28e43ace4da5e7ca49a7066bb00f7ae4ea69e0587da58b120611c"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T195538-5a807f02\\network-validation.json",
+          "sha256": "70ca0923422cd2fa3da343e8bc8d50d0b704b440ab9c52c26a97914382121bb8"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T195538-5a807f02\\public.json",
+          "sha256": "2137ed94e1d49ce28d3b8eaad29ff4b03a9fd482d2af8d4972d48647c38101cd"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T195538-5a807f02\\sample-flow.json",
+          "sha256": "2f8ad139a1c76c07b44ae77f98fd5d78aa47992ef7a2ee2967187ded5b7a8756"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T195538-5a807f02\\walk-smoke-graph.json",
+          "sha256": "f3f520e7bb051498ae343ca0d6db37aa7b21cc3a424b19156968390f4f0727ed"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T195538-5a807f02\\walking-preview.geojson",
+          "sha256": "17f3a1343e2540cc30cfa32a3c28c00a25facb45ae5eb56a043bcffd6b90bd1c"
+        }
+      ]
+    },
+    {
+      "run_id": "20261022T195544-b343e386",
+      "command": "smoke",
+      "config": {
+        "mode": "synthetic",
+        "seed": 20261022,
+        "walking_speed_m_per_min": 80,
+        "distance_bands_m": [
+          500,
+          1000,
+          1500
+        ],
+        "min_public_group": 30,
+        "max_snap_m": 100,
+        "location_radius_max_m": 500,
+        "size_range_m2": [
+          20,
+          500
+        ],
+        "period": "synthetic"
+      },
+      "dataset_revision": "e9446ee97b8e6eb9bd62bdfd7548f1bc8973be85",
+      "started_utc": "2026-10-22T19:55:44.400715+00:00",
+      "git_commit": "fd44f81a40d0c5c8117e157953e2f957fcb64e90",
+      "git_dirty": true,
+      "python": "3.13.7",
+      "packages": {
+        "certifi": "2026.10.19",
+        "charset-normalizer": "3.5.2",
+        "colorama": "0.4.6",
+        "contourpy": "1.4.0",
+        "cycler": "0.12.1",
+        "duckdb": "1.5.6",
+        "fonttools": "4.67.0",
+        "geopandas": "1.2.0",
+        "idna": "3.20",
+        "iniconfig": "2.3.1",
+        "kiwisolver": "1.5.1",
+        "matplotlib": "3.11.2",
+        "metropremium": "0.1.0",
+        "networkx": "3.7",
+        "numpy": "2.5.4",
+        "osmnx": "2.1.1",
+        "packaging": "26.3",
+        "pandas": "2.3.3",
+        "patsy": "1.0.3",
+        "pillow": "13.0.0",
+        "pluggy": "1.7.0",
+        "pyarrow": "26.0.0",
+        "Pygments": "2.21.0",
+        "pyogrio": "0.13.0",
+        "pyparsing": "3.3.3",
+        "pyproj": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dateutil": "3.0.0",
+        "pytz": "2026.5",
+        "PyYAML": "6.0.3",
+        "requests": "2.34.2",
+        "scipy": "1.18.1",
+        "shapely": "2.2.0",
+        "six": "1.17.0",
+        "statsmodels": "0.14.6",
+        "tzdata": "2026.5",
+        "urllib3": "2.8.0"
+      },
+      "inputs": [
+        {
+          "path": "configs\\full.yaml",
+          "sha256": "b69e956198512c339fb53565224d5efdab22a487fefc7ffd6419dbafef296755"
+        },
+        {
+          "path": "data\\raw\\osm\\acquisition-20261022T191003Z.json",
+          "sha256": "ce8897d90ee2e2cd0fa2db3004d0e28f5c11539735c211d7f51cd9c31138ff20"
+        },
+        {
+          "path": "data\\raw\\osm\\metro.json",
+          "sha256": "20e771e4af00c9b59d6a63c64955da869c51d00e7b19c8b4f6c174a8a31e2491"
+        },
+        {
+          "path": "data\\raw\\osm\\metro.json.source.json",
+          "sha256": "29562f401b969b996d49c16d568d460208a6c44a9c3e65048e08eed450992930"
+        },
+        {
+          "path": "data\\raw\\osm\\walk-smoke.osm",
+          "sha256": "5427c1b838b5571ab25aeb9c04bd75db49aa973dd2d1780307cc7cd6f7577a22"
+        },
+        {
+          "path": "data\\raw\\osm\\walk-smoke.osm.source.json",
+          "sha256": "0c2931c8b3560d68baeb293b7b119bd1237d48715dcfbc166e5278c484d491d7"
+        }
+      ],
+      "outputs": [
+        "artifacts\\runs\\20261022T195544-b343e386\\analysis.json",
+        "artifacts\\runs\\20261022T195544-b343e386\\figure.png",
+        "artifacts\\runs\\20261022T195544-b343e386\\figure.svg",
+        "artifacts\\runs\\20261022T195544-b343e386\\public.json",
+        "artifacts\\runs\\20261022T195544-b343e386\\sample-flow.json",
+        "artifacts\\runs\\20261022T195544-b343e386\\sensitivity.json",
+        "artifacts\\runs\\20261022T195544-b343e386\\uncertainty.json"
+      ],
+      "validation": [
+        "Synthetic fixture cleaned, routed, modeled and aggregated",
+        "Synthetic outputs never become default public empirical data"
+      ],
+      "failures": [],
+      "status": "completed",
+      "finished_utc": "2026-10-22T19:55:46.052444+00:00",
+      "output_hashes": [
+        {
+          "path": "artifacts\\runs\\20261022T195544-b343e386\\analysis.json",
+          "sha256": "a4f1671dad6c9246f7ecee795a22082de7d5b5821b41ea19436220063413de80"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T195544-b343e386\\figure.png",
+          "sha256": "374372e98de9ea714fac9fd1b5a0a1e2403f4669c1c9395f27bdb8bded8185a1"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T195544-b343e386\\figure.svg",
+          "sha256": "b481d5e78d3af040d0110eb3870bf05fd6e53bd2b796de69c6c378a7f71ed456"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T195544-b343e386\\public.json",
+          "sha256": "403a32976c4334a44c023e737b20844f3ce45fdcb0f87fd3c8578600cbdf8d53"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T195544-b343e386\\sample-flow.json",
+          "sha256": "fbcc29ed14209320666faa9a8e3cc02311779fb0e90371703b432dd9ea58354d"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T195544-b343e386\\sensitivity.json",
+          "sha256": "8e90206ef97033c6906a06768137d9015f1343234c9b13a0a169e31e22c3e4f4"
+        },
+        {
+          "path": "artifacts\\runs\\20261022T195544-b343e386\\uncertainty.json",
+          "sha256": "7646d0ef4e690e9fcd329ceedfb9a25f2e286293a954a5210b1a26f6a0889891"
+        }
+      ]
+    }
+  ]
+}

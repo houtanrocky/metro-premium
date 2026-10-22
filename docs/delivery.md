@@ -24,12 +24,14 @@ No remote push or site publication is part of this local delivery. Historical pr
 | Documentation | 25 Markdown documents and their local link targets checked |
 | Setup | Locked uv sync and `npm ci` completed; an initial retry hit a running-server file lock, resolved after stopping that owned server |
 | Dependencies | `npm audit` reported zero vulnerabilities after reviewed package updates |
-| Production | Vite build passed; MapLibre worker emitted as its own asset |
+| Production | Vite build passed; MapLibre worker emitted as its own asset; production HTTP 200 and rendered-street smoke passed with no page errors |
 | Visual review | Desktop, mobile, actual street map and source-count figure inspected from screenshots |
 
 The map chunk is approximately 1.06 MB minified (about 291 KB gzip), plus a separate 517 KB worker; Vite emits a chunk-size warning. It is split from the main reading interface. Further viewport-triggered loading can reduce initial transfer; this engineering limit does not change the data claims.
 
 The initial pipeline implementation commit is `cea32e9`. The final delivery commit is reported in the handoff and can be retrieved with `git rev-parse HEAD`; a document cannot embed the hash of its own containing commit without changing that hash. Scientific manifests use the commit at the start of each run and mark dirty state honestly. Early bootstrap runs have no commit. Final publication assets record their run ID and source revision.
+
+The final scientific execution evidence is preserved in [reproduction-manifests.json](../artifacts/reports/reproduction-manifests.json). It captures execution at implementation commit `fd44f81`, exact dependency versions, source/input/output hashes, config, timestamps and validation. The empirical reproduction started from a clean tree; the following smoke execution correctly records a dirty tree because the empirical export had just refreshed publication files. The change is generated metadata/results, not an unrecorded analysis-code edit.
 
 ## Scientific gates
 
