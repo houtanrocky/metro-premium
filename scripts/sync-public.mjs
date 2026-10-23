@@ -6,7 +6,7 @@ const data=JSON.parse(readFileSync('data/public/research.json','utf8'));
 if(data.kind!=='empirical_preview'||data.schema_version!==2) throw Error('Default site requires versioned empirical data');
 copyFileSync('data/public/research.json',`${dest}/data/research.json`);
 mkdirSync(`${dest}/research`,{recursive:true});
-for(const name of ['methodology','limitations','findings','statistical-analysis-plan','literature-review','mapped-reference-plan']){
+for(const name of ['methodology','limitations','findings','statistical-analysis-plan','literature-review','mapped-reference-plan','mapped-reference-findings','historical-network-validation']){
   copyFileSync(`research/${name}.md`,`${dest}/research/${name}.md`);
 }
 copyFileSync('artifacts/audits/source-audit.json',`${dest}/data/source-audit.json`);
@@ -19,6 +19,7 @@ copyFileSync('data/public/synthetic-demo.json',`${dest}/data/synthetic-demo.json
 if(data.mapped_reference){
   copyFileSync('artifacts/reports/mapped-analysis.json',`${dest}/data/mapped-analysis.json`);
   copyFileSync('artifacts/figures/mapped-accessibility.png',`${dest}/data/mapped-accessibility.png`);
+  if(existsSync('artifacts/reports/historical-network-audit.json'))copyFileSync('artifacts/reports/historical-network-audit.json',`${dest}/data/historical-network-audit.json`);
 }
 mkdirSync(`${dest}/licenses`,{recursive:true});
 copyFileSync('node_modules/@fontsource/vazirmatn/LICENSE',`${dest}/licenses/vazirmatn.txt`);

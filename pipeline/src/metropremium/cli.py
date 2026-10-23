@@ -163,7 +163,8 @@ def main():
                         shutil.copyfile(folder/filename,ROOT/'artifacts/reports'/filename)
                     for filename in ['housing-descriptives.json','housing-descriptives.csv']:
                         shutil.copyfile(folder/filename,ROOT/'artifacts/reports'/filename)
-                    for filename in ['mapped-analysis.json','mapped-entrance-inventory.json','mapped-location-sensitivity.json','station-entrance-review.csv']:
+                    # Individual entrance review coordinates stay in the private run.
+                    for filename in ['mapped-analysis.json','mapped-entrance-inventory.json','mapped-location-sensitivity.json']:
                         if (folder/filename).exists():
                             shutil.copyfile(folder/filename,ROOT/'artifacts/reports'/filename)
                     for filename in ['mapped-accessibility.png','mapped-accessibility.svg']:

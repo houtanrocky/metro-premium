@@ -42,7 +42,14 @@ def fit_models(frame, minimum_n=100, minimum_clusters=30):
         beta = float(result.params['distance_km'])
         influence = result.get_influence()
         resid = np.asarray(result.resid)
-        item = {'name':name,'status':'estimated','formula':formula,'n':int(result.nobs),'clusters':int(clusters),'distance_coefficient_per_km':beta,'confidence_interval_95':ci,'association_percent_per_km':float(100*np.expm1(beta)),'association_percent_ci_95':(100*np.expm1(ci)).tolist(),'r_squared':float(result.rsquared),'condition_number':float(result.condition_number),'breusch_pagan_pvalue':float(het_breuschpagan(resid,x)[1]),'max_cooks_distance':float(influence.cooks_distance[0].max()),'residual_quantiles':np.quantile(resid,[.01,.25,.5,.75,.99]).tolist()}
+        # A singleton fixed-effect group has unit leverage: Cook's distance is
+        # undefined there. Preserve that limitation rather than exporting NaN
+        # or replacing it with zero. Coefficients retain their existing gates.
+        leverage = np.asarray(influence.hat_matrix_diag)
+        with np.errstate(divide='ignore', invalid='ignore'):
+            cooks = np.asarray(influence.cooks_distance[0])
+        defined = np.isfinite(cooks) & np.isfinite(leverage) & (leverage >= 0) & (leverage < 1 - 1e-10)
+        item = {'name':name,'status':'estimated','formula':formula,'n':int(result.nobs),'clusters':int(clusters),'distance_coefficient_per_km':beta,'confidence_interval_95':ci,'association_percent_per_km':float(100*np.expm1(beta)),'association_percent_ci_95':(100*np.expm1(ci)).tolist(),'r_squared':float(result.rsquared),'condition_number':float(result.condition_number),'breusch_pagan_pvalue':float(het_breuschpagan(resid,x)[1]),'max_cooks_distance':float(cooks[defined].max()) if defined.any() else None,'cooks_distance_defined_n':int(defined.sum()),'cooks_distance_undefined_n':int((~defined).sum()),'influence_diagnostic_caveat':'Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.','residual_quantiles':np.quantile(resid,[.01,.25,.5,.75,.99]).tolist()}
         # Exploratory residual spatial structure, kNN at approximate origins; not a significance test.
         if {'x','y'}.issubset(df.columns) and df[['x','y']].notna().all().all():
             _, nn = cKDTree(df[['x','y']]).query(df[['x','y']],k=min(9,len(df)))
@@ -86,11 +93,20 @@ def spatial_wild_bootstrap(frame, draws=199, block_m=2000, seed=0):
         out['models'].append({'name':entry['name'],'coefficient_quantiles_025_50_975':np.quantile(coefficients,[.025,.5,.975]).tolist(),'failed_draws':0})
     return out
 
-def sensitivity_models(df):
+def sensitivity_models(df, minimum_group=30):
     variants = {'baseline':df, 'candidate_deduplicated':df.loc[~df.duplicate_candidate], 'without_flagged_price_tails':df.loc[~df.tail_flag], 'radius_at_most_100m':df.loc[df.location_radius.le(100)], 'radius_at_most_250m':df.loc[df.location_radius.le(250)]}
     if 'euclidean_m' in df:
         variants['euclidean_distance'] = df.assign(network_m=df.euclidean_m)
     results = {key:fit_models(value) for key,value in variants.items()}
     # Threshold comparisons are summaries, not regressions at arbitrarily selected cutoffs.
-    results['threshold_summaries'] = [{'threshold_m':t,'near_n':int(df.network_m.le(t).sum()),'far_n':int(df.network_m.gt(t).sum()),'near_median':float(df.loc[df.network_m.le(t),'per_m2'].median()) if df.network_m.le(t).any() else None,'far_median':float(df.loc[df.network_m.gt(t),'per_m2'].median()) if df.network_m.gt(t).any() else None} for t in [400,500,800,1000,1500]]
+    results['threshold_summaries'] = []
+    results['suppressed_thresholds_m'] = []
+    for t in [400,500,800,1000,1500]:
+        near = df.loc[df.network_m.le(t) & df.per_m2.notna(), 'per_m2']
+        far = df.loc[df.network_m.gt(t) & df.per_m2.notna(), 'per_m2']
+        if min(len(near), len(far)) < minimum_group:
+            results['suppressed_thresholds_m'].append(t)
+            continue
+        results['threshold_summaries'].append({'threshold_m':t,'near_n':len(near),'far_n':len(far),'near_median':float(near.median()),'far_median':float(far.median())})
+    results['threshold_minimum_group'] = minimum_group
     return results

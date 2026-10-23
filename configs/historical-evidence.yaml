@@ -1,0 +1,30 @@
+schema_version: 1
+snapshot: '2024-12-01T00:00:00Z'
+source_scope: station_inauguration_only
+calendar_conversion: System.Globalization.PersianCalendar.ToDateTime(1402,7,18,0,0,0,0), checked 2026-10-23
+sources:
+  - id: president-147059
+    authority: official_presidential_event_report
+    url: https://president.ir/fa/147059
+    file: data/raw/references/historical-operation/president-147059.html
+    sha256: 9e29cfd2967f0abdefc1bd23c926e8330ed810bc341af25d7a146bd50aed0831
+    bytes: 44288
+    event_date_gregorian: '2023-10-10'
+    event_date_persian: '1402-07-18'
+    article_date_marker: '18 مهر 1402'
+    claims:
+      - line: '6'
+        station: شهید آرمان علی‌وردی
+      - line: '6'
+        station: شهران
+      - line: '6'
+        station: شهر زیبا
+      - line: '7'
+        station: میدان کتاب
+    verifies_specific_entrance: false
+    verifies_continuous_service: false
+    verifies_physical_walking: false
+rejected_sources:
+  - url: https://www.irna.ir/news/85253321
+    cached_file: data/raw/references/historical-operation/irna-85253321.html
+    reason: Cached response is a Cloudflare challenge, not the article; no claim accepted.

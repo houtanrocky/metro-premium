@@ -1,5 +1,7 @@
 # Findings: initial evidence, 22 October 2026
 
+Current exploratory update, 23 October 2026: the historical mapped-entrance extension has executed on real data. It supports 2,978 routes and 2,962 common complete model cases. The neighborhood-adjusted interval spans zero and location perturbations change the estimate's sign. See the separate [mapped-reference findings](mapped-reference-findings.md); primary operational metro-access approval remains closed. The housing-only findings and preserved initial audit below retain their original scope.
+
 ## Current update — 23 October 2026
 
 After inspecting actual source records, the owner confirmed that `price_value` is the **total apartment asking price in toman**. This is recorded as owner-provided evidence in [price-interpretation.md](price-interpretation.md); publisher verification is not claimed. The original audit below is preserved as the earlier evidence state. The change enables division by area without currency rescaling and does not alter the raw data or candidate population.

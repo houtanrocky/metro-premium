@@ -1,0 +1,2115 @@
+{
+  "mapped_entrance_nodes": 194,
+  "retained_entrance_nodes": 166,
+  "excluded_entrance_nodes": [
+    3212178801,
+    3212178802,
+    4129914399,
+    4174121494,
+    4245940673,
+    4245940674,
+    4467024498,
+    4467024499,
+    4499931427,
+    4558200196,
+    4607557528,
+    4841608963,
+    5068589664,
+    5112546416,
+    5194776018,
+    6581263862,
+    6694194498,
+    6746468335,
+    6814313950,
+    8979941574,
+    11263536546,
+    11417054142,
+    11468172630,
+    11737168945,
+    11737197480,
+    11932540115,
+    12165049396,
+    12330887623
+  ],
+  "lines": [
+    {
+      "line": "1",
+      "route_relations": [
+        2750010,
+        6151834,
+        7735255,
+        7832313
+      ],
+      "stop_nodes": [
+        26751498,
+        660623347,
+        660623588,
+        660623849,
+        660624203,
+        660631367,
+        660633348,
+        660635266,
+        660636159,
+        660637545,
+        660640664,
+        660640714,
+        660658298,
+        660658572,
+        2152781392,
+        2169292190,
+        2169298472,
+        2169380695,
+        2169380696,
+        2169380700,
+        2169380705,
+        2169380710,
+        2169380721,
+        2367114843,
+        3548939496,
+        3691093697,
+        4452299882,
+        5003695295,
+        5003695296,
+        5162855460,
+        5188238057,
+        5190423567,
+        6735113793,
+        11271470415,
+        11281419801
+      ],
+      "identity_matched_nodes": [
+        660623347,
+        660623588,
+        660623849,
+        660624203,
+        660631367,
+        660633348,
+        660635266,
+        660636159,
+        660637545,
+        660640664,
+        660640714,
+        660658298,
+        660658572,
+        2152781392,
+        2169292190,
+        2169298472,
+        2169380695,
+        2169380696,
+        2169380700,
+        2169380705,
+        2169380710,
+        2169380721,
+        3548939496,
+        3691093697,
+        4452299882,
+        5162855460,
+        5188238057
+      ],
+      "retained_entrances": [
+        660624152,
+        2316962838,
+        2317957220,
+        2317957425,
+        2317957434,
+        3417716479,
+        3428577592,
+        3428644793,
+        3428644794,
+        3689254136,
+        3689254138,
+        3784895492,
+        4167271189,
+        4174126193,
+        4219248422,
+        4219248423,
+        4361122323,
+        4388771061,
+        4431077574,
+        4483402991,
+        4493689476,
+        4508494541,
+        4508494542,
+        4508500046,
+        4560783437,
+        4566502125,
+        5162855458,
+        6463545147,
+        6468302494,
+        7061650894,
+        7061650895,
+        7061650896,
+        8507749864,
+        8614032470,
+        9105930293,
+        12037680563
+      ]
+    },
+    {
+      "line": "2",
+      "route_relations": [
+        2431321,
+        7832324
+      ],
+      "stop_nodes": [
+        654082162,
+        659782107,
+        659784460,
+        660627035,
+        660628277,
+        660628303,
+        660628364,
+        660628705,
+        660628852,
+        660628855,
+        660628921,
+        864404756,
+        2120217849,
+        2169691367,
+        3080821096,
+        3691224155,
+        3778792864,
+        4452329924,
+        4453643066,
+        4674995987,
+        5183625749,
+        5186262280
+      ],
+      "identity_matched_nodes": [
+        654082162,
+        659782107,
+        659784460,
+        660627035,
+        660628277,
+        660628303,
+        660628364,
+        660628705,
+        660628852,
+        660628855,
+        660628921,
+        864404756,
+        2120217849,
+        2169691367,
+        3080821096,
+        3691224155,
+        4674995987,
+        5183625749,
+        5186262280
+      ],
+      "retained_entrances": [
+        2145223376,
+        2281972809,
+        2299605787,
+        2299605800,
+        2299605804,
+        2299606138,
+        2299606179,
+        2299606195,
+        2317957459,
+        2317957463,
+        3080821097,
+        3080821098,
+        3086587328,
+        3086587329,
+        3086587330,
+        3428577592,
+        3428644793,
+        3428644794,
+        3834386745,
+        3834418220,
+        3856733614,
+        4165484096,
+        4167271189,
+        4174120891,
+        4174127589,
+        4176980394,
+        4200367229,
+        4217383911,
+        4217385028,
+        4307342671,
+        4445587131,
+        4460126783,
+        4560007208,
+        4672357739,
+        4732328685,
+        4853415469,
+        4853415470,
+        5508708607,
+        5669676071,
+        10982033228
+      ]
+    },
+    {
+      "line": "3",
+      "route_relations": [
+        5366249,
+        7770933
+      ],
+      "stop_nodes": [
+        2169732979,
+        2831259303,
+        2831259315,
+        3635251445,
+        3641204693,
+        3649760925,
+        3649760926,
+        3649760928,
+        3778821747,
+        3778822187,
+        3778861785,
+        3778861786,
+        3778861787,
+        3778861789,
+        3778861790,
+        3778861791,
+        3778861792,
+        3778861797,
+        4453205974,
+        4453224428,
+        4453604919,
+        4453614390,
+        5188238058,
+        5190555599,
+        10760685494
+      ],
+      "identity_matched_nodes": [
+        2169732979,
+        2831259303,
+        2831259315,
+        3635251445,
+        3641204693,
+        3649760925,
+        3649760926,
+        3649760928,
+        3778821747,
+        3778861785,
+        3778861786,
+        3778861787,
+        3778861789,
+        3778861790,
+        3778861791,
+        3778861792,
+        3778861797,
+        4453205974,
+        4453604919,
+        4453614390,
+        5188238058,
+        5190555599,
+        10760685494
+      ],
+      "retained_entrances": [
+        2192231217,
+        3972700019,
+        4038852944,
+        4174121392,
+        4174121393,
+        4174126195,
+        4174126196,
+        4225663390,
+        4234109918,
+        4293301924,
+        4380416542,
+        4421782060,
+        4443793545,
+        4443793547,
+        4443793548,
+        4443793550,
+        4443793556,
+        4443841290,
+        4443949609,
+        4473002178,
+        4508494541,
+        4508494542,
+        4508500046,
+        4699612455,
+        4699612457,
+        4780665323,
+        4913123013,
+        4939470509,
+        5078343294,
+        5097223596,
+        5108879548,
+        5128085899,
+        5358224529,
+        5538633456,
+        5758507227,
+        5892238817,
+        6636898112,
+        7061611731,
+        9971428686,
+        11644943830
+      ]
+    },
+    {
+      "line": "4",
+      "route_relations": [
+        443307,
+        7683584,
+        7705668,
+        7726963
+      ],
+      "stop_nodes": [
+        654081655,
+        660624968,
+        2169732950,
+        2169732952,
+        2169732956,
+        2169732969,
+        2169732971,
+        2169732980,
+        2169732984,
+        3930789262,
+        3930792260,
+        3930792665,
+        4452444057,
+        4544628125,
+        4553519985,
+        4558309639,
+        5161529740,
+        5162910434,
+        5188247276,
+        5188341404,
+        6438071583,
+        10860300370,
+        11417054144,
+        11417054145,
+        11417054162,
+        11417054166
+      ],
+      "identity_matched_nodes": [
+        654081655,
+        660624968,
+        2169732950,
+        2169732952,
+        2169732956,
+        2169732969,
+        2169732971,
+        2169732984,
+        3930789262,
+        4452444057,
+        4544628125,
+        4553519985,
+        4558309639,
+        5161529740,
+        5162910434,
+        5188247276,
+        5188341404,
+        6438071583,
+        10860300370,
+        11417054144,
+        11417054145
+      ],
+      "retained_entrances": [
+        2192231217,
+        2203911488,
+        2203911616,
+        2203911624,
+        2316962439,
+        3010835326,
+        3075362396,
+        3075362397,
+        3439539465,
+        3870176576,
+        4155885934,
+        4174120891,
+        4174127589,
+        4219248422,
+        4219248423,
+        4219260482,
+        4443793545,
+        4443793547,
+        4443793548,
+        4443793550,
+        4443793556,
+        4443841290,
+        4447043734,
+        4447077847,
+        4460126783,
+        4499905470,
+        4553519986,
+        4553591969,
+        5211274170,
+        5211274175,
+        5508708607,
+        6090395289,
+        9033082250,
+        9166566159,
+        10969076750,
+        10982033228,
+        12167907213
+      ]
+    },
+    {
+      "line": "6",
+      "route_relations": [
+        5697303,
+        9468295
+      ],
+      "stop_nodes": [
+        660627594,
+        3784648882,
+        3815454692,
+        3815454729,
+        3815456757,
+        3815456806,
+        3815456820,
+        3815456823,
+        3815456838,
+        3815456860,
+        3853324357,
+        3853324358,
+        3853324374,
+        3853324397,
+        3853324399,
+        3853324444,
+        5930756414,
+        6818484834,
+        9149513247,
+        10235224668,
+        10759924012,
+        10761286147,
+        11263536540
+      ],
+      "identity_matched_nodes": [
+        660627594,
+        3784648882,
+        3815454729,
+        3815456820,
+        3815456823,
+        3853324358,
+        3853324374,
+        3853324397,
+        3853324444,
+        5930756414,
+        6818484834,
+        9149513247,
+        10235224668,
+        11263536540
+      ],
+      "retained_entrances": [
+        4499905470,
+        6388937499,
+        6417374273,
+        8273593825,
+        8479037451,
+        8906980008,
+        10746895092,
+        11263536541,
+        11263536544,
+        11342897748,
+        12167854848
+      ]
+    },
+    {
+      "line": "7",
+      "route_relations": [
+        7429356,
+        7705643
+      ],
+      "stop_nodes": [
+        3784645922,
+        3784645934,
+        3784645954,
+        3784648769,
+        3784648857,
+        3784648870,
+        3784648871,
+        3784648875,
+        3784648877,
+        3784648879,
+        3784648880,
+        3784648883,
+        3784648884,
+        3784648885,
+        4981028494,
+        5190423569,
+        5193453622,
+        9360432983,
+        9817359618,
+        10126282787,
+        10746895094
+      ],
+      "identity_matched_nodes": [
+        3784645934,
+        3784645954,
+        3784648769,
+        3784648857,
+        3784648870,
+        3784648871,
+        3784648875,
+        3784648877,
+        3784648879,
+        3784648880,
+        3784648883,
+        3784648884,
+        3784648885,
+        4981028494,
+        5190423569,
+        5193453622,
+        9360432983,
+        9817359618,
+        10126282787,
+        10746895094
+      ],
+      "retained_entrances": [
+        654080987,
+        2317957425,
+        2317957434,
+        3439539465,
+        4219260482,
+        4293293322,
+        4532784208,
+        4781215605,
+        5156504221,
+        5183499958,
+        6326965069,
+        6417374273,
+        7232916108,
+        8479037611,
+        8979969908,
+        8979969909,
+        9025939361,
+        9025939362,
+        9025939363,
+        9025939364,
+        9266851430,
+        9366193868,
+        9921520766,
+        10842009881,
+        11263799078,
+        11397331446,
+        11397336552,
+        11491058642,
+        11655780757
+      ]
+    }
+  ],
+  "stop_area_checks": [
+    {
+      "stop_area": 7643577,
+      "name": "ارم سبز",
+      "route_lines": [
+        "4"
+      ],
+      "guide_identity_lines": [
+        "4"
+      ],
+      "entrances_in_relation": 0
+    },
+    {
+      "stop_area": 7643579,
+      "name": "صادقیه",
+      "route_lines": [
+        "2"
+      ],
+      "guide_identity_lines": [],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7645336,
+      "name": "خیام",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [
+        "1"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7645337,
+      "name": "کهریزک",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [
+        "1"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7645338,
+      "name": "حرم مطهر",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7645339,
+      "name": "شاهد",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [
+        "1"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7645340,
+      "name": "شاهد",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [
+        "1"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7645438,
+      "name": "نبرد",
+      "route_lines": [
+        "4"
+      ],
+      "guide_identity_lines": [
+        "4"
+      ],
+      "entrances_in_relation": 0
+    },
+    {
+      "stop_area": 7645439,
+      "name": "میدان انقلاب اسلامی",
+      "route_lines": [
+        "4"
+      ],
+      "guide_identity_lines": [
+        "4"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7645440,
+      "name": "تئاترشهر",
+      "route_lines": [
+        "4"
+      ],
+      "guide_identity_lines": [
+        "4"
+      ],
+      "entrances_in_relation": 8
+    },
+    {
+      "stop_area": 7645441,
+      "name": "تئاترشهر",
+      "route_lines": [
+        "3"
+      ],
+      "guide_identity_lines": [
+        "3"
+      ],
+      "entrances_in_relation": 7
+    },
+    {
+      "stop_area": 7645443,
+      "name": "شهید کلاهدوز",
+      "route_lines": [
+        "4"
+      ],
+      "guide_identity_lines": [
+        "4"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7645622,
+      "name": "شهید محلاتی",
+      "route_lines": [
+        "3"
+      ],
+      "guide_identity_lines": [
+        "3"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7645623,
+      "name": "قائم",
+      "route_lines": [
+        "3"
+      ],
+      "guide_identity_lines": [
+        "3"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7645624,
+      "name": "شهید باقری",
+      "route_lines": [
+        "2"
+      ],
+      "guide_identity_lines": [
+        "2"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7645625,
+      "name": "فرهنگسرا",
+      "route_lines": [
+        "2"
+      ],
+      "guide_identity_lines": [
+        "2"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7645626,
+      "name": "تهرانپارس",
+      "route_lines": [
+        "2"
+      ],
+      "guide_identity_lines": [
+        "2"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7649028,
+      "name": "توحید",
+      "route_lines": [
+        "4"
+      ],
+      "guide_identity_lines": [
+        "4"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7649029,
+      "name": "شهید نواب صفوی",
+      "route_lines": [
+        "2"
+      ],
+      "guide_identity_lines": [],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7649030,
+      "name": "شهید نواب صفوی",
+      "route_lines": [
+        "7"
+      ],
+      "guide_identity_lines": [
+        "7"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7649031,
+      "name": "رودکی",
+      "route_lines": [
+        "7"
+      ],
+      "guide_identity_lines": [
+        "7"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7649047,
+      "name": "عبدل آباد",
+      "route_lines": [
+        "3"
+      ],
+      "guide_identity_lines": [
+        "3"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7649048,
+      "name": "نعمت آباد",
+      "route_lines": [
+        "3"
+      ],
+      "guide_identity_lines": [
+        "3"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7649049,
+      "name": "آزادگان",
+      "route_lines": [
+        "3"
+      ],
+      "guide_identity_lines": [
+        "3"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7659322,
+      "name": "ترمینال های چهار و شش",
+      "route_lines": [
+        "4"
+      ],
+      "guide_identity_lines": [],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7659323,
+      "name": "فرودگاه مهر آباد ترمینال های یک و دو",
+      "route_lines": [
+        "4"
+      ],
+      "guide_identity_lines": [],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7664376,
+      "name": "طرشت",
+      "route_lines": [
+        "2"
+      ],
+      "guide_identity_lines": [
+        "2"
+      ],
+      "entrances_in_relation": 4
+    },
+    {
+      "stop_area": 7673356,
+      "name": "بسیج",
+      "route_lines": [
+        "7"
+      ],
+      "guide_identity_lines": [
+        "7"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7673382,
+      "name": "علی آباد",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [
+        "1"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7673389,
+      "name": "بیمه",
+      "route_lines": [
+        "4"
+      ],
+      "guide_identity_lines": [
+        "4"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7673508,
+      "name": "دانشگاه امام علی ع",
+      "route_lines": [
+        "2"
+      ],
+      "guide_identity_lines": [],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7673509,
+      "name": "شادمان",
+      "route_lines": [
+        "2"
+      ],
+      "guide_identity_lines": [
+        "2"
+      ],
+      "entrances_in_relation": 3
+    },
+    {
+      "stop_area": 7673510,
+      "name": "شادمان",
+      "route_lines": [
+        "4"
+      ],
+      "guide_identity_lines": [
+        "4"
+      ],
+      "entrances_in_relation": 3
+    },
+    {
+      "stop_area": 7677559,
+      "name": "میدان آزادی",
+      "route_lines": [
+        "4"
+      ],
+      "guide_identity_lines": [
+        "4"
+      ],
+      "entrances_in_relation": 3
+    },
+    {
+      "stop_area": 7677588,
+      "name": "امام خمینی",
+      "route_lines": [
+        "2"
+      ],
+      "guide_identity_lines": [
+        "2"
+      ],
+      "entrances_in_relation": 4
+    },
+    {
+      "stop_area": 7677589,
+      "name": "امام خمینی",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [
+        "1"
+      ],
+      "entrances_in_relation": 4
+    },
+    {
+      "stop_area": 7679813,
+      "name": "شهر آفتاب",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7679920,
+      "name": "شهید بهشتی",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [
+        "1"
+      ],
+      "entrances_in_relation": 3
+    },
+    {
+      "stop_area": 7679921,
+      "name": "شهید بهشتی",
+      "route_lines": [
+        "3"
+      ],
+      "guide_identity_lines": [
+        "3"
+      ],
+      "entrances_in_relation": 3
+    },
+    {
+      "stop_area": 7679928,
+      "name": "دروازه دولت",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [
+        "1"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7679929,
+      "name": "دروازه دولت",
+      "route_lines": [
+        "4"
+      ],
+      "guide_identity_lines": [
+        "4"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7680016,
+      "name": "دروازه شمیران",
+      "route_lines": [
+        "2"
+      ],
+      "guide_identity_lines": [
+        "2"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7680017,
+      "name": "دروازه شمیران",
+      "route_lines": [
+        "4"
+      ],
+      "guide_identity_lines": [
+        "4"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7680022,
+      "name": "میدان محمدیه",
+      "route_lines": [
+        "7"
+      ],
+      "guide_identity_lines": [
+        "7"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7680023,
+      "name": "میدان محمدیه",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [
+        "1"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7682678,
+      "name": "دانشگاه تربیت مدرس",
+      "route_lines": [
+        "7"
+      ],
+      "guide_identity_lines": [
+        "7"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7682679,
+      "name": "کمیل",
+      "route_lines": [
+        "7"
+      ],
+      "guide_identity_lines": [
+        "7"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7682680,
+      "name": "بریانک",
+      "route_lines": [
+        "7"
+      ],
+      "guide_identity_lines": [
+        "7"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7682785,
+      "name": "شهرک اکباتان",
+      "route_lines": [
+        "4"
+      ],
+      "guide_identity_lines": [
+        "4"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7682848,
+      "name": "دانشگاه شریف",
+      "route_lines": [
+        "2"
+      ],
+      "guide_identity_lines": [
+        "2"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7682919,
+      "name": "زمزم",
+      "route_lines": [
+        "3"
+      ],
+      "guide_identity_lines": [
+        "3"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7682921,
+      "name": "شهرری",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [
+        "1"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7683322,
+      "name": "شهرک شریعتی",
+      "route_lines": [
+        "3"
+      ],
+      "guide_identity_lines": [
+        "3"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7683369,
+      "name": "تجریش",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [
+        "1"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7683370,
+      "name": "شوش",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [
+        "1"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7683375,
+      "name": "شهید بخارایی",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [
+        "1"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7683377,
+      "name": "پانزده خرداد",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [
+        "1"
+      ],
+      "entrances_in_relation": 3
+    },
+    {
+      "stop_area": 7685397,
+      "name": "میدان ولی عصر عج",
+      "route_lines": [
+        "6"
+      ],
+      "guide_identity_lines": [],
+      "entrances_in_relation": 4
+    },
+    {
+      "stop_area": 7685398,
+      "name": "میدان جهاد",
+      "route_lines": [
+        "3"
+      ],
+      "guide_identity_lines": [
+        "3"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7685399,
+      "name": "هروی",
+      "route_lines": [
+        "3"
+      ],
+      "guide_identity_lines": [],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7685400,
+      "name": "شهید زین الدین",
+      "route_lines": [
+        "3"
+      ],
+      "guide_identity_lines": [
+        "3"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7685401,
+      "name": "نوبنیاد",
+      "route_lines": [
+        "3"
+      ],
+      "guide_identity_lines": [
+        "3"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7685402,
+      "name": "سهروردی",
+      "route_lines": [
+        "3"
+      ],
+      "guide_identity_lines": [
+        "3"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7685403,
+      "name": "شهید صیاد شیرازی",
+      "route_lines": [
+        "3"
+      ],
+      "guide_identity_lines": [
+        "3"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7685404,
+      "name": "خواجه عبدالله انصاری",
+      "route_lines": [
+        "3"
+      ],
+      "guide_identity_lines": [
+        "3"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7685405,
+      "name": "میدان حر",
+      "route_lines": [
+        "2"
+      ],
+      "guide_identity_lines": [
+        "2"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7685406,
+      "name": "بهارستان",
+      "route_lines": [
+        "2"
+      ],
+      "guide_identity_lines": [
+        "2"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7685407,
+      "name": "قلهک",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [
+        "1"
+      ],
+      "entrances_in_relation": 0
+    },
+    {
+      "stop_area": 7685409,
+      "name": "طالقانی",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [
+        "1"
+      ],
+      "entrances_in_relation": 0
+    },
+    {
+      "stop_area": 7685410,
+      "name": "مصلی امام خمینی",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [],
+      "entrances_in_relation": 4
+    },
+    {
+      "stop_area": 7685411,
+      "name": "شهید مدنی",
+      "route_lines": [
+        "2"
+      ],
+      "guide_identity_lines": [
+        "2"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7685412,
+      "name": "جوادیه",
+      "route_lines": [
+        "3"
+      ],
+      "guide_identity_lines": [
+        "3"
+      ],
+      "entrances_in_relation": 0
+    },
+    {
+      "stop_area": 7685413,
+      "name": "حسن آباد",
+      "route_lines": [
+        "2"
+      ],
+      "guide_identity_lines": [
+        "2"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7685414,
+      "name": "میدان صنعت",
+      "route_lines": [
+        "7"
+      ],
+      "guide_identity_lines": [
+        "7"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7685416,
+      "name": "مهدیه",
+      "route_lines": [
+        "3"
+      ],
+      "guide_identity_lines": [],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7685417,
+      "name": "میرداماد",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [
+        "1"
+      ],
+      "entrances_in_relation": 3
+    },
+    {
+      "stop_area": 7685418,
+      "name": "شهید حقانی",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [
+        "1"
+      ],
+      "entrances_in_relation": 0
+    },
+    {
+      "stop_area": 7685420,
+      "name": "سبلان",
+      "route_lines": [
+        "2"
+      ],
+      "guide_identity_lines": [
+        "2"
+      ],
+      "entrances_in_relation": 3
+    },
+    {
+      "stop_area": 7685422,
+      "name": "دکتر شریعتی",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [
+        "1"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7685424,
+      "name": "نیرو هوایی",
+      "route_lines": [
+        "4"
+      ],
+      "guide_identity_lines": [],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7685425,
+      "name": "سرسبز",
+      "route_lines": [
+        "2"
+      ],
+      "guide_identity_lines": [
+        "2"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7685426,
+      "name": "راه آهن",
+      "route_lines": [
+        "3"
+      ],
+      "guide_identity_lines": [
+        "3"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7685427,
+      "name": "ابن سینا",
+      "route_lines": [
+        "4"
+      ],
+      "guide_identity_lines": [
+        "4"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7685428,
+      "name": "قیطریه",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [
+        "1"
+      ],
+      "entrances_in_relation": 0
+    },
+    {
+      "stop_area": 7685429,
+      "name": "میرزای شیرازی",
+      "route_lines": [
+        "3"
+      ],
+      "guide_identity_lines": [
+        "3"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7685433,
+      "name": "پیروزی",
+      "route_lines": [
+        "4"
+      ],
+      "guide_identity_lines": [
+        "4"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7685436,
+      "name": "امام حسین",
+      "route_lines": [
+        "2"
+      ],
+      "guide_identity_lines": [
+        "2"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7685437,
+      "name": "میدان شهدا",
+      "route_lines": [
+        "6"
+      ],
+      "guide_identity_lines": [
+        "6"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7685438,
+      "name": "فدک",
+      "route_lines": [
+        "2"
+      ],
+      "guide_identity_lines": [
+        "2"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7685439,
+      "name": "جانبازان",
+      "route_lines": [
+        "2"
+      ],
+      "guide_identity_lines": [
+        "2"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7685440,
+      "name": "دکتر حبیب اله",
+      "route_lines": [
+        "4"
+      ],
+      "guide_identity_lines": [
+        "4"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7685442,
+      "name": "پایانه جنوب",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [
+        "1"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7685443,
+      "name": "شهید صدر",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [
+        "1"
+      ],
+      "entrances_in_relation": 0
+    },
+    {
+      "stop_area": 7685444,
+      "name": "فردوسی",
+      "route_lines": [
+        "4"
+      ],
+      "guide_identity_lines": [
+        "4"
+      ],
+      "entrances_in_relation": 3
+    },
+    {
+      "stop_area": 7685445,
+      "name": "جوانمرد قصاب",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [
+        "1"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7685447,
+      "name": "شهید همت",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [
+        "1"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7685450,
+      "name": "استاد معین",
+      "route_lines": [
+        "4"
+      ],
+      "guide_identity_lines": [
+        "4"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7685452,
+      "name": "سعدی",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [
+        "1"
+      ],
+      "entrances_in_relation": 0
+    },
+    {
+      "stop_area": 7685453,
+      "name": "شهید مفتح",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [
+        "1"
+      ],
+      "entrances_in_relation": 3
+    },
+    {
+      "stop_area": 7685454,
+      "name": "ملت",
+      "route_lines": [
+        "2"
+      ],
+      "guide_identity_lines": [
+        "2"
+      ],
+      "entrances_in_relation": 0
+    },
+    {
+      "stop_area": 7685455,
+      "name": "دانشگاه علم و صنعت",
+      "route_lines": [
+        "2"
+      ],
+      "guide_identity_lines": [
+        "2"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 7685457,
+      "name": "شهید قدوسی",
+      "route_lines": [
+        "3"
+      ],
+      "guide_identity_lines": [
+        "3"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 7685458,
+      "name": "باقرشهر",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [
+        "1"
+      ],
+      "entrances_in_relation": 0
+    },
+    {
+      "stop_area": 8493368,
+      "name": "مهدیه",
+      "route_lines": [
+        "7"
+      ],
+      "guide_identity_lines": [
+        "7"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 9468293,
+      "name": "بعثت",
+      "route_lines": [
+        "6"
+      ],
+      "guide_identity_lines": [
+        "6"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 9468294,
+      "name": "دولت آباد",
+      "route_lines": [
+        "6"
+      ],
+      "guide_identity_lines": [],
+      "entrances_in_relation": 0
+    },
+    {
+      "stop_area": 9468297,
+      "name": "میدان شهدا",
+      "route_lines": [
+        "4"
+      ],
+      "guide_identity_lines": [
+        "4"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 9588054,
+      "name": "منیریه",
+      "route_lines": [
+        "3"
+      ],
+      "guide_identity_lines": [
+        "3"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 9588055,
+      "name": "هلال احمر",
+      "route_lines": [
+        "7"
+      ],
+      "guide_identity_lines": [
+        "7"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 9874847,
+      "name": "حسین آباد",
+      "route_lines": [
+        "3"
+      ],
+      "guide_identity_lines": [
+        "3"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 10068530,
+      "name": "امام حسین",
+      "route_lines": [
+        "6"
+      ],
+      "guide_identity_lines": [
+        "6"
+      ],
+      "entrances_in_relation": 0
+    },
+    {
+      "stop_area": 11561233,
+      "name": "شهدای هفت تیر",
+      "route_lines": [
+        "1"
+      ],
+      "guide_identity_lines": [],
+      "entrances_in_relation": 3
+    },
+    {
+      "stop_area": 11942360,
+      "name": "برج میلاد تهران",
+      "route_lines": [
+        "7"
+      ],
+      "guide_identity_lines": [
+        "7"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 12040388,
+      "name": "امیر کبیر",
+      "route_lines": [
+        "6"
+      ],
+      "guide_identity_lines": [
+        "6"
+      ],
+      "entrances_in_relation": 0
+    },
+    {
+      "stop_area": 12111802,
+      "name": "کیانشهر",
+      "route_lines": [
+        "6"
+      ],
+      "guide_identity_lines": [
+        "6"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 12386192,
+      "name": "یادگار امام",
+      "route_lines": [
+        "6"
+      ],
+      "guide_identity_lines": [
+        "6"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 12519507,
+      "name": "اشرفی اصفهانی",
+      "route_lines": [
+        "6"
+      ],
+      "guide_identity_lines": [],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 12721904,
+      "name": "اقدسیه",
+      "route_lines": [
+        "3"
+      ],
+      "guide_identity_lines": [
+        "3"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 12818896,
+      "name": "میدان ولی عصر عج",
+      "route_lines": [
+        "3"
+      ],
+      "guide_identity_lines": [
+        "3"
+      ],
+      "entrances_in_relation": 4
+    },
+    {
+      "stop_area": 12818897,
+      "name": "دانشگاه تربیت مدرس",
+      "route_lines": [
+        "6"
+      ],
+      "guide_identity_lines": [
+        "6"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 12818898,
+      "name": "بوستان لاله",
+      "route_lines": [
+        "6"
+      ],
+      "guide_identity_lines": [
+        "6"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 12933868,
+      "name": "مرزداران",
+      "route_lines": [
+        "6"
+      ],
+      "guide_identity_lines": [
+        "6"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 13169327,
+      "name": "بوستان گفتگو",
+      "route_lines": [
+        "7"
+      ],
+      "guide_identity_lines": [
+        "7"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 13341702,
+      "name": "شهید رضایی",
+      "route_lines": [
+        "6"
+      ],
+      "guide_identity_lines": [
+        "6"
+      ],
+      "entrances_in_relation": 0
+    },
+    {
+      "stop_area": 13343889,
+      "name": "مدافعان سلامت",
+      "route_lines": [
+        "7"
+      ],
+      "guide_identity_lines": [
+        "7"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 13343890,
+      "name": "مولوی",
+      "route_lines": [
+        "7"
+      ],
+      "guide_identity_lines": [
+        "7"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 13343891,
+      "name": "میدان قیام",
+      "route_lines": [
+        "7"
+      ],
+      "guide_identity_lines": [
+        "7"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 13585766,
+      "name": "توحید",
+      "route_lines": [
+        "7"
+      ],
+      "guide_identity_lines": [
+        "7"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 14251983,
+      "name": "شهدای هفده شهریور",
+      "route_lines": [
+        "7"
+      ],
+      "guide_identity_lines": [
+        "7"
+      ],
+      "entrances_in_relation": 0
+    },
+    {
+      "stop_area": 14964244,
+      "name": "شهید ستاری",
+      "route_lines": [
+        "6"
+      ],
+      "guide_identity_lines": [
+        "6"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 15633847,
+      "name": "کارگر",
+      "route_lines": [
+        "6"
+      ],
+      "guide_identity_lines": [
+        "6"
+      ],
+      "entrances_in_relation": 0
+    },
+    {
+      "stop_area": 15640836,
+      "name": "شهدای هفت تیر",
+      "route_lines": [
+        "6"
+      ],
+      "guide_identity_lines": [],
+      "entrances_in_relation": 3
+    },
+    {
+      "stop_area": 15796007,
+      "name": "علامه جعفری",
+      "route_lines": [
+        "4"
+      ],
+      "guide_identity_lines": [
+        "4"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 15796999,
+      "name": "شهید دادمان",
+      "route_lines": [
+        "7"
+      ],
+      "guide_identity_lines": [
+        "7"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 15912974,
+      "name": "آهنگ",
+      "route_lines": [
+        "7"
+      ],
+      "guide_identity_lines": [
+        "7"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 16492076,
+      "name": "شهر زیبا",
+      "route_lines": [
+        "6"
+      ],
+      "guide_identity_lines": [
+        "6"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 16492077,
+      "name": "شهران",
+      "route_lines": [
+        "6"
+      ],
+      "guide_identity_lines": [
+        "6"
+      ],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 16492078,
+      "name": "کوهسار",
+      "route_lines": [
+        "6"
+      ],
+      "guide_identity_lines": [],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 16492440,
+      "name": "میدان کتاب",
+      "route_lines": [
+        "7"
+      ],
+      "guide_identity_lines": [
+        "7"
+      ],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 17352773,
+      "name": "شهدای کن",
+      "route_lines": [
+        "6"
+      ],
+      "guide_identity_lines": [],
+      "entrances_in_relation": 2
+    },
+    {
+      "stop_area": 17352836,
+      "name": "آیت الله کاشانی",
+      "route_lines": [
+        "6"
+      ],
+      "guide_identity_lines": [],
+      "entrances_in_relation": 1
+    },
+    {
+      "stop_area": 17352851,
+      "name": "بهار شیراز",
+      "route_lines": [
+        "6"
+      ],
+      "guide_identity_lines": [],
+      "entrances_in_relation": 2
+    }
+  ],
+  "opening_dates_verified": false,
+  "physical_routes_verified": false,
+  "rule": "historical explicit membership + active mapped route tag + exact guide identity; no spatial station assignment",
+  "warning": "Exploratory distances to an incomplete retained subset of OSM-mapped entrances at 2024-12-01; operational eligibility, entrance completeness and physical walking routes are not independently certified. Not nearest operational metro access or a causal effect."
+}

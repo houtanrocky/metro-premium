@@ -1,16 +1,27 @@
-# Deployment
+﻿# Deployment
 
-The initial delivery is local. No site or GitHub push was made. The static website needs neither Python nor the million-row source at runtime.
+The static site runs without Python or the private source data. Deploy only `apps/web/dist`; never serve the repository root, private source cache or run directories.
 
-```sh
+## GitHub Pages
+
+The GitHub Actions workflow in [.github/workflows/ci.yml](../.github/workflows/ci.yml) runs the Python, React, TypeScript, documentation and browser checks. Only a successful `main` build can deploy. It builds with the Pages base path, tests the resulting production site in English and Persian on desktop/mobile, uploads only the distribution directory, and deploys through the `github-pages` environment. Pull requests run validation without publishing.
+
+In the repository's **Settings → Pages**, use **GitHub Actions** as the build source. The workflow uses revision-pinned actions and the minimum Pages deployment permissions. Raw inputs, private runs and review files are excluded from Git and deployment artifacts.
+
+To reproduce a project-site build in PowerShell:
+
+```powershell
 npm ci
+$env:VITE_BASE_PATH='/metro-premium/'
+$env:VITE_REPOSITORY_URL='https://github.com/houtanrocky/metro-premium'
 npm run build
+node scripts/check-pages.mjs
 ```
 
-Serve `apps/web/dist` over HTTPS using any static host. A local check is `npx vite preview --config apps/web/vite.config.ts --outDir apps/web/dist --host 127.0.0.1` from the repository root, or run Vite preview from `apps/web`. Do not serve the repository root: it contains local raw/intermediate data and run evidence that must never be publicly reachable.
+For root hosting, use `/` as `VITE_BASE_PATH`. No client-side router fallback is needed for anchor navigation. Asset and download paths use the configured base, including map workers and fonts.
 
-The app currently expects to be hosted at `/`; subpath hosting requires adjusting Vite base and absolute data/document fetch URLs before building. No client-side router fallback is needed for current anchor navigation. Keep JSON assets same-origin, declare UTF-8, and invalidate caches when updating research exports. Avoid immutable long-lived caching for the stable `research.json` alias unless the HTML is versioned with it. Check linked research Markdown and data notices after upload.
+English links use `?lang=en`; Persian links use `?lang=fa`. Explicit links take priority over the saved language; first visits otherwise default to Persian. The language switch updates document direction, metadata, controls, dates and numbers. Authored UI text lives in `apps/web/src/locales/en.json` and `fa.json`; research exports retain their original scientific content. Source identifiers, original research documents and exported technical charts remain in their source language.
 
-`VITE_MAP_STYLE_URL` is optional. Default is a tile-free geographic canvas with actual street lines. Any external style can request additional services; review license, quotas, attribution and user privacy. Vite environment variables are public. `VITE_REPOSITORY_URL` should point to your actual public repository after you authorize creating/pushing one; otherwise the site omits that link.
+`VITE_MAP_STYLE_URL` is optional. The default loads the actual small street extract without external map tiles. Review attribution and privacy before choosing an external style. All `VITE_` values are public browser configuration, so never use them for secrets. Retain the [data notices](../DATA-LICENSE.md) and font license.
 
-Run Python tests, types, unit tests, docs/link checks, production build and browser smoke before publishing. Keep the research-preview labels and disabled empirical layers until their evidence gates pass. Exporting `apps/web/dist` does not resolve database licensing obligations; retain [data notices](../DATA-LICENSE.md).
+The preview labels, historical-network caveats and disabled operational metro layers remain in both languages. Publishing software does not approve a scientific finding.

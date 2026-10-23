@@ -1,0 +1,949 @@
+{
+  "schema_version": 1,
+  "status": "audit_complete_operational_validation_incomplete",
+  "snapshot": "2024-12-01T00:00:00Z",
+  "line_coverage": [
+    {
+      "line": "1",
+      "cached_route_relations": 4,
+      "cached_stop_nodes": 35,
+      "retained_route_relations": 4,
+      "mapped_stop_nodes": 35,
+      "identity_matched_stop_nodes": 27,
+      "retained_unique_entrances": 36,
+      "route_rejection_reasons": {}
+    },
+    {
+      "line": "2",
+      "cached_route_relations": 2,
+      "cached_stop_nodes": 22,
+      "retained_route_relations": 2,
+      "mapped_stop_nodes": 22,
+      "identity_matched_stop_nodes": 19,
+      "retained_unique_entrances": 40,
+      "route_rejection_reasons": {}
+    },
+    {
+      "line": "3",
+      "cached_route_relations": 2,
+      "cached_stop_nodes": 25,
+      "retained_route_relations": 2,
+      "mapped_stop_nodes": 25,
+      "identity_matched_stop_nodes": 23,
+      "retained_unique_entrances": 40,
+      "route_rejection_reasons": {}
+    },
+    {
+      "line": "4",
+      "cached_route_relations": 4,
+      "cached_stop_nodes": 26,
+      "retained_route_relations": 4,
+      "mapped_stop_nodes": 26,
+      "identity_matched_stop_nodes": 21,
+      "retained_unique_entrances": 37,
+      "route_rejection_reasons": {}
+    },
+    {
+      "line": "5",
+      "cached_route_relations": 1,
+      "cached_stop_nodes": 12,
+      "retained_route_relations": 0,
+      "mapped_stop_nodes": 0,
+      "identity_matched_stop_nodes": 0,
+      "retained_unique_entrances": 0,
+      "route_rejection_reasons": {
+        "missing_required_network_wikidata": 1
+      }
+    },
+    {
+      "line": "6",
+      "cached_route_relations": 2,
+      "cached_stop_nodes": 23,
+      "retained_route_relations": 2,
+      "mapped_stop_nodes": 23,
+      "identity_matched_stop_nodes": 14,
+      "retained_unique_entrances": 11,
+      "route_rejection_reasons": {}
+    },
+    {
+      "line": "7",
+      "cached_route_relations": 2,
+      "cached_stop_nodes": 21,
+      "retained_route_relations": 2,
+      "mapped_stop_nodes": 21,
+      "identity_matched_stop_nodes": 20,
+      "retained_unique_entrances": 29,
+      "route_rejection_reasons": {}
+    }
+  ],
+  "route_geometry_checks": [
+    {
+      "relation_id": 443301,
+      "line": "5",
+      "route_tag": "train",
+      "has_required_network_identifier": false,
+      "actual_track_way_members": 147,
+      "track_nodes": 432,
+      "track_edges": 431,
+      "track_components": 1,
+      "ordered_chain_breaks": 0,
+      "stop_members": 12,
+      "missing_way_members": 0,
+      "missing_track_nodes": 0,
+      "invalid_track_nodes": 0,
+      "missing_stop_nodes": 0,
+      "stop_nodes_off_track": 0,
+      "summed_unique_track_edge_length_m": 64940.06132467126,
+      "software_geometry_screen_passed": true,
+      "screen_failures": [],
+      "independent_topology_verified": false,
+      "public_geometry_approved": false
+    },
+    {
+      "relation_id": 443307,
+      "line": "4",
+      "route_tag": "subway",
+      "has_required_network_identifier": true,
+      "actual_track_way_members": 10,
+      "track_nodes": 79,
+      "track_edges": 78,
+      "track_components": 1,
+      "ordered_chain_breaks": 0,
+      "stop_members": 20,
+      "missing_way_members": 0,
+      "missing_track_nodes": 0,
+      "invalid_track_nodes": 0,
+      "missing_stop_nodes": 0,
+      "stop_nodes_off_track": 0,
+      "summed_unique_track_edge_length_m": 21597.230018101232,
+      "software_geometry_screen_passed": true,
+      "screen_failures": [],
+      "independent_topology_verified": false,
+      "public_geometry_approved": false
+    },
+    {
+      "relation_id": 2431321,
+      "line": "2",
+      "route_tag": "subway",
+      "has_required_network_identifier": true,
+      "actual_track_way_members": 7,
+      "track_nodes": 159,
+      "track_edges": 158,
+      "track_components": 1,
+      "ordered_chain_breaks": 0,
+      "stop_members": 22,
+      "missing_way_members": 0,
+      "missing_track_nodes": 0,
+      "invalid_track_nodes": 0,
+      "missing_stop_nodes": 0,
+      "stop_nodes_off_track": 0,
+      "summed_unique_track_edge_length_m": 23483.87477200442,
+      "software_geometry_screen_passed": true,
+      "screen_failures": [],
+      "independent_topology_verified": false,
+      "public_geometry_approved": false
+    },
+    {
+      "relation_id": 2750010,
+      "line": "1",
+      "route_tag": "subway",
+      "has_required_network_identifier": true,
+      "actual_track_way_members": 13,
+      "track_nodes": 214,
+      "track_edges": 213,
+      "track_components": 1,
+      "ordered_chain_breaks": 0,
+      "stop_members": 29,
+      "missing_way_members": 0,
+      "missing_track_nodes": 0,
+      "invalid_track_nodes": 0,
+      "missing_stop_nodes": 0,
+      "stop_nodes_off_track": 0,
+      "summed_unique_track_edge_length_m": 36208.65604028925,
+      "software_geometry_screen_passed": true,
+      "screen_failures": [],
+      "independent_topology_verified": false,
+      "public_geometry_approved": false
+    },
+    {
+      "relation_id": 5366249,
+      "line": "3",
+      "route_tag": "subway",
+      "has_required_network_identifier": true,
+      "actual_track_way_members": 10,
+      "track_nodes": 230,
+      "track_edges": 228,
+      "track_components": 2,
+      "ordered_chain_breaks": 1,
+      "stop_members": 25,
+      "missing_way_members": 0,
+      "missing_track_nodes": 0,
+      "invalid_track_nodes": 0,
+      "missing_stop_nodes": 0,
+      "stop_nodes_off_track": 0,
+      "summed_unique_track_edge_length_m": 31087.0885837304,
+      "software_geometry_screen_passed": false,
+      "screen_failures": [
+        "track_geometry_not_one_connected_component",
+        "ordered_track_way_chain_breaks"
+      ],
+      "independent_topology_verified": false,
+      "public_geometry_approved": false
+    },
+    {
+      "relation_id": 5697303,
+      "line": "6",
+      "route_tag": "subway",
+      "has_required_network_identifier": true,
+      "actual_track_way_members": 8,
+      "track_nodes": 229,
+      "track_edges": 228,
+      "track_components": 1,
+      "ordered_chain_breaks": 0,
+      "stop_members": 23,
+      "missing_way_members": 0,
+      "missing_track_nodes": 0,
+      "invalid_track_nodes": 0,
+      "missing_stop_nodes": 0,
+      "stop_nodes_off_track": 0,
+      "summed_unique_track_edge_length_m": 31383.28525183611,
+      "software_geometry_screen_passed": true,
+      "screen_failures": [],
+      "independent_topology_verified": false,
+      "public_geometry_approved": false
+    },
+    {
+      "relation_id": 6151834,
+      "line": "1",
+      "route_tag": "subway",
+      "has_required_network_identifier": true,
+      "actual_track_way_members": 69,
+      "track_nodes": 366,
+      "track_edges": 365,
+      "track_components": 1,
+      "ordered_chain_breaks": 0,
+      "stop_members": 4,
+      "missing_way_members": 0,
+      "missing_track_nodes": 0,
+      "invalid_track_nodes": 0,
+      "missing_stop_nodes": 0,
+      "stop_nodes_off_track": 0,
+      "summed_unique_track_edge_length_m": 49746.86308096658,
+      "software_geometry_screen_passed": true,
+      "screen_failures": [],
+      "independent_topology_verified": false,
+      "public_geometry_approved": false
+    },
+    {
+      "relation_id": 7429356,
+      "line": "7",
+      "route_tag": "subway",
+      "has_required_network_identifier": true,
+      "actual_track_way_members": 5,
+      "track_nodes": 185,
+      "track_edges": 184,
+      "track_components": 1,
+      "ordered_chain_breaks": 0,
+      "stop_members": 21,
+      "missing_way_members": 0,
+      "missing_track_nodes": 0,
+      "invalid_track_nodes": 0,
+      "missing_stop_nodes": 0,
+      "stop_nodes_off_track": 0,
+      "summed_unique_track_edge_length_m": 23477.755095037897,
+      "software_geometry_screen_passed": true,
+      "screen_failures": [],
+      "independent_topology_verified": false,
+      "public_geometry_approved": false
+    },
+    {
+      "relation_id": 7683584,
+      "line": "4",
+      "route_tag": "subway",
+      "has_required_network_identifier": true,
+      "actual_track_way_members": 1,
+      "track_nodes": 19,
+      "track_edges": 18,
+      "track_components": 1,
+      "ordered_chain_breaks": 0,
+      "stop_members": 3,
+      "missing_way_members": 0,
+      "missing_track_nodes": 0,
+      "invalid_track_nodes": 0,
+      "missing_stop_nodes": 0,
+      "stop_nodes_off_track": 0,
+      "summed_unique_track_edge_length_m": 1462.9417677736524,
+      "software_geometry_screen_passed": true,
+      "screen_failures": [],
+      "independent_topology_verified": false,
+      "public_geometry_approved": false
+    },
+    {
+      "relation_id": 7705643,
+      "line": "7",
+      "route_tag": "subway",
+      "has_required_network_identifier": true,
+      "actual_track_way_members": 5,
+      "track_nodes": 185,
+      "track_edges": 184,
+      "track_components": 1,
+      "ordered_chain_breaks": 0,
+      "stop_members": 21,
+      "missing_way_members": 0,
+      "missing_track_nodes": 0,
+      "invalid_track_nodes": 0,
+      "missing_stop_nodes": 0,
+      "stop_nodes_off_track": 0,
+      "summed_unique_track_edge_length_m": 23477.755095037897,
+      "software_geometry_screen_passed": true,
+      "screen_failures": [],
+      "independent_topology_verified": false,
+      "public_geometry_approved": false
+    },
+    {
+      "relation_id": 7705668,
+      "line": "4",
+      "route_tag": "subway",
+      "has_required_network_identifier": true,
+      "actual_track_way_members": 10,
+      "track_nodes": 79,
+      "track_edges": 78,
+      "track_components": 1,
+      "ordered_chain_breaks": 0,
+      "stop_members": 20,
+      "missing_way_members": 0,
+      "missing_track_nodes": 0,
+      "invalid_track_nodes": 0,
+      "missing_stop_nodes": 0,
+      "stop_nodes_off_track": 0,
+      "summed_unique_track_edge_length_m": 21597.230018101232,
+      "software_geometry_screen_passed": true,
+      "screen_failures": [],
+      "independent_topology_verified": false,
+      "public_geometry_approved": false
+    },
+    {
+      "relation_id": 7726963,
+      "line": "4",
+      "route_tag": "subway",
+      "has_required_network_identifier": true,
+      "actual_track_way_members": 1,
+      "track_nodes": 19,
+      "track_edges": 18,
+      "track_components": 1,
+      "ordered_chain_breaks": 0,
+      "stop_members": 3,
+      "missing_way_members": 0,
+      "missing_track_nodes": 0,
+      "invalid_track_nodes": 0,
+      "missing_stop_nodes": 0,
+      "stop_nodes_off_track": 0,
+      "summed_unique_track_edge_length_m": 1458.3013091817893,
+      "software_geometry_screen_passed": true,
+      "screen_failures": [],
+      "independent_topology_verified": false,
+      "public_geometry_approved": false
+    },
+    {
+      "relation_id": 7735255,
+      "line": "1",
+      "route_tag": "subway",
+      "has_required_network_identifier": true,
+      "actual_track_way_members": 13,
+      "track_nodes": 214,
+      "track_edges": 213,
+      "track_components": 1,
+      "ordered_chain_breaks": 0,
+      "stop_members": 29,
+      "missing_way_members": 0,
+      "missing_track_nodes": 0,
+      "invalid_track_nodes": 0,
+      "missing_stop_nodes": 0,
+      "stop_nodes_off_track": 0,
+      "summed_unique_track_edge_length_m": 36208.65604028925,
+      "software_geometry_screen_passed": true,
+      "screen_failures": [],
+      "independent_topology_verified": false,
+      "public_geometry_approved": false
+    },
+    {
+      "relation_id": 7770933,
+      "line": "3",
+      "route_tag": "subway",
+      "has_required_network_identifier": true,
+      "actual_track_way_members": 10,
+      "track_nodes": 230,
+      "track_edges": 228,
+      "track_components": 2,
+      "ordered_chain_breaks": 1,
+      "stop_members": 25,
+      "missing_way_members": 0,
+      "missing_track_nodes": 0,
+      "invalid_track_nodes": 0,
+      "missing_stop_nodes": 0,
+      "stop_nodes_off_track": 0,
+      "summed_unique_track_edge_length_m": 31087.0885837304,
+      "software_geometry_screen_passed": false,
+      "screen_failures": [
+        "track_geometry_not_one_connected_component",
+        "ordered_track_way_chain_breaks"
+      ],
+      "independent_topology_verified": false,
+      "public_geometry_approved": false
+    },
+    {
+      "relation_id": 7832313,
+      "line": "1",
+      "route_tag": "subway",
+      "has_required_network_identifier": true,
+      "actual_track_way_members": 60,
+      "track_nodes": 363,
+      "track_edges": 362,
+      "track_components": 1,
+      "ordered_chain_breaks": 0,
+      "stop_members": 4,
+      "missing_way_members": 0,
+      "missing_track_nodes": 0,
+      "invalid_track_nodes": 0,
+      "missing_stop_nodes": 0,
+      "stop_nodes_off_track": 0,
+      "summed_unique_track_edge_length_m": 49750.11622485315,
+      "software_geometry_screen_passed": true,
+      "screen_failures": [],
+      "independent_topology_verified": false,
+      "public_geometry_approved": false
+    },
+    {
+      "relation_id": 7832324,
+      "line": "2",
+      "route_tag": "subway",
+      "has_required_network_identifier": true,
+      "actual_track_way_members": 7,
+      "track_nodes": 159,
+      "track_edges": 158,
+      "track_components": 1,
+      "ordered_chain_breaks": 0,
+      "stop_members": 22,
+      "missing_way_members": 0,
+      "missing_track_nodes": 0,
+      "invalid_track_nodes": 0,
+      "missing_stop_nodes": 0,
+      "stop_nodes_off_track": 0,
+      "summed_unique_track_edge_length_m": 23483.87477200442,
+      "software_geometry_screen_passed": true,
+      "screen_failures": [],
+      "independent_topology_verified": false,
+      "public_geometry_approved": false
+    },
+    {
+      "relation_id": 9468295,
+      "line": "6",
+      "route_tag": "subway",
+      "has_required_network_identifier": true,
+      "actual_track_way_members": 8,
+      "track_nodes": 229,
+      "track_edges": 228,
+      "track_components": 1,
+      "ordered_chain_breaks": 0,
+      "stop_members": 23,
+      "missing_way_members": 0,
+      "missing_track_nodes": 0,
+      "invalid_track_nodes": 0,
+      "missing_stop_nodes": 0,
+      "stop_nodes_off_track": 0,
+      "summed_unique_track_edge_length_m": 31383.28525183611,
+      "software_geometry_screen_passed": true,
+      "screen_failures": [],
+      "independent_topology_verified": false,
+      "public_geometry_approved": false
+    }
+  ],
+  "station_order_checks": [
+    {
+      "relation_id": 443301,
+      "line": "5",
+      "reference_checks": [
+        {
+          "reference_list": "5",
+          "reference_station_entries": 13,
+          "exact_matched_stop_nodes": 11,
+          "unique_matched_reference_positions": 11,
+          "unmatched_stop_nodes": 1,
+          "ambiguous_stop_nodes": 0,
+          "order_compatibility": "forward_compatible",
+          "historical_service_verified": false
+        },
+        {
+          "reference_list": "5-hashtgerd",
+          "reference_station_entries": 2,
+          "exact_matched_stop_nodes": 1,
+          "unique_matched_reference_positions": 1,
+          "unmatched_stop_nodes": 11,
+          "ambiguous_stop_nodes": 0,
+          "order_compatibility": "insufficient_exact_matches",
+          "historical_service_verified": false
+        }
+      ]
+    },
+    {
+      "relation_id": 443307,
+      "line": "4",
+      "reference_checks": [
+        {
+          "reference_list": "4",
+          "reference_station_entries": 20,
+          "exact_matched_stop_nodes": 19,
+          "unique_matched_reference_positions": 19,
+          "unmatched_stop_nodes": 1,
+          "ambiguous_stop_nodes": 0,
+          "order_compatibility": "reverse_compatible",
+          "historical_service_verified": false
+        },
+        {
+          "reference_list": "4-airport",
+          "reference_station_entries": 3,
+          "exact_matched_stop_nodes": 1,
+          "unique_matched_reference_positions": 1,
+          "unmatched_stop_nodes": 19,
+          "ambiguous_stop_nodes": 0,
+          "order_compatibility": "insufficient_exact_matches",
+          "historical_service_verified": false
+        }
+      ]
+    },
+    {
+      "relation_id": 2431321,
+      "line": "2",
+      "reference_checks": [
+        {
+          "reference_list": "2",
+          "reference_station_entries": 22,
+          "exact_matched_stop_nodes": 19,
+          "unique_matched_reference_positions": 19,
+          "unmatched_stop_nodes": 3,
+          "ambiguous_stop_nodes": 0,
+          "order_compatibility": "forward_compatible",
+          "historical_service_verified": false
+        }
+      ]
+    },
+    {
+      "relation_id": 2750010,
+      "line": "1",
+      "reference_checks": [
+        {
+          "reference_list": "1",
+          "reference_station_entries": 29,
+          "exact_matched_stop_nodes": 24,
+          "unique_matched_reference_positions": 24,
+          "unmatched_stop_nodes": 5,
+          "ambiguous_stop_nodes": 0,
+          "order_compatibility": "forward_compatible",
+          "historical_service_verified": false
+        },
+        {
+          "reference_list": "1-airport",
+          "reference_station_entries": 3,
+          "exact_matched_stop_nodes": 1,
+          "unique_matched_reference_positions": 1,
+          "unmatched_stop_nodes": 28,
+          "ambiguous_stop_nodes": 0,
+          "order_compatibility": "insufficient_exact_matches",
+          "historical_service_verified": false
+        }
+      ]
+    },
+    {
+      "relation_id": 5366249,
+      "line": "3",
+      "reference_checks": [
+        {
+          "reference_list": "3",
+          "reference_station_entries": 24,
+          "exact_matched_stop_nodes": 22,
+          "unique_matched_reference_positions": 22,
+          "unmatched_stop_nodes": 3,
+          "ambiguous_stop_nodes": 0,
+          "order_compatibility": "forward_compatible",
+          "historical_service_verified": false
+        }
+      ]
+    },
+    {
+      "relation_id": 5697303,
+      "line": "6",
+      "reference_checks": [
+        {
+          "reference_list": "6",
+          "reference_station_entries": 20,
+          "exact_matched_stop_nodes": 15,
+          "unique_matched_reference_positions": 15,
+          "unmatched_stop_nodes": 8,
+          "ambiguous_stop_nodes": 0,
+          "order_compatibility": "reverse_compatible",
+          "historical_service_verified": false
+        }
+      ]
+    },
+    {
+      "relation_id": 6151834,
+      "line": "1",
+      "reference_checks": [
+        {
+          "reference_list": "1",
+          "reference_station_entries": 29,
+          "exact_matched_stop_nodes": 1,
+          "unique_matched_reference_positions": 1,
+          "unmatched_stop_nodes": 3,
+          "ambiguous_stop_nodes": 0,
+          "order_compatibility": "insufficient_exact_matches",
+          "historical_service_verified": false
+        },
+        {
+          "reference_list": "1-airport",
+          "reference_station_entries": 3,
+          "exact_matched_stop_nodes": 1,
+          "unique_matched_reference_positions": 1,
+          "unmatched_stop_nodes": 3,
+          "ambiguous_stop_nodes": 0,
+          "order_compatibility": "insufficient_exact_matches",
+          "historical_service_verified": false
+        }
+      ]
+    },
+    {
+      "relation_id": 7429356,
+      "line": "7",
+      "reference_checks": [
+        {
+          "reference_list": "7",
+          "reference_station_entries": 22,
+          "exact_matched_stop_nodes": 20,
+          "unique_matched_reference_positions": 20,
+          "unmatched_stop_nodes": 1,
+          "ambiguous_stop_nodes": 0,
+          "order_compatibility": "forward_compatible",
+          "historical_service_verified": false
+        }
+      ]
+    },
+    {
+      "relation_id": 7683584,
+      "line": "4",
+      "reference_checks": [
+        {
+          "reference_list": "4",
+          "reference_station_entries": 20,
+          "exact_matched_stop_nodes": 1,
+          "unique_matched_reference_positions": 1,
+          "unmatched_stop_nodes": 2,
+          "ambiguous_stop_nodes": 0,
+          "order_compatibility": "insufficient_exact_matches",
+          "historical_service_verified": false
+        },
+        {
+          "reference_list": "4-airport",
+          "reference_station_entries": 3,
+          "exact_matched_stop_nodes": 1,
+          "unique_matched_reference_positions": 1,
+          "unmatched_stop_nodes": 2,
+          "ambiguous_stop_nodes": 0,
+          "order_compatibility": "insufficient_exact_matches",
+          "historical_service_verified": false
+        }
+      ]
+    },
+    {
+      "relation_id": 7705643,
+      "line": "7",
+      "reference_checks": [
+        {
+          "reference_list": "7",
+          "reference_station_entries": 22,
+          "exact_matched_stop_nodes": 20,
+          "unique_matched_reference_positions": 20,
+          "unmatched_stop_nodes": 1,
+          "ambiguous_stop_nodes": 0,
+          "order_compatibility": "reverse_compatible",
+          "historical_service_verified": false
+        }
+      ]
+    },
+    {
+      "relation_id": 7705668,
+      "line": "4",
+      "reference_checks": [
+        {
+          "reference_list": "4",
+          "reference_station_entries": 20,
+          "exact_matched_stop_nodes": 19,
+          "unique_matched_reference_positions": 19,
+          "unmatched_stop_nodes": 1,
+          "ambiguous_stop_nodes": 0,
+          "order_compatibility": "forward_compatible",
+          "historical_service_verified": false
+        },
+        {
+          "reference_list": "4-airport",
+          "reference_station_entries": 3,
+          "exact_matched_stop_nodes": 1,
+          "unique_matched_reference_positions": 1,
+          "unmatched_stop_nodes": 19,
+          "ambiguous_stop_nodes": 0,
+          "order_compatibility": "insufficient_exact_matches",
+          "historical_service_verified": false
+        }
+      ]
+    },
+    {
+      "relation_id": 7726963,
+      "line": "4",
+      "reference_checks": [
+        {
+          "reference_list": "4",
+          "reference_station_entries": 20,
+          "exact_matched_stop_nodes": 1,
+          "unique_matched_reference_positions": 1,
+          "unmatched_stop_nodes": 2,
+          "ambiguous_stop_nodes": 0,
+          "order_compatibility": "insufficient_exact_matches",
+          "historical_service_verified": false
+        },
+        {
+          "reference_list": "4-airport",
+          "reference_station_entries": 3,
+          "exact_matched_stop_nodes": 1,
+          "unique_matched_reference_positions": 1,
+          "unmatched_stop_nodes": 2,
+          "ambiguous_stop_nodes": 0,
+          "order_compatibility": "insufficient_exact_matches",
+          "historical_service_verified": false
+        }
+      ]
+    },
+    {
+      "relation_id": 7735255,
+      "line": "1",
+      "reference_checks": [
+        {
+          "reference_list": "1",
+          "reference_station_entries": 29,
+          "exact_matched_stop_nodes": 24,
+          "unique_matched_reference_positions": 24,
+          "unmatched_stop_nodes": 5,
+          "ambiguous_stop_nodes": 0,
+          "order_compatibility": "reverse_compatible",
+          "historical_service_verified": false
+        },
+        {
+          "reference_list": "1-airport",
+          "reference_station_entries": 3,
+          "exact_matched_stop_nodes": 1,
+          "unique_matched_reference_positions": 1,
+          "unmatched_stop_nodes": 28,
+          "ambiguous_stop_nodes": 0,
+          "order_compatibility": "insufficient_exact_matches",
+          "historical_service_verified": false
+        }
+      ]
+    },
+    {
+      "relation_id": 7770933,
+      "line": "3",
+      "reference_checks": [
+        {
+          "reference_list": "3",
+          "reference_station_entries": 24,
+          "exact_matched_stop_nodes": 22,
+          "unique_matched_reference_positions": 22,
+          "unmatched_stop_nodes": 3,
+          "ambiguous_stop_nodes": 0,
+          "order_compatibility": "reverse_compatible",
+          "historical_service_verified": false
+        }
+      ]
+    },
+    {
+      "relation_id": 7832313,
+      "line": "1",
+      "reference_checks": [
+        {
+          "reference_list": "1",
+          "reference_station_entries": 29,
+          "exact_matched_stop_nodes": 1,
+          "unique_matched_reference_positions": 1,
+          "unmatched_stop_nodes": 3,
+          "ambiguous_stop_nodes": 0,
+          "order_compatibility": "insufficient_exact_matches",
+          "historical_service_verified": false
+        },
+        {
+          "reference_list": "1-airport",
+          "reference_station_entries": 3,
+          "exact_matched_stop_nodes": 2,
+          "unique_matched_reference_positions": 2,
+          "unmatched_stop_nodes": 2,
+          "ambiguous_stop_nodes": 0,
+          "order_compatibility": "reverse_compatible",
+          "historical_service_verified": false
+        }
+      ]
+    },
+    {
+      "relation_id": 7832324,
+      "line": "2",
+      "reference_checks": [
+        {
+          "reference_list": "2",
+          "reference_station_entries": 22,
+          "exact_matched_stop_nodes": 19,
+          "unique_matched_reference_positions": 19,
+          "unmatched_stop_nodes": 3,
+          "ambiguous_stop_nodes": 0,
+          "order_compatibility": "reverse_compatible",
+          "historical_service_verified": false
+        }
+      ]
+    },
+    {
+      "relation_id": 9468295,
+      "line": "6",
+      "reference_checks": [
+        {
+          "reference_list": "6",
+          "reference_station_entries": 20,
+          "exact_matched_stop_nodes": 15,
+          "unique_matched_reference_positions": 15,
+          "unmatched_stop_nodes": 8,
+          "ambiguous_stop_nodes": 0,
+          "order_compatibility": "forward_compatible",
+          "historical_service_verified": false
+        }
+      ]
+    }
+  ],
+  "station_order_note": "Only exact orthographic matches in the later owner-selected guide are compared. Missing/unmatched/ambiguous entries remain unresolved; compatible subsequences do not verify every adjacency, transfers or historical service.",
+  "line_coverage_note": "Parent-line groups include directions/branches. Stops are OSM node identities, not certified unique stations. Shared entrances occur on multiple lines; per-line entrance counts must not be summed.",
+  "route_geometry_summary": {
+    "cached_routes": 17,
+    "software_screens_passed": 15,
+    "ordered_endpoint_review_cases": 2,
+    "closest_endpoint_separations_m": [
+      534.5906339628755,
+      534.5906339628755
+    ],
+    "independent_topology_verified": 0,
+    "note": "Checks inspect actual OSM track ways, endpoint order and stop membership. A software pass is not independent topology or service approval."
+  },
+  "entrance_membership": {
+    "retained_unique_entrances": 166,
+    "retained_stop_areas": 106,
+    "stop_areas_examined": 142,
+    "areas_without_member_entrances": 17,
+    "entrances_with_multiple_orthographic_station_names": 0
+  },
+  "walking": {
+    "nodes": 555686,
+    "directed_edges": 1236780,
+    "weak_components": 1532
+  },
+  "entrance_connectors": {
+    "retained_entrances": 166,
+    "entrance_nodes_present_on_walking_graph": 43,
+    "snapped_to_same_osm_node": 43,
+    "nonzero_straight_connectors": 123,
+    "connectors_over_25m": 39,
+    "connectors_over_100m": 0,
+    "nearest_node_ties": 0,
+    "ties_spanning_components": 0,
+    "components_with_snapped_entrances": 12,
+    "connector_quantiles_m": {
+      "min": 0.0,
+      "median": 12.903110937418806,
+      "q95": 45.85451515258387,
+      "max": 87.11725032389182
+    },
+    "physical_connections_verified": 0,
+    "triage_note": "25 m flags review priority only; every physical connector remains unverified. Nearest-node tie tolerance is 1e-6 m."
+  },
+  "historical_station_evidence": {
+    "sources": [
+      {
+        "id": "president-147059",
+        "authority": "official_presidential_event_report",
+        "url": "https://president.ir/fa/147059",
+        "sha256": "9e29cfd2967f0abdefc1bd23c926e8330ed810bc341af25d7a146bd50aed0831",
+        "bytes": 44288,
+        "event_date": "2023-10-10",
+        "event_date_persian": "1402-07-18",
+        "scope": "station inauguration only; no entrance identity, continuity or physical route verification"
+      }
+    ],
+    "station_claims": [
+      {
+        "station": "شهید آرمان علی‌وردی",
+        "line": "6",
+        "source_id": "president-147059",
+        "event_date": "2023-10-10",
+        "inauguration_before_snapshot": true,
+        "exact_name_stop_area_matches": 0,
+        "retained_stop_area_matches": 0,
+        "specific_entrance_operation_verified": false,
+        "continuous_study_period_service_verified": false
+      },
+      {
+        "station": "شهران",
+        "line": "6",
+        "source_id": "president-147059",
+        "event_date": "2023-10-10",
+        "inauguration_before_snapshot": true,
+        "exact_name_stop_area_matches": 1,
+        "retained_stop_area_matches": 1,
+        "specific_entrance_operation_verified": false,
+        "continuous_study_period_service_verified": false
+      },
+      {
+        "station": "شهر زیبا",
+        "line": "6",
+        "source_id": "president-147059",
+        "event_date": "2023-10-10",
+        "inauguration_before_snapshot": true,
+        "exact_name_stop_area_matches": 1,
+        "retained_stop_area_matches": 1,
+        "specific_entrance_operation_verified": false,
+        "continuous_study_period_service_verified": false
+      },
+      {
+        "station": "میدان کتاب",
+        "line": "7",
+        "source_id": "president-147059",
+        "event_date": "2023-10-10",
+        "inauguration_before_snapshot": true,
+        "exact_name_stop_area_matches": 1,
+        "retained_stop_area_matches": 1,
+        "specific_entrance_operation_verified": false,
+        "continuous_study_period_service_verified": false
+      }
+    ],
+    "accepted_station_inauguration_claims": 4,
+    "retained_stop_areas_with_inauguration_evidence": 3,
+    "specific_entrances_with_operation_evidence": 0,
+    "rejected_source_candidates": [
+      {
+        "url": "https://www.irna.ir/news/85253321",
+        "cached_file": "data/raw/references/historical-operation/irna-85253321.html",
+        "reason": "Cached response is a Cloudflare challenge, not the article; no claim accepted."
+      }
+    ],
+    "operational_eligibility_approved": false
+  },
+  "primary_operational_gate_passed": false,
+  "public_routes_enabled": false,
+  "public_stations_enabled": false,
+  "limitations": [
+    "Official station inaugurations do not identify individual entrances or uninterrupted service during the listing month.",
+    "Track geometry and walking connectors lack independent physical verification; no missing link or station adjacency was invented.",
+    "Line 5 remains outside the retained entrance rule when its required network identifier is missing.",
+    "No housing observations were read and no earlier model result was replaced by this audit."
+  ]
+}

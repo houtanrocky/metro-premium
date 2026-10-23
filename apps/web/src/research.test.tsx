@@ -22,10 +22,20 @@ describe('Publication boundaries',()=>{
     expect(()=>validateResearch({...payload,housing_prices:{...payload.housing_prices,variants:[{...payload.housing_prices.variants[0],n:1}]}})).toThrow();
     expect(()=>validateResearch({...payload,neighborhoods:[{...payload.neighborhoods[0],price_n:2}]})).toThrow();
   });
+  it('keeps historical mapped-subset results distinct from operational metro approval',()=>{
+    const mapped=payload.mapped_reference;
+    expect(mapped).toBeDefined();
+    expect(validateResearch(payload).mapped_reference?.scope.supported_route_rows).toBe(mapped.scope.supported_route_rows);
+    expect(payload.findings_available).toBe(false);
+    expect(()=>validateResearch({...payload,mapped_reference:{...mapped,primary_quality_gate_passed:true}})).toThrow();
+    expect(()=>validateResearch({...payload,mapped_reference:{...mapped,public_routes_enabled:true}})).toThrow();
+    expect(()=>validateResearch({...payload,mapped_reference:{...mapped,bands:[{...mapped.bands[0],n:29}]}})).toThrow();
+    expect(()=>validateResearch({...payload,mapped_reference:{...mapped,scope:{...mapped.scope,supported_route_rows:mapped.scope.supported_route_rows+1}}})).toThrow();
+  });
   it('shows real counts and filters with honest missing measures',async()=>{
     vi.stubGlobal('fetch',vi.fn().mockResolvedValue({ok:true,json:async()=>payload}));
     render(<App/>);
-    expect(await screen.findByRole('heading',{level:1})).toHaveTextContent('خونه نزدیک مترو');
+    expect(await screen.findByRole('heading',{level:1})).toHaveTextContent('خانه نزدیک مترو');
     expect(screen.getAllByText(fa(payload.scope.analysis_rows)).length).toBeGreaterThan(0);
     fireEvent.change(screen.getByLabelText('نمایش'),{target:{value:'radius'}});
     expect(screen.getAllByText('شعاع نامشخص').length).toBeGreaterThan(0);
@@ -33,13 +43,13 @@ describe('Publication boundaries',()=>{
     fireEvent.change(screen.getByLabelText('انتخاب محله'),{target:{value:selected}});
     expect(screen.getByTestId('overall-price')).toHaveTextContent(perM2(payload.housing_prices.median_per_m2));
     expect(screen.getByTestId('neighborhood-price')).toHaveTextContent(perM2(payload.neighborhoods[0].median_per_m2));
-    expect(screen.getByText('محاسبه معتبر موجود نیست')).toBeInTheDocument();
+    expect(screen.getByText('سنجه معتبر برای شبکه فعال موجود نیست')).toBeInTheDocument();
     expect(screen.getByRole('link',{name:'داده رسمی دیوار ↗'})).toHaveAttribute('href',payload.source.url);
   });
   it('fails visibly on network error without showing invented fallback',async()=>{
     vi.stubGlobal('fetch',vi.fn().mockRejectedValue(new Error('offline')));
     render(<App/>);
-    expect(await screen.findByRole('alert')).toHaveTextContent('offline');
+    expect(await screen.findByRole('alert')).toHaveTextContent('دریافت فایل پژوهش ممکن نشد.');
     expect(screen.getByRole('button',{name:'تلاش دوباره'})).toBeInTheDocument();
   });
 });

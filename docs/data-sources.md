@@ -23,3 +23,13 @@ The owner subsequently confirmed total apartment asking prices in toman after in
 The provided reference image was absent. No replacement was generated. No live Divar records, personal details, guessed coordinates, made-up station sequences, or housing heatmaps were acquired or fabricated.
 
 The owner later supplied [Alibaba's Tehran subway guide](https://www.alibaba.ir/mag/tehran/tehran-ci/tehran-subway-guide/). A cached HTML snapshot and linked schematic PDF now support station-name/order comparisons, with separate source hashes and rights notices. The [reference audit](../research/references/alibaba-guide-audit.md) documents extracted counts, alias candidates and disagreements. The guide does not supply approved entrance coordinates or historical eligibility; its embedded Google map is not ingested.
+
+## Historical mapped-subset extension, 23 October 2026
+
+Overpass attic queries request `2024-12-01T00:00:00Z`. Four walking tiles merge to SHA-256 `a49f5ea4a7bab0b56bdd4b4b2b45c5acffb387bb46743ca2480495f532fce72c`, with 734,532 OSM objects. The historical metro extract and one tile were programmatic downloads; Line 5 and three tiles were imported from operator-supplied raw browser exports. Sidecars label the generating-request evidence as operator-attested and do not claim independent snapshot-request verification. Import timestamps do not invent browser retrieval timestamps. All raw responses remain ignored by Git.
+
+The [mapped-reference report](../research/mapped-reference-findings.md) explains the historical mapping scope; the appended [successful run manifest](../artifacts/reports/reproduction-manifests.json) records every source hash, config, package version and scientific code snapshot. The provider's base-database timestamp is not treated as the requested snapshot date or an operational opening date.
+
+## Scoped official station evidence
+
+The [official presidential event record](https://president.ir/fa/147059) dated 18 Mehr 1402 supports four station-inauguration claims. The exact private HTML capture is pinned in [historical-evidence.yaml](../configs/historical-evidence.yaml), with source URL, SHA-256, byte count, date markers and individually curated station/line claims. It is not an entrance inventory, route geometry source or assurance of uninterrupted December 2024 service. The [validation report](../research/historical-network-validation.md) records exact-match coverage and remaining gaps. An IRNA source candidate returned a Cloudflare challenge rather than the article and was rejected; no fact was inferred from that response.

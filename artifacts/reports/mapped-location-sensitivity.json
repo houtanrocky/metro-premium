@@ -1,0 +1,1194 @@
+{
+  "assumption": "Uniform area within each stated-radius disk; scenario, not the empirical error law. Failed draws remain failed, not straight-line replacements.",
+  "seed": 20261022,
+  "draws_per_origin": 30,
+  "origins": 3110,
+  "nominal_supported_origins": 2978,
+  "successful_draws": 88318,
+  "total_draws": 93300,
+  "failure_fraction": 0.05339764201500541,
+  "classification_change_fraction_among_successful_nominal_supported": 0.22574646260467804,
+  "fraction_nominal_supported_origins_ever_changing_band": 0.5402955003357959,
+  "model_refits": [
+    {
+      "draw": 0,
+      "analysis": {
+        "status": "estimated",
+        "diagnostics": {
+          "input_n": 3110,
+          "complete_case_n": 2944,
+          "clusters": 281,
+          "covariance": "neighborhood-clustered CR1, t inference; no causal identification",
+          "limitations": [
+            "Clustered errors do not remove spatial confounding or account for all cross-neighborhood dependence.",
+            "Complete-case analysis may change sample composition."
+          ],
+          "within_neighborhood_sd_km": 0.6117435967301014
+        },
+        "models": [
+          {
+            "name": "M1",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km",
+            "n": 2944,
+            "clusters": 281,
+            "distance_coefficient_per_km": -0.02827533994816142,
+            "confidence_interval_95": [
+              -0.05618703503280876,
+              -0.00036364486351408293
+            ],
+            "association_percent_per_km": -2.7879333705247897,
+            "association_percent_ci_95": [
+              -5.463769651546404,
+              -0.03635787527345608
+            ],
+            "r_squared": 0.0029858455007371054,
+            "condition_number": 5.112366974051104,
+            "breusch_pagan_pvalue": 0.9811215014804939,
+            "max_cooks_distance": 0.49215158230903516,
+            "cooks_distance_defined_n": 2944,
+            "cooks_distance_undefined_n": 0,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -6.426350817952232,
+              -0.30479117186873594,
+              0.11952719956481594,
+              0.4219435255787527,
+              1.6176877688180937
+            ],
+            "exploratory_knn_moran_i": 0.08750386646932405,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          },
+          {
+            "name": "M2",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km + log_area + rooms_count + construction_year + floor + C(has_parking) + C(has_elevator) + C(has_warehouse)",
+            "n": 2944,
+            "clusters": 281,
+            "distance_coefficient_per_km": -0.03889947965798859,
+            "confidence_interval_95": [
+              -0.06393468264035719,
+              -0.013864276675619989
+            ],
+            "association_percent_per_km": -3.815261048432968,
+            "association_percent_ci_95": [
+              -6.193373045839353,
+              -1.3768610217493797
+            ],
+            "r_squared": 0.06757272828990923,
+            "condition_number": 316786.23615398724,
+            "breusch_pagan_pvalue": 0.9096730379636034,
+            "max_cooks_distance": 0.12819123767619425,
+            "cooks_distance_defined_n": 2944,
+            "cooks_distance_undefined_n": 0,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -6.493954828877357,
+              -0.1394796522976618,
+              0.12275823161663268,
+              0.35335897703847596,
+              1.1327521595261962
+            ],
+            "exploratory_knn_moran_i": 0.021846579340092927,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          },
+          {
+            "name": "M3",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km + log_area + rooms_count + construction_year + floor + C(has_parking) + C(has_elevator) + C(has_warehouse) + C(neighborhood_slug) + C(month)",
+            "n": 2944,
+            "clusters": 281,
+            "distance_coefficient_per_km": -0.03251419807630068,
+            "confidence_interval_95": [
+              -0.1219160975149754,
+              0.05688770136237403
+            ],
+            "association_percent_per_km": -3.199129412772831,
+            "association_percent_ci_95": [
+              -11.477736223399573,
+              5.853693146537374
+            ],
+            "r_squared": 0.1755231146457895,
+            "condition_number": 641460.8364261759,
+            "breusch_pagan_pvalue": 0.9999997190475926,
+            "max_cooks_distance": 0.06578879313290822,
+            "cooks_distance_defined_n": 2899,
+            "cooks_distance_undefined_n": 45,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -5.953690115947255,
+              -0.11272377227260044,
+              0.032806979156859484,
+              0.22251382440481926,
+              2.229702603393816
+            ],
+            "exploratory_knn_moran_i": -0.03723251470890894,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          }
+        ]
+      }
+    },
+    {
+      "draw": 1,
+      "analysis": {
+        "status": "estimated",
+        "diagnostics": {
+          "input_n": 3110,
+          "complete_case_n": 2928,
+          "clusters": 278,
+          "covariance": "neighborhood-clustered CR1, t inference; no causal identification",
+          "limitations": [
+            "Clustered errors do not remove spatial confounding or account for all cross-neighborhood dependence.",
+            "Complete-case analysis may change sample composition."
+          ],
+          "within_neighborhood_sd_km": 0.4861081499856207
+        },
+        "models": [
+          {
+            "name": "M1",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km",
+            "n": 2928,
+            "clusters": 278,
+            "distance_coefficient_per_km": -0.018315240887477918,
+            "confidence_interval_95": [
+              -0.03841565824544413,
+              0.0017851764704882901
+            ],
+            "association_percent_per_km": -1.814853616029521,
+            "association_percent_ci_95": [
+              -3.76871355273864,
+              0.1786770846610105
+            ],
+            "r_squared": 0.0012699702941312285,
+            "condition_number": 5.059476648041448,
+            "breusch_pagan_pvalue": 0.16490985785876905,
+            "max_cooks_distance": 0.056697651358042916,
+            "cooks_distance_defined_n": 2928,
+            "cooks_distance_undefined_n": 0,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -6.0559154218444915,
+              -0.3057487244727133,
+              0.10876333413125039,
+              0.41028221755010463,
+              1.610026813786738
+            ],
+            "exploratory_knn_moran_i": 0.09311172132849858,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          },
+          {
+            "name": "M2",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km + log_area + rooms_count + construction_year + floor + C(has_parking) + C(has_elevator) + C(has_warehouse)",
+            "n": 2928,
+            "clusters": 278,
+            "distance_coefficient_per_km": -0.0307045272176225,
+            "confidence_interval_95": [
+              -0.04661452895241155,
+              -0.01479452548283345
+            ],
+            "association_percent_per_km": -3.0237930955154093,
+            "association_percent_ci_95": [
+              -4.554475844894509,
+              -1.4685624199764693
+            ],
+            "r_squared": 0.06781375951410762,
+            "condition_number": 316184.4339014996,
+            "breusch_pagan_pvalue": 0.6716395597966122,
+            "max_cooks_distance": 0.08313294151143409,
+            "cooks_distance_defined_n": 2928,
+            "cooks_distance_undefined_n": 0,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -6.296833366193557,
+              -0.14125656332490077,
+              0.1178098309271256,
+              0.3409335812866736,
+              1.1014287466324555
+            ],
+            "exploratory_knn_moran_i": 0.025640075306892413,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          },
+          {
+            "name": "M3",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km + log_area + rooms_count + construction_year + floor + C(has_parking) + C(has_elevator) + C(has_warehouse) + C(neighborhood_slug) + C(month)",
+            "n": 2928,
+            "clusters": 278,
+            "distance_coefficient_per_km": -0.06305520549425755,
+            "confidence_interval_95": [
+              -0.1637975566458327,
+              0.037687145657317594
+            ],
+            "association_percent_per_km": -6.110835971865406,
+            "association_percent_ci_95": [
+              -15.1086138544758,
+              3.8406312130495577
+            ],
+            "r_squared": 0.17820452280459076,
+            "condition_number": 638280.9214543672,
+            "breusch_pagan_pvalue": 0.9999907266377739,
+            "max_cooks_distance": 0.07093898879919541,
+            "cooks_distance_defined_n": 2885,
+            "cooks_distance_undefined_n": 43,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -5.546545254099286,
+              -0.11387807574633335,
+              0.03062597887320173,
+              0.21404534345027315,
+              2.2136497157874144
+            ],
+            "exploratory_knn_moran_i": -0.04445249884713997,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          }
+        ]
+      }
+    },
+    {
+      "draw": 2,
+      "analysis": {
+        "status": "estimated",
+        "diagnostics": {
+          "input_n": 3110,
+          "complete_case_n": 2919,
+          "clusters": 279,
+          "covariance": "neighborhood-clustered CR1, t inference; no causal identification",
+          "limitations": [
+            "Clustered errors do not remove spatial confounding or account for all cross-neighborhood dependence.",
+            "Complete-case analysis may change sample composition."
+          ],
+          "within_neighborhood_sd_km": 0.4911058728142492
+        },
+        "models": [
+          {
+            "name": "M1",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km",
+            "n": 2919,
+            "clusters": 279,
+            "distance_coefficient_per_km": -0.013075900932440564,
+            "confidence_interval_95": [
+              -0.032086201588117716,
+              0.005934399723236585
+            ],
+            "association_percent_per_km": -1.299078274275774,
+            "association_percent_ci_95": [
+              -3.1576901128035884,
+              0.5952043157070551
+            ],
+            "r_squared": 0.0006562533517087132,
+            "condition_number": 5.071721540761307,
+            "breusch_pagan_pvalue": 0.26700404297209,
+            "max_cooks_distance": 0.07796049943739951,
+            "cooks_distance_defined_n": 2919,
+            "cooks_distance_undefined_n": 0,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -6.1292253283282365,
+              -0.31459811772725743,
+              0.09959744614869948,
+              0.40146983709564843,
+              1.6236805373730259
+            ],
+            "exploratory_knn_moran_i": 0.09462879733286761,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          },
+          {
+            "name": "M2",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km + log_area + rooms_count + construction_year + floor + C(has_parking) + C(has_elevator) + C(has_warehouse)",
+            "n": 2919,
+            "clusters": 279,
+            "distance_coefficient_per_km": -0.0265125790837184,
+            "confidence_interval_95": [
+              -0.04067365481777262,
+              -0.012351503349664186
+            ],
+            "association_percent_per_km": -2.616420620349007,
+            "association_percent_ci_95": [
+              -3.9857583322854184,
+              -1.2275536621595189
+            ],
+            "r_squared": 0.06650368773628212,
+            "condition_number": 316733.22025688074,
+            "breusch_pagan_pvalue": 0.6144026420953029,
+            "max_cooks_distance": 0.08429391834797621,
+            "cooks_distance_defined_n": 2919,
+            "cooks_distance_undefined_n": 0,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -6.306716235212513,
+              -0.14312796448237997,
+              0.11410291681119844,
+              0.335789875288631,
+              1.1662927904584552
+            ],
+            "exploratory_knn_moran_i": 0.03185038667556423,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          },
+          {
+            "name": "M3",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km + log_area + rooms_count + construction_year + floor + C(has_parking) + C(has_elevator) + C(has_warehouse) + C(neighborhood_slug) + C(month)",
+            "n": 2919,
+            "clusters": 279,
+            "distance_coefficient_per_km": -0.038587625735680656,
+            "confidence_interval_95": [
+              -0.15518934041305132,
+              0.07801408894169001
+            ],
+            "association_percent_per_km": -3.7852607827176246,
+            "association_percent_ci_95": [
+              -14.374696116965048,
+              8.113789065148188
+            ],
+            "r_squared": 0.17970431271841736,
+            "condition_number": 637455.2963950719,
+            "breusch_pagan_pvalue": 0.9999934030470835,
+            "max_cooks_distance": 0.07106719980050401,
+            "cooks_distance_defined_n": 2877,
+            "cooks_distance_undefined_n": 42,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -5.668625488331092,
+              -0.11993234286042309,
+              0.029540963393134945,
+              0.2078568739698614,
+              2.241476706384013
+            ],
+            "exploratory_knn_moran_i": -0.04013820764811385,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          }
+        ]
+      }
+    },
+    {
+      "draw": 3,
+      "analysis": {
+        "status": "estimated",
+        "diagnostics": {
+          "input_n": 3110,
+          "complete_case_n": 2903,
+          "clusters": 282,
+          "covariance": "neighborhood-clustered CR1, t inference; no causal identification",
+          "limitations": [
+            "Clustered errors do not remove spatial confounding or account for all cross-neighborhood dependence.",
+            "Complete-case analysis may change sample composition."
+          ],
+          "within_neighborhood_sd_km": 0.5354624909316339
+        },
+        "models": [
+          {
+            "name": "M1",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km",
+            "n": 2903,
+            "clusters": 282,
+            "distance_coefficient_per_km": -0.027832754969468274,
+            "confidence_interval_95": [
+              -0.05422220693196879,
+              -0.0014433030069677562
+            ],
+            "association_percent_per_km": -2.744899247661157,
+            "association_percent_ci_95": [
+              -5.277839609140235,
+              -0.14422619460984573
+            ],
+            "r_squared": 0.0029202356328860146,
+            "condition_number": 5.118624694454569,
+            "breusch_pagan_pvalue": 0.9234089487619485,
+            "max_cooks_distance": 0.46881065297392976,
+            "cooks_distance_defined_n": 2903,
+            "cooks_distance_undefined_n": 0,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -6.293313349500463,
+              -0.30741793405142204,
+              0.11337343462085059,
+              0.4169806112726935,
+              1.6209603407749718
+            ],
+            "exploratory_knn_moran_i": 0.09968406791224073,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          },
+          {
+            "name": "M2",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km + log_area + rooms_count + construction_year + floor + C(has_parking) + C(has_elevator) + C(has_warehouse)",
+            "n": 2903,
+            "clusters": 282,
+            "distance_coefficient_per_km": -0.039877367098028194,
+            "confidence_interval_95": [
+              -0.06375353977975168,
+              -0.016001194416304713
+            ],
+            "association_percent_per_km": -3.909272922570047,
+            "association_percent_ci_95": [
+              -6.176379105970149,
+              -1.5873855401729877
+            ],
+            "r_squared": 0.06712924666727282,
+            "condition_number": 315339.91208811314,
+            "breusch_pagan_pvalue": 0.809615919123194,
+            "max_cooks_distance": 0.1240898416750541,
+            "cooks_distance_defined_n": 2903,
+            "cooks_distance_undefined_n": 0,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -6.4135730686388905,
+              -0.14190268075633838,
+              0.11817921838133572,
+              0.3501637028565501,
+              1.165059430074472
+            ],
+            "exploratory_knn_moran_i": 0.03262220109282639,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          },
+          {
+            "name": "M3",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km + log_area + rooms_count + construction_year + floor + C(has_parking) + C(has_elevator) + C(has_warehouse) + C(neighborhood_slug) + C(month)",
+            "n": 2903,
+            "clusters": 282,
+            "distance_coefficient_per_km": -0.059699658802083055,
+            "confidence_interval_95": [
+              -0.15497041771707093,
+              0.035571100112904805
+            ],
+            "association_percent_per_km": -5.79525732474689,
+            "association_percent_ci_95": [
+              -14.355948742556832,
+              3.6211320250848686
+            ],
+            "r_squared": 0.1798204955402155,
+            "condition_number": 736342.0214041009,
+            "breusch_pagan_pvalue": 0.9999996734506852,
+            "max_cooks_distance": 0.07090833706504224,
+            "cooks_distance_defined_n": 2854,
+            "cooks_distance_undefined_n": 49,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -5.87439437352193,
+              -0.11523431273745643,
+              0.02974313520611105,
+              0.2110767809999583,
+              2.2646336694112583
+            ],
+            "exploratory_knn_moran_i": -0.03413099841246533,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          }
+        ]
+      }
+    },
+    {
+      "draw": 4,
+      "analysis": {
+        "status": "estimated",
+        "diagnostics": {
+          "input_n": 3110,
+          "complete_case_n": 2943,
+          "clusters": 280,
+          "covariance": "neighborhood-clustered CR1, t inference; no causal identification",
+          "limitations": [
+            "Clustered errors do not remove spatial confounding or account for all cross-neighborhood dependence.",
+            "Complete-case analysis may change sample composition."
+          ],
+          "within_neighborhood_sd_km": 0.5760406523942269
+        },
+        "models": [
+          {
+            "name": "M1",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km",
+            "n": 2943,
+            "clusters": 280,
+            "distance_coefficient_per_km": -0.02294159275448864,
+            "confidence_interval_95": [
+              -0.04740686391522876,
+              0.001523678406251481
+            ],
+            "association_percent_per_km": -2.268043534995197,
+            "association_percent_ci_95": [
+              -4.630070718541475,
+              0.15248397939798833
+            ],
+            "r_squared": 0.0019484391708169957,
+            "condition_number": 5.086904210218911,
+            "breusch_pagan_pvalue": 0.9399611416757293,
+            "max_cooks_distance": 0.437247302073907,
+            "cooks_distance_defined_n": 2943,
+            "cooks_distance_undefined_n": 0,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -6.189591010456843,
+              -0.3094457080417339,
+              0.11831164965535379,
+              0.4174136767889767,
+              1.6289453830499816
+            ],
+            "exploratory_knn_moran_i": 0.09978624926319511,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          },
+          {
+            "name": "M2",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km + log_area + rooms_count + construction_year + floor + C(has_parking) + C(has_elevator) + C(has_warehouse)",
+            "n": 2943,
+            "clusters": 280,
+            "distance_coefficient_per_km": -0.03399762456987667,
+            "confidence_interval_95": [
+              -0.054679711676022535,
+              -0.01331553746373081
+            ],
+            "association_percent_per_km": -3.342619933669786,
+            "association_percent_ci_95": [
+              -5.321165535221996,
+              -1.3227277870365004
+            ],
+            "r_squared": 0.06736031329805725,
+            "condition_number": 317088.20362013177,
+            "breusch_pagan_pvalue": 0.9137617455250682,
+            "max_cooks_distance": 0.1174091690200458,
+            "cooks_distance_defined_n": 2943,
+            "cooks_distance_undefined_n": 0,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -6.373394297599284,
+              -0.14251015543106682,
+              0.11869502374288743,
+              0.3463891226606588,
+              1.204663268095231
+            ],
+            "exploratory_knn_moran_i": 0.034734255660926215,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          },
+          {
+            "name": "M3",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km + log_area + rooms_count + construction_year + floor + C(has_parking) + C(has_elevator) + C(has_warehouse) + C(neighborhood_slug) + C(month)",
+            "n": 2943,
+            "clusters": 280,
+            "distance_coefficient_per_km": -0.042953194434401425,
+            "confidence_interval_95": [
+              -0.14230079851710645,
+              0.056394409648303605
+            ],
+            "association_percent_per_km": -4.204377329927011,
+            "association_percent_ci_95": [
+              -13.263968345430596,
+              5.801489273731975
+            ],
+            "r_squared": 0.17444358335561194,
+            "condition_number": 640610.6437136335,
+            "breusch_pagan_pvalue": 0.999999010496454,
+            "max_cooks_distance": 0.06639489703092591,
+            "cooks_distance_defined_n": 2897,
+            "cooks_distance_undefined_n": 46,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -5.849212685889714,
+              -0.12207534133293407,
+              0.029649502708153364,
+              0.2147127512332574,
+              2.252141156505826
+            ],
+            "exploratory_knn_moran_i": -0.03845133868705529,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          }
+        ]
+      }
+    },
+    {
+      "draw": 5,
+      "analysis": {
+        "status": "estimated",
+        "diagnostics": {
+          "input_n": 3110,
+          "complete_case_n": 2923,
+          "clusters": 280,
+          "covariance": "neighborhood-clustered CR1, t inference; no causal identification",
+          "limitations": [
+            "Clustered errors do not remove spatial confounding or account for all cross-neighborhood dependence.",
+            "Complete-case analysis may change sample composition."
+          ],
+          "within_neighborhood_sd_km": 0.5836464763939434
+        },
+        "models": [
+          {
+            "name": "M1",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km",
+            "n": 2923,
+            "clusters": 280,
+            "distance_coefficient_per_km": -0.023605847647598557,
+            "confidence_interval_95": [
+              -0.04609500154114659,
+              -0.0011166937540505253
+            ],
+            "association_percent_per_km": -2.332940908705017,
+            "association_percent_ci_95": [
+              -4.504876395792294,
+              -0.11160704836026844
+            ],
+            "r_squared": 0.0020259889907506823,
+            "condition_number": 5.084091438398254,
+            "breusch_pagan_pvalue": 0.8173059481187384,
+            "max_cooks_distance": 0.42939135788425553,
+            "cooks_distance_defined_n": 2923,
+            "cooks_distance_undefined_n": 0,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -6.478683405496716,
+              -0.3007148522631997,
+              0.12463097844472415,
+              0.4182251024649659,
+              1.6262211042830659
+            ],
+            "exploratory_knn_moran_i": 0.10670328878826285,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          },
+          {
+            "name": "M2",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km + log_area + rooms_count + construction_year + floor + C(has_parking) + C(has_elevator) + C(has_warehouse)",
+            "n": 2923,
+            "clusters": 280,
+            "distance_coefficient_per_km": -0.03591999755136243,
+            "confidence_interval_95": [
+              -0.05523620995808956,
+              -0.016603785144635296
+            ],
+            "association_percent_per_km": -3.528252984422363,
+            "association_percent_ci_95": [
+              -5.37383948610878,
+              -1.6466702052085787
+            ],
+            "r_squared": 0.06719796713829185,
+            "condition_number": 315775.3765022342,
+            "breusch_pagan_pvalue": 0.899085237078728,
+            "max_cooks_distance": 0.11620939893000502,
+            "cooks_distance_defined_n": 2923,
+            "cooks_distance_undefined_n": 0,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -6.5232818982312635,
+              -0.13356556314120027,
+              0.123410544721267,
+              0.35162591610713,
+              1.1141379282412052
+            ],
+            "exploratory_knn_moran_i": 0.04038709776242053,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          },
+          {
+            "name": "M3",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km + log_area + rooms_count + construction_year + floor + C(has_parking) + C(has_elevator) + C(has_warehouse) + C(neighborhood_slug) + C(month)",
+            "n": 2923,
+            "clusters": 280,
+            "distance_coefficient_per_km": -0.07667260570545606,
+            "confidence_interval_95": [
+              -0.170661333165722,
+              0.01731612175480987
+            ],
+            "association_percent_per_km": -7.380696571095298,
+            "association_percent_ci_95": [
+              -15.689294247496955,
+              1.7466914917960084
+            ],
+            "r_squared": 0.1713498167389017,
+            "condition_number": 735033.4633567636,
+            "breusch_pagan_pvalue": 0.9999986671152389,
+            "max_cooks_distance": 0.06573146239649377,
+            "cooks_distance_defined_n": 2878,
+            "cooks_distance_undefined_n": 45,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -5.963208288516773,
+              -0.11845722974375938,
+              0.029400904082756085,
+              0.22355335147396715,
+              2.2091957244765843
+            ],
+            "exploratory_knn_moran_i": -0.024336407200138604,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          }
+        ]
+      }
+    },
+    {
+      "draw": 6,
+      "analysis": {
+        "status": "estimated",
+        "diagnostics": {
+          "input_n": 3110,
+          "complete_case_n": 2920,
+          "clusters": 281,
+          "covariance": "neighborhood-clustered CR1, t inference; no causal identification",
+          "limitations": [
+            "Clustered errors do not remove spatial confounding or account for all cross-neighborhood dependence.",
+            "Complete-case analysis may change sample composition."
+          ],
+          "within_neighborhood_sd_km": 0.5350602064203851
+        },
+        "models": [
+          {
+            "name": "M1",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km",
+            "n": 2920,
+            "clusters": 281,
+            "distance_coefficient_per_km": -0.013295854847709163,
+            "confidence_interval_95": [
+              -0.032144456267991756,
+              0.00555274657257343
+            ],
+            "association_percent_per_km": -1.320785541063291,
+            "association_percent_ci_95": [
+              -3.1633314662451153,
+              0.556819164411256
+            ],
+            "r_squared": 0.0006776641171388764,
+            "condition_number": 5.085130831460963,
+            "breusch_pagan_pvalue": 0.2558764714516618,
+            "max_cooks_distance": 0.07607106151516979,
+            "cooks_distance_defined_n": 2920,
+            "cooks_distance_undefined_n": 0,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -6.129213019840617,
+              -0.31041903208222266,
+              0.10340025753436777,
+              0.4069464551201465,
+              1.6271383624931934
+            ],
+            "exploratory_knn_moran_i": 0.08760840916782556,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          },
+          {
+            "name": "M2",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km + log_area + rooms_count + construction_year + floor + C(has_parking) + C(has_elevator) + C(has_warehouse)",
+            "n": 2920,
+            "clusters": 281,
+            "distance_coefficient_per_km": -0.024769586003093563,
+            "confidence_interval_95": [
+              -0.03940859948999707,
+              -0.01013057251619005
+            ],
+            "association_percent_per_km": -2.446533702472677,
+            "association_percent_ci_95": [
+              -3.864218142998404,
+              -1.0079431109375543
+            ],
+            "r_squared": 0.06527722309641681,
+            "condition_number": 316370.8392237477,
+            "breusch_pagan_pvalue": 0.643691838345771,
+            "max_cooks_distance": 0.08381726378623752,
+            "cooks_distance_defined_n": 2920,
+            "cooks_distance_undefined_n": 0,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -6.314730584135753,
+              -0.14325634229032946,
+              0.10972563861932727,
+              0.33618237665641537,
+              1.224011583887338
+            ],
+            "exploratory_knn_moran_i": 0.021743489305477426,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          },
+          {
+            "name": "M3",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km + log_area + rooms_count + construction_year + floor + C(has_parking) + C(has_elevator) + C(has_warehouse) + C(neighborhood_slug) + C(month)",
+            "n": 2920,
+            "clusters": 281,
+            "distance_coefficient_per_km": 0.029786759037457256,
+            "confidence_interval_95": [
+              -0.06540829352751078,
+              0.12498181160242529
+            ],
+            "association_percent_per_km": 3.0234822263438765,
+            "association_percent_ci_95": [
+              -6.3315057107101556,
+              13.312784309968247
+            ],
+            "r_squared": 0.17986890612690754,
+            "condition_number": 640629.3049946361,
+            "breusch_pagan_pvalue": 0.9999515926639444,
+            "max_cooks_distance": 0.07002925341129435,
+            "cooks_distance_defined_n": 2874,
+            "cooks_distance_undefined_n": 46,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -5.6729013360838,
+              -0.12093223847028334,
+              0.028083829176628328,
+              0.2115861057575188,
+              2.2214123790881484
+            ],
+            "exploratory_knn_moran_i": -0.045945851053698764,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          }
+        ]
+      }
+    },
+    {
+      "draw": 7,
+      "analysis": {
+        "status": "estimated",
+        "diagnostics": {
+          "input_n": 3110,
+          "complete_case_n": 2937,
+          "clusters": 282,
+          "covariance": "neighborhood-clustered CR1, t inference; no causal identification",
+          "limitations": [
+            "Clustered errors do not remove spatial confounding or account for all cross-neighborhood dependence.",
+            "Complete-case analysis may change sample composition."
+          ],
+          "within_neighborhood_sd_km": 0.547382677976952
+        },
+        "models": [
+          {
+            "name": "M1",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km",
+            "n": 2937,
+            "clusters": 282,
+            "distance_coefficient_per_km": -0.024494600593960848,
+            "confidence_interval_95": [
+              -0.047091267091516786,
+              -0.0018979340964049053
+            ],
+            "association_percent_per_km": -2.4197042339434103,
+            "association_percent_ci_95": [
+              -4.599967521795833,
+              -0.18961341583890798
+            ],
+            "r_squared": 0.0022125933463844616,
+            "condition_number": 5.133378048581889,
+            "breusch_pagan_pvalue": 0.780840200718871,
+            "max_cooks_distance": 0.4459223980962509,
+            "cooks_distance_defined_n": 2937,
+            "cooks_distance_undefined_n": 0,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -6.451563138813761,
+              -0.30484448017506693,
+              0.11627539083107408,
+              0.41637076793915995,
+              1.6294726344390829
+            ],
+            "exploratory_knn_moran_i": 0.08334320893609887,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          },
+          {
+            "name": "M2",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km + log_area + rooms_count + construction_year + floor + C(has_parking) + C(has_elevator) + C(has_warehouse)",
+            "n": 2937,
+            "clusters": 282,
+            "distance_coefficient_per_km": -0.036603100923856886,
+            "confidence_interval_95": [
+              -0.055687851706906225,
+              -0.017518350140807548
+            ],
+            "association_percent_per_km": -3.594130656967282,
+            "association_percent_ci_95": [
+              -5.416566961244987,
+              -1.736579597637406
+            ],
+            "r_squared": 0.06627967362733367,
+            "condition_number": 315888.7509258741,
+            "breusch_pagan_pvalue": 0.9208855016204728,
+            "max_cooks_distance": 0.11930806928452818,
+            "cooks_distance_defined_n": 2937,
+            "cooks_distance_undefined_n": 0,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -6.506498089551768,
+              -0.13559800756801366,
+              0.11973919477517825,
+              0.34759824223533187,
+              1.2100612123206405
+            ],
+            "exploratory_knn_moran_i": 0.01768470772599671,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          },
+          {
+            "name": "M3",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km + log_area + rooms_count + construction_year + floor + C(has_parking) + C(has_elevator) + C(has_warehouse) + C(neighborhood_slug) + C(month)",
+            "n": 2937,
+            "clusters": 282,
+            "distance_coefficient_per_km": -0.06656366186121601,
+            "confidence_interval_95": [
+              -0.1772163700595383,
+              0.04408904633710628
+            ],
+            "association_percent_per_km": -6.43966482903611,
+            "association_percent_ci_95": [
+              -16.24014663295274,
+              4.5075410882573514
+            ],
+            "r_squared": 0.17171372735388635,
+            "condition_number": 642989.304302712,
+            "breusch_pagan_pvalue": 0.9999995595650554,
+            "max_cooks_distance": 0.06443303594886303,
+            "cooks_distance_defined_n": 2892,
+            "cooks_distance_undefined_n": 45,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -5.959643021086531,
+              -0.11581214412960605,
+              0.03193827524965798,
+              0.2211110592356782,
+              2.2784186125686237
+            ],
+            "exploratory_knn_moran_i": -0.04551572756368799,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          }
+        ]
+      }
+    },
+    {
+      "draw": 8,
+      "analysis": {
+        "status": "estimated",
+        "diagnostics": {
+          "input_n": 3110,
+          "complete_case_n": 2917,
+          "clusters": 282,
+          "covariance": "neighborhood-clustered CR1, t inference; no causal identification",
+          "limitations": [
+            "Clustered errors do not remove spatial confounding or account for all cross-neighborhood dependence.",
+            "Complete-case analysis may change sample composition."
+          ],
+          "within_neighborhood_sd_km": 0.5739516387918371
+        },
+        "models": [
+          {
+            "name": "M1",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km",
+            "n": 2917,
+            "clusters": 282,
+            "distance_coefficient_per_km": -0.02635062487226205,
+            "confidence_interval_95": [
+              -0.05269359521686105,
+              -7.654527663047972e-06
+            ],
+            "association_percent_per_km": -2.6006476623277655,
+            "association_percent_ci_95": [
+              -5.132935482229367,
+              -0.0007654498367225847
+            ],
+            "r_squared": 0.002576346262694651,
+            "condition_number": 5.126770210792534,
+            "breusch_pagan_pvalue": 0.9190509886867937,
+            "max_cooks_distance": 0.4273029501346511,
+            "cooks_distance_defined_n": 2917,
+            "cooks_distance_undefined_n": 0,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -6.4908570939316474,
+              -0.2982252672667478,
+              0.11887701993395439,
+              0.4173783733479617,
+              1.626997762963392
+            ],
+            "exploratory_knn_moran_i": 0.08722308752397255,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          },
+          {
+            "name": "M2",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km + log_area + rooms_count + construction_year + floor + C(has_parking) + C(has_elevator) + C(has_warehouse)",
+            "n": 2917,
+            "clusters": 282,
+            "distance_coefficient_per_km": -0.03688052372290543,
+            "confidence_interval_95": [
+              -0.059905502489531894,
+              -0.013855544956278963
+            ],
+            "association_percent_per_km": -3.6208721335659804,
+            "association_percent_ci_95": [
+              -5.814646780687315,
+              -1.3759998684196215
+            ],
+            "r_squared": 0.06558394397034384,
+            "condition_number": 315961.7706332208,
+            "breusch_pagan_pvalue": 0.9098569287385609,
+            "max_cooks_distance": 0.11435836580463882,
+            "cooks_distance_defined_n": 2917,
+            "cooks_distance_undefined_n": 0,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -6.5184097099642395,
+              -0.13507691288610957,
+              0.12296987323484032,
+              0.3505457519205173,
+              1.1074103127409058
+            ],
+            "exploratory_knn_moran_i": 0.026431688654791802,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          },
+          {
+            "name": "M3",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km + log_area + rooms_count + construction_year + floor + C(has_parking) + C(has_elevator) + C(has_warehouse) + C(neighborhood_slug) + C(month)",
+            "n": 2917,
+            "clusters": 282,
+            "distance_coefficient_per_km": 0.021671269626216835,
+            "confidence_interval_95": [
+              -0.056649122904737906,
+              0.09999166215717158
+            ],
+            "association_percent_per_km": 2.1907797116721603,
+            "association_percent_ci_95": [
+              -5.507443605668941,
+              10.516170337264958
+            ],
+            "r_squared": 0.17453903512918512,
+            "condition_number": 737953.2594212366,
+            "breusch_pagan_pvalue": 0.9999987963643732,
+            "max_cooks_distance": 0.06806577686491709,
+            "cooks_distance_defined_n": 2870,
+            "cooks_distance_undefined_n": 47,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -6.012656062608883,
+              -0.11342674001864239,
+              0.029616163958671393,
+              0.22086328258480492,
+              2.227669137874649
+            ],
+            "exploratory_knn_moran_i": -0.04448891473441882,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          }
+        ]
+      }
+    },
+    {
+      "draw": 9,
+      "analysis": {
+        "status": "estimated",
+        "diagnostics": {
+          "input_n": 3110,
+          "complete_case_n": 2941,
+          "clusters": 280,
+          "covariance": "neighborhood-clustered CR1, t inference; no causal identification",
+          "limitations": [
+            "Clustered errors do not remove spatial confounding or account for all cross-neighborhood dependence.",
+            "Complete-case analysis may change sample composition."
+          ],
+          "within_neighborhood_sd_km": 0.6129904356397388
+        },
+        "models": [
+          {
+            "name": "M1",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km",
+            "n": 2941,
+            "clusters": 280,
+            "distance_coefficient_per_km": -0.02577118857962474,
+            "confidence_interval_95": [
+              -0.04947655252437283,
+              -0.0020658246348766555
+            ],
+            "association_percent_per_km": -2.5441945888036273,
+            "association_percent_ci_95": [
+              -4.8272526518419925,
+              -0.20636922877700967
+            ],
+            "r_squared": 0.0026897063209092575,
+            "condition_number": 5.101625216458387,
+            "breusch_pagan_pvalue": 0.6550285436412139,
+            "max_cooks_distance": 0.4567290381459203,
+            "cooks_distance_defined_n": 2941,
+            "cooks_distance_undefined_n": 0,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -5.831265269038854,
+              -0.31849250717974087,
+              0.099912772017408,
+              0.4101541348227471,
+              1.6188764553604504
+            ],
+            "exploratory_knn_moran_i": 0.10551010637050526,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          },
+          {
+            "name": "M2",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km + log_area + rooms_count + construction_year + floor + C(has_parking) + C(has_elevator) + C(has_warehouse)",
+            "n": 2941,
+            "clusters": 280,
+            "distance_coefficient_per_km": -0.037395336614435025,
+            "confidence_interval_95": [
+              -0.05671428848417941,
+              -0.018076384744690636
+            ],
+            "association_percent_per_km": -3.6704765814658065,
+            "association_percent_ci_95": [
+              -5.513601067229833,
+              -1.7913986896201284
+            ],
+            "r_squared": 0.07997380538729626,
+            "condition_number": 315975.30653618125,
+            "breusch_pagan_pvalue": 0.9713704927701678,
+            "max_cooks_distance": 0.12520886447316176,
+            "cooks_distance_defined_n": 2941,
+            "cooks_distance_undefined_n": 0,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -6.221601072186273,
+              -0.15242035374047092,
+              0.10205316110541318,
+              0.3300586683773368,
+              1.118926765693618
+            ],
+            "exploratory_knn_moran_i": 0.03227066385030628,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          },
+          {
+            "name": "M3",
+            "status": "estimated",
+            "formula": "log_price ~ distance_km + log_area + rooms_count + construction_year + floor + C(has_parking) + C(has_elevator) + C(has_warehouse) + C(neighborhood_slug) + C(month)",
+            "n": 2941,
+            "clusters": 280,
+            "distance_coefficient_per_km": -0.048034838979618605,
+            "confidence_interval_95": [
+              -0.11404039678012813,
+              0.01797071882089092
+            ],
+            "association_percent_per_km": -4.6899418552648555,
+            "association_percent_ci_95": [
+              -10.777808773802503,
+              1.8133163813795679
+            ],
+            "r_squared": 0.18685374965017765,
+            "condition_number": 737182.4019146047,
+            "breusch_pagan_pvalue": 0.9999952326885102,
+            "max_cooks_distance": 0.07375034055553167,
+            "cooks_distance_defined_n": 2897,
+            "cooks_distance_undefined_n": 44,
+            "influence_diagnostic_caveat": "Maximum over defined Cook distances only; nonfinite values or leverage within 1e-10 of one are excluded and counted, not replaced with zero.",
+            "residual_quantiles": [
+              -4.702681341083768,
+              -0.12282577213889567,
+              0.03102629010125213,
+              0.21134064295758748,
+              2.240630478071336
+            ],
+            "exploratory_knn_moran_i": -0.03350469584160734,
+            "spatial_diagnostic_caveat": "Directed row-standardized 8NN residual Moran I; approximate coordinates, duplicated origins and no permutation inference."
+          }
+        ]
+      }
+    }
+  ]
+}

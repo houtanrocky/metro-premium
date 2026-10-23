@@ -48,3 +48,40 @@ The Alibaba guide and its linked schematic were acquired privately and audited. 
 Documented 23 October 2026: the owner confirmed total apartment asking prices in toman after inspecting actual records. The scoped [price interpretation](../research/price-interpretation.md) now enables real housing-only medians/IQR and filtering sensitivities, without relabeling the evidence as publisher verification or converting currency. Source bytes and the initial audit are unchanged. The same 11,767 candidates have median 86.99 million toman/m² and IQR 58.54–126.67; metro associations remain blocked by network validation.
 
 The Persian site uses public schema version 2 for aggregate housing prices and price distributions in the neighborhood explorer, while retaining disabled metro/price-map layers. New tables and actual figures are in [housing-descriptives.json](../artifacts/reports/housing-descriptives.json), [CSV](../artifacts/reports/housing-descriptives.csv), and [the median/IQR figure](../artifacts/figures/housing-price-summary.png). The expanded Python suite passes 28 tests, React 4 tests, and desktop/mobile browser 6 tests, including owner-evidence/units checks and continued metro gating. Type checking, production build and 27-document link checks pass. This follow-up supersedes the initial price-blocked status above, while preserving its dated evidence record.
+
+## Follow-up: executed historical mapped-entrance extension
+
+Documented 23 October 2026: the historical acquisition is complete, including operator-attested browser imports with explicit source evidence labels. The four-tile walking union contains 734,532 OSM objects and produces 555,686 nodes and 1,236,780 directed edges. The retained mapped subset has 166 entrances; 2,978 of 3,110 routing candidates have supported baseline routes. Three observational models share 2,962 complete cases across 281 neighborhoods. Thirty location draws, ten model refits and 199 spatial-cell wild-bootstrap draws executed.
+
+The adjusted association is −9.87% per additional km, with a neighborhood-clustered interval of −22.85% to +5.28%; location perturbations change its sign. This is exploratory mapped-subset evidence, without operational metro-access approval or a causal interpretation. See the [full findings and limitations](../research/mapped-reference-findings.md) and appended [execution manifest](../artifacts/reports/reproduction-manifests.json), run `20261023T055844-0795d47b`.
+
+The earlier failed run is preserved: strict JSON export stopped on undefined influence diagnostics. Defined Cook distances and explicit missing counts now handle singleton fixed-effect groups. Boundary-sensitive routes have no nominal band. Threshold-price comparisons require 30 measured observations on both sides. Scientific code/config snapshots preserve the exact local dirty-tree implementation. Individual entrance review coordinates remain private.
+
+| Follow-up verification | Executed outcome |
+|---|---|
+| Python | 57 tests passed, including directed/disconnected routing, singleton influence, boundary bands, privacy suppression, browser import and code-provenance cases |
+| React | 5 tests passed, including separate mapped-subset contract and closed operational gates |
+| TypeScript / production build | Passed; existing MapLibre bundle-size warning remains |
+| Browser | 8 desktop/mobile Chrome tests passed; new results, model table, source links and disabled operating metro layers checked |
+| Documentation | 29 research/documentation files and local link targets checked |
+| Production preview | Desktop/mobile actual street rendering, exploratory results and assets passed; no page errors or page overflow; signed intervals use explicit left-to-right direction |
+| Visual review | Actual aggregate figure and desktop/mobile exploratory section inspected; small nonzero interval bounds preserve significant digits |
+| Data boundary | Aggregate payload and minimum-group comparisons checked; raw inputs and private runs remain untracked; primary findings and public metro geometry gates remain false |
+
+No source bytes or previous run evidence were erased. No remote push or deployment occurred. Historical operational eligibility, independent topology/entrance completeness, physical route checks, geographic selection, calibrated spatial uncertainty and expanded-area/period sensitivities remain outstanding.
+
+## Follow-up: historical evidence and network audit
+
+Documented 23 October 2026: offline validation run `20261023T065027-67bd97e9` audits actual track ways, station-order compatibility, line coverage, memberships and all 166 entrance attachments. The [validation report](../research/historical-network-validation.md) and [machine-readable output](../artifacts/reports/historical-network-audit.json) document 15 of 17 software geometry passes, the same Line 3 endpoint gap in two directions, 14 compatible matched station subsequences and three insufficient branch comparisons. Line 5's missing network identifier remains an explicit exclusion under the existing retained-destination rule. No edge, transfer, alias or service date was invented to repair these findings.
+
+An exact cached official presidential report supplies four scoped inauguration facts, matching three retained stop areas. It verifies no individual entrance or uninterrupted December 2024 service. Private review CSVs contain the 123 nonzero connectors (39 over 25 m) and the Line 3 endpoint cases; no housing records were read. The preceding empirical payload remains byte-identical to its saved successful run. The latest audit manifest is appended to the reproduction bundle; all prior runs and source bytes remain intact.
+
+Validation: 70 Python tests, five React tests, TypeScript checks, production build, 30-document link checks and eight desktop/mobile browser tests passed. Browser checks include the new validation report/JSON and closed operational gates. The existing map bundle-size warning remains. Raw official HTML, source coordinates and private review files are not tracked or served; public output contains derived diagnostics and narrowly scoped station facts only.
+
+## Follow-up: bilingual interface and publication preparation
+
+Documented 23 October 2026: the owner authorized GitHub and GitHub Pages publication. Added English and Persian i18next catalogs, revised the Persian prose, and made all authored UI copy, errors, map controls and metadata translatable. Language links, saved preferences, RTL/LTR layouts and locale formatting work without changing the immutable empirical export (`660b878b2a0aaf3da86a464900f39c90dec1a327cea515d66dc835c23e5ea633`). Original scientific documents and technical chart exports keep their source language.
+
+The production build supports the GitHub Pages project path. A revision-pinned workflow validates Python, React, types, documentation, browser behavior and the production artifact before deployment. The publication check audits private paths in Git history, possible credentials and aggregate privacy thresholds. Failure artifacts exclude private runs. Only the static distribution is deployed; raw source data, listing coordinates and private review queues remain local.
+
+Local preparation checks: 70 Python and 11 React/localization tests passed; TypeScript, documentation links and production builds passed. English/Persian desktop/mobile production previews rendered actual streets, retained closed operational gates, and passed path/overflow checks. Browser accessibility checks cover both languages, including keyboard access to wide model tables. The pre-existing MapLibre chunk-size warning remains.

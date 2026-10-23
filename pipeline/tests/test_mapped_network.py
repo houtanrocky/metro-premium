@@ -65,6 +65,18 @@ def test_boundary_certificate_uses_metric_crs_and_outside_fails():
     assert distances[1]==0
 
 
+def test_boundary_sensitive_routes_have_no_nominal_distance_band():
+    from metropremium.mapped_network import route_frame, BBOX
+    class SyntheticRouter:
+        def route(self,x,y):
+            return {'status':'ok','network_m':100.,'euclidean_m':50.,'band':0,'ratio':2.}
+    frame=pd.DataFrame({'coordinate_valid':[True,True], 'radius_valid':[True,True],
+                        'location_longitude':[BBOX[0]+.000001,51.4], 'location_latitude':[35.7,35.7]})
+    routed=route_frame(frame,SyntheticRouter())
+    assert routed.route_status.tolist()==['boundary_sensitive','ok']
+    assert np.isnan(routed.band.iloc[0]) and routed.band.iloc[1]==0
+
+
 def test_json_importer_respects_foot_direction_and_real_lengths():
     elements=[{'type':'node','id':1,'lon':51.4,'lat':35.7}, {'type':'node','id':2,'lon':51.401,'lat':35.7}, {'type':'way','id':3,'nodes':[1,2],'tags':{'highway':'footway','oneway:foot':'-1'}}]
     g,_,_=walking_from_elements(elements)

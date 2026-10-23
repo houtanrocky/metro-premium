@@ -165,6 +165,7 @@ def route_frame(frame, router, candidates_only=True):
             if col in result:df.loc[idx,col]=result[col]
         if result['status']=='ok' and result['network_m'] >= df.loc[idx,'boundary_clearance_m'] - 1:
             df.loc[idx,'route_status']='boundary_sensitive'
+            df.loc[idx,'band']=np.nan
     return df
 
 
@@ -181,24 +182,29 @@ def mapped_analysis(cleaned, config, folder):
     if (raw_dir/'line5.json').exists():raw['elements'].extend(checked_json(raw_dir/'line5.json')['elements'])
     guide=extract_guide((ROOT/'data/raw/references/alibaba/tehran-subway-guide.html').read_text(encoding='utf-8'))
     entrances,inventory=entrance_inventory(raw['elements'],guide)
+    print(f'Mapped entrance inventory: {len(entrances)} retained candidates', flush=True)
     write_json(folder/'mapped-entrance-inventory.json',inventory)
     write_json(folder/'mapped-entrances-private.json',entrances)
     retained_by_id={e['id']:e for e in entrances}
     pd.DataFrame([{'osm_entrance_node':e['id'],'longitude':e['lon'],'latitude':e['lat'],'snapshot':SNAPSHOT,'station_names':' | '.join(retained_by_id.get(str(e['id']),{}).get('station_names',[])),'lines':';'.join(retained_by_id.get(str(e['id']),{}).get('lines',[])),'stop_area_relations':';'.join(map(str,retained_by_id.get(str(e['id']),{}).get('stop_areas',[]))),'retained_as_mapped':str(e['id']) in retained_by_id,'operation_verified':False} for e in raw['elements'] if e['type']=='node' and e.get('tags',{}).get('railway')=='subway_entrance']).drop_duplicates('osm_entrance_node').to_csv(folder/'station-entrance-review.csv',index=False,encoding='utf-8-sig')
     graph,graph_report=load_mapped_graph(raw_dir)
+    print(f'Walking graph: {graph.number_of_nodes():,} nodes, {graph.number_of_edges():,} edges', flush=True)
     router=Router(graph,entrances,max_snap_m=config['max_snap_m'],speed=config['walking_speed_m_per_min'])
     routed=route_frame(cleaned,router)
     routed.to_parquet(folder/'mapped-accessibility.parquet',index=False)
     good=routed.loc[routed.route_status.eq('ok')].copy()
     n=len(good)
+    print(f'Routing complete: {n:,} supported of {int((cleaned.coordinate_valid & cleaned.radius_valid).sum()):,} candidates', flush=True)
     if n==0: raise ValueError('No supported empirical routes; investigate network and joins')
     if (good.network_m+1e-5<good.euclidean_m).any():raise ValueError('Triangle inequality violation')
     models=fit_models(good)
-    sensitivity=sensitivity_models(good)
+    sensitivity=sensitivity_models(good, minimum_group=config['min_public_group'])
+    print('Baseline models and filtering sensitivities computed', flush=True)
     for snap in [50,150]:
         alternative=route_frame(cleaned,Router(graph,entrances,max_snap_m=snap))
         sensitivity[f'snap_{snap}m']={'coverage':alternative.route_status.value_counts().to_dict(), 'analysis':fit_models(alternative.loc[alternative.route_status.eq('ok')])}
     spatial=spatial_wild_bootstrap(good, draws=config.get('spatial_bootstrap_draws',199), block_m=config.get('spatial_block_m',2000), seed=config['seed'])
+    print('Snapping and spatial-block sensitivities computed', flush=True)
     # Batched whole-sample draws retain aligned source rows for model refits.
     rng=np.random.default_rng(config['seed'])
     indices=routed.index[routed.coordinate_valid & routed.radius_valid]
@@ -223,6 +229,8 @@ def mapped_analysis(cleaned, config, folder):
             perturbed['network_m']=[s.get('network_m',np.nan) if np.isfinite(b) else np.nan for s,b in zip(results,bands)]
             perturbed['x']=sx;perturbed['y']=sy
             refits.append({'draw':draw,'analysis':fit_models(perturbed)})
+        if (draw+1)%5==0:
+            print(f'Location scenarios: {draw+1}/{config.get("location_draws",30)} draws', flush=True)
     sampled=np.array(all_bands)
     nominal_ok=np.isfinite(nominal)
     changed=(sampled != nominal) & np.isfinite(sampled) & nominal_ok

@@ -28,6 +28,17 @@ def run_record(command, config, inputs=()):
     git = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT, capture_output=True, text=True)
     state = {"run_id": run_id, "command": command, "config": config, "dataset_revision": REVISION, "started_utc": datetime.now(timezone.utc).isoformat(), "git_commit": git.stdout.strip() or None, "git_dirty": bool(subprocess.run(["git", "status", "--porcelain"], cwd=ROOT, capture_output=True, text=True).stdout), "python": platform.python_version(), "packages": {d.metadata["Name"]: d.version for d in importlib.metadata.distributions()}, "inputs": [{"path": str(p.relative_to(ROOT)), "sha256": digest(p)} for p in inputs if p.exists()], "outputs": [], "validation": [], "failures": []}
     try:
+        # A dirty Git flag alone cannot recover the code used by a local run.
+        # Snapshot only code/configuration; never collect raw/private datasets.
+        code = [p for pattern in ['pipeline/src/**/*.py', 'scripts/*.py', 'scripts/*.mjs', 'configs/*.yaml'] for p in ROOT.glob(pattern)]
+        code += [ROOT/p for p in ['pipeline/pyproject.toml', 'pipeline/uv.lock'] if (ROOT/p).exists()]
+        state['source_code_snapshot'] = []
+        for path in sorted(code):
+            relative = path.relative_to(ROOT)
+            saved = folder/'source-code'/relative
+            saved.parent.mkdir(parents=True, exist_ok=True)
+            saved.write_bytes(path.read_bytes())
+            state['source_code_snapshot'].append({'source_path':str(relative), 'snapshot_path':str(saved.relative_to(folder)), 'sha256':digest(saved)})
         yield folder, state
         state["status"] = "completed"
     except Exception as e:
