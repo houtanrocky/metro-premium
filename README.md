@@ -4,7 +4,7 @@
 
 Exploring Housing Prices Through Urban Network Science.
 
-[فارسی](README.fa.md) · [Research report](research/report.md) · [Actual audit](artifacts/audits/source-audit.json) · [Defense guide](docs/what-i-must-understand.md)
+[Website: English](https://houtanrocky.github.io/metro-premium/?lang=en) · [وب‌سایت فارسی](https://houtanrocky.github.io/metro-premium/?lang=fa) · [فارسی](README.fa.md) · [Research report](research/report.md) · [Actual audit](artifacts/audits/source-audit.json) · [Defense guide](docs/what-i-must-understand.md)
 
 This repository implements an offline-capable Python research pipeline and an English/Persian React data publication. **The release includes housing descriptions and exploratory associations with distance to a retained historical mapped-entrance subset; no operational metro price premium is established.** The entire official Divar CSV was downloaded and audited. After inspecting source records, the owner confirmed that `price_value` is the total apartment asking price in toman. This evidence is recorded explicitly as owner confirmation, without claiming publisher verification. Independent metro topology, entrance completeness and historical operation checks remain incomplete; public metro layers and the primary operational-access claim stay disabled.
 

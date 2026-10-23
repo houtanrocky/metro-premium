@@ -277,5 +277,8 @@
   "coverage.unreachable": "دسترسی‌ناپذیر در شبکه",
   "language.en": "English",
   "language.fa": "فارسی",
-  "map.contributors": "مشارکت‌کنندگان OpenStreetMap"
+  "map.contributors": "مشارکت‌کنندگان OpenStreetMap",
+  "brand.metro": "METRO",
+  "brand.premium": "PREMIUM",
+  "brand.name": "METROPREMIUM"
 }

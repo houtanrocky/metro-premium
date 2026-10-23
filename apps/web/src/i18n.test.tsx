@@ -26,7 +26,7 @@ describe('Bilingual publication',()=>{
       const source=readFileSync(`apps/web/src/${file}`,'utf8');
       const tree=ts.createSourceFile(file,source,ts.ScriptTarget.Latest,true,ts.ScriptKind.TSX);
       function visit(node:ts.Node){
-        if(ts.isJsxText(node)&&/\p{L}/u.test(node.text))expect(['METRO','PREMIUM','METROPREMIUM'],`${file}: ${node.text}`).toContain(node.text.trim());
+        if(ts.isJsxText(node)&&/\p{L}/u.test(node.text))expect.fail(`${file}: hardcoded display text ${node.text.trim()}`);
         if(ts.isJsxAttribute(node)&&['aria-label','title','placeholder','alt'].includes(node.name.getText(tree))&&node.initializer&&ts.isStringLiteral(node.initializer))expect.fail(`${file}: hardcoded ${node.name.getText(tree)}`);
         ts.forEachChild(node,visit);
       }visit(tree);

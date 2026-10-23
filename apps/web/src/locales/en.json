@@ -277,5 +277,8 @@
   "coverage.unreachable": "Unreachable on the graph",
   "language.en": "English",
   "language.fa": "فارسی",
-  "map.contributors": "OpenStreetMap contributors"
+  "map.contributors": "OpenStreetMap contributors",
+  "brand.metro": "METRO",
+  "brand.premium": "PREMIUM",
+  "brand.name": "METROPREMIUM"
 }
